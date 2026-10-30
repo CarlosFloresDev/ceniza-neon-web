@@ -1,0 +1,16 @@
+{
+  "tool": "OpenAI image_gen (built-in)",
+  "key": "wanderer",
+  "route": "/bitacora/el-errante-empieza-a-moverse/",
+  "source": "art/sources/pages/wanderer-v1.png",
+  "output": "/media/pages/wanderer-v1.webp",
+  "prompt": "Create ONE original cinematic widescreen 16:9 colored manga key illustration for CENIZA NEON. Reference image 1 is the website cover: match its sophisticated confident ink linework, engraved cross-hatching, painterly textured color, tactile weathered metal, realistic anatomy and atmospheric industrial gothic cyberpunk world. Other reference sheets, when present, establish character and machine identities ONLY: never copy their grid, labels or layout. A single richly detailed coherent scene, NOT a collage, sprite sheet or panel montage. PALETTE: charcoal black, desaturated steel teal, antique brass, muted ivory, restrained amber and cyan practical light. COMPOSITION: place the focal subject on the RIGHT 55%, keeping the LEFT 45% atmospheric and naturally darker with enough negative space for a webpage title; preserve meaningful architecture there, not empty black. The illustration must be beautiful on its own and readable when cropped on mobile. No text, numbers, labels, logos, watermarks, UI, speech bubbles or fake game screenshot. Do not reproduce the existing cover composition; this is a fresh image for a different page. Scene: One lean faceless wandering industrial automaton in a torn maintenance hood and oxidized jointed limbs, taking a hesitant step under a leaking pipe. No human face, no gore, no fantasy armor. Dense rain, steel stairwells, dim violet threat indicator, reflective cyan puddles. Mechanical gait suggested by a planted foot and shifted center of mass. Figure right.",
+  "references": [
+    "art/sources/hero.png"
+  ],
+  "width": 1672,
+  "height": 941,
+  "generatedAt": "2026-10-30T02:05:00.934Z",
+  "sha256": "51913da76d10d3019e35b008c84472e569f0edbc9fe18bb029636022465655f7",
+  "processing": "Original PNG preserved unchanged. WebP resize and compression only; no painted edits."
+}

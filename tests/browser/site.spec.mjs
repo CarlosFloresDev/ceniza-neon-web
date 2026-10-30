@@ -11,6 +11,41 @@ const pages = [
   "/contacto/",
   "/prensa/",
 ];
+test("All 36 routes load distinct page art, one heading and working images", async ({
+  page,
+}) => {
+  test.setTimeout(120000);
+  const manifest = JSON.parse(
+    await fs.readFile("content/page-art.json", "utf8"),
+  );
+  const routes = [
+    "/",
+    "/universo/",
+    ...manifest.entries.map((entry) => entry.route),
+  ];
+  const illustrations = new Set();
+  for (const route of routes) {
+    await page.goto(route, { waitUntil: "domcontentloaded" });
+    await expect(page.locator("main h1")).toHaveCount(1);
+    const hero = page.locator("[data-page-art]");
+    await expect(hero).toHaveCount(1);
+    const src = await hero.getAttribute("data-page-art");
+    expect(illustrations.has(src)).toBeFalsy();
+    illustrations.add(src);
+    const picture = hero.locator("img").first();
+    await expect
+      .poll(() =>
+        picture.evaluate((img) => img.complete && img.naturalWidth > 0),
+      )
+      .toBeTruthy();
+    expect(
+      await page.evaluate(
+        () => document.documentElement.scrollWidth <= innerWidth,
+      ),
+    ).toBeTruthy();
+  }
+  expect(illustrations.size).toBe(36);
+});
 test("The archive exposes real development dates and the walking record shows current designs", async ({
   page,
 }) => {

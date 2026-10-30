@@ -1,0 +1,16 @@
+{
+  "tool": "OpenAI image_gen (built-in)",
+  "key": "day-night",
+  "route": "/wiki/ciclo-dia-noche/",
+  "source": "art/sources/pages/day-night-v1.png",
+  "output": "/media/pages/day-night-v1.webp",
+  "prompt": "Create ONE original cinematic widescreen 16:9 colored manga key illustration for CENIZA NEON. Reference image 1 is the website cover: match its sophisticated confident ink linework, engraved cross-hatching, painterly textured color, tactile weathered metal, realistic anatomy and atmospheric industrial gothic cyberpunk world. Other reference sheets, when present, establish character and machine identities ONLY: never copy their grid, labels or layout. A single richly detailed coherent scene, NOT a collage, sprite sheet or panel montage. PALETTE: charcoal black, desaturated steel teal, antique brass, muted ivory, restrained amber and cyan practical light. COMPOSITION: place the focal subject on the RIGHT 55%, keeping the LEFT 45% atmospheric and naturally darker with enough negative space for a webpage title; preserve meaningful architecture there, not empty black. The illustration must be beautiful on its own and readable when cropped on mobile. No text, numbers, labels, logos, watermarks, UI, speech bubbles or fake game screenshot. Do not reproduce the existing cover composition; this is a fresh image for a different page. Scene: One continuous industrial city at blue-hour transition: low amber sunset on far left, cold night rising over chimney stacks at right, street lamps beginning to glow across suspended bridges and canals. No split-screen, no montage. Dramatic atmospheric clouds and long reflections, no people.",
+  "width": 1672,
+  "height": 941,
+  "generatedAt": "2026-10-30T01:53:32.410Z",
+  "sha256": "aef0187a1656e9413d152582311a0ebf4442875fc8896e31c10bd1174ed85a5a",
+  "processing": "Original PNG preserved unchanged. WebP resize and compression only; no painted edits.",
+  "references": [
+    "art/sources/hero.png"
+  ]
+}

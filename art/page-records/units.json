@@ -1,0 +1,17 @@
+{
+  "tool": "OpenAI image_gen (built-in)",
+  "key": "units",
+  "route": "/wiki/reclutas-y-profesiones/",
+  "source": "art/sources/pages/units-v1.png",
+  "output": "/media/pages/units-v1.webp",
+  "prompt": "Create ONE original cinematic widescreen 16:9 colored manga key illustration for CENIZA NEON. Reference image 1 is the website cover: match its sophisticated confident ink linework, engraved cross-hatching, painterly textured color, tactile weathered metal, realistic anatomy and atmospheric industrial gothic cyberpunk world. Other reference sheets, when present, establish character and machine identities ONLY: never copy their grid, labels or layout. A single richly detailed coherent scene, NOT a collage, sprite sheet or panel montage. PALETTE: charcoal black, desaturated steel teal, antique brass, muted ivory, restrained amber and cyan practical light. COMPOSITION: place the focal subject on the RIGHT 55%, keeping the LEFT 45% atmospheric and naturally darker with enough negative space for a webpage title; preserve meaningful architecture there, not empty black. The illustration must be beautiful on its own and readable when cropped on mobile. No text, numbers, labels, logos, watermarks, UI, speech bubbles or fake game screenshot. Do not reproduce the existing cover composition; this is a fresh image for a different page. Scene: Ivo, older dark-skinned white-haired man with cyan technical monocle and white medical work coat, checks a recruit's arm while a guardian and technician prepare equipment at a station quartermaster bench. Warm human faces, thoughtfully different practical roles, shields and tool belts. Quiet care, no fighting, main group right.",
+  "width": 1672,
+  "height": 941,
+  "generatedAt": "2026-10-30T01:57:13.687Z",
+  "sha256": "d78a0d22af488463c05992196256236d5cd8f8401400af468fb15852b8a95002",
+  "processing": "Original PNG preserved unchanged. WebP resize and compression only; no painted edits.",
+  "references": [
+    "art/sources/hero.png",
+    "art/references/portraits.png"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "tool": "OpenAI image_gen (built-in)",
+  "key": "rail-arena",
+  "route": "/bitacora/el-ferrocarril-llega-a-la-arena/",
+  "source": "art/sources/pages/rail-arena-v1.png",
+  "output": "/media/pages/rail-arena-v1.webp",
+  "prompt": "Create ONE original cinematic widescreen 16:9 colored manga key illustration for CENIZA NEON. Reference image 1 is the website cover: match its sophisticated confident ink linework, engraved cross-hatching, painterly textured color, tactile weathered metal, realistic anatomy and atmospheric industrial gothic cyberpunk world. Other reference sheets, when present, establish character and machine identities ONLY: never copy their grid, labels or layout. A single richly detailed coherent scene, NOT a collage, sprite sheet or panel montage. PALETTE: charcoal black, desaturated steel teal, antique brass, muted ivory, restrained amber and cyan practical light. COMPOSITION: place the focal subject on the RIGHT 55%, keeping the LEFT 45% atmospheric and naturally darker with enough negative space for a webpage title; preserve meaningful architecture there, not empty black. The illustration must be beautiful on its own and readable when cropped on mobile. No text, numbers, labels, logos, watermarks, UI, speech bubbles or fake game screenshot. Do not reproduce the existing cover composition; this is a fresh image for a different page. Scene: A powerful old copper-and-black industrial locomotive crawls across a narrow elevated bridge toward a distant circular railway maintenance depot. Steam, massive wheels, lamp beam and tall gantries. Low diagonal composition, train on right, landscape in fog to left. Distinctive travel scene, no people or text.",
+  "references": [
+    "art/sources/hero.png"
+  ],
+  "width": 1672,
+  "height": 941,
+  "generatedAt": "2026-10-30T02:05:52.793Z",
+  "sha256": "e446adf51af77941c9b6227318ab72e6a64934b1ec1b1c4ce7ba23264259b4b6",
+  "processing": "Original PNG preserved unchanged. WebP resize and compression only; no painted edits."
+}

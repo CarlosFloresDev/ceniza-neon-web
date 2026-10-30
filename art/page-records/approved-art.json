@@ -1,0 +1,17 @@
+{
+  "tool": "OpenAI image_gen (built-in)",
+  "key": "approved-art",
+  "route": "/bitacora/el-diseno-aprobado-llega-al-combate/",
+  "source": "art/sources/pages/approved-art-v1.png",
+  "output": "/media/pages/approved-art-v1.webp",
+  "prompt": "Create ONE original cinematic widescreen 16:9 colored manga key illustration for CENIZA NEON. Reference image 1 is the website cover: match its sophisticated confident ink linework, engraved cross-hatching, painterly textured color, tactile weathered metal, realistic anatomy and atmospheric industrial gothic cyberpunk world. Other reference sheets, when present, establish character and machine identities ONLY: never copy their grid, labels or layout. A single richly detailed coherent scene, NOT a collage, sprite sheet or panel montage. PALETTE: charcoal black, desaturated steel teal, antique brass, muted ivory, restrained amber and cyan practical light. COMPOSITION: place the focal subject on the RIGHT 55%, keeping the LEFT 45% atmospheric and naturally darker with enough negative space for a webpage title; preserve meaningful architecture there, not empty black. The illustration must be beautiful on its own and readable when cropped on mobile. No text, numbers, labels, logos, watermarks, UI, speech bubbles or fake game screenshot. Do not reproduce the existing cover composition; this is a fresh image for a different page. Scene: The Prefecto matching portrait, black hair with white streak and gold cheek implant, ivory antique-gold armor, ceremonial black cape, carrying his shield lowered and sword sheathed, walks through a narrow maintenance passage toward a shaft of pale gold light. Portrait focus on face, detailed layered armor and weight shift, right-side three-quarter figure. No duel, distinct from terrace boss page.",
+  "references": [
+    "art/sources/hero.png",
+    "art/references/antagonists.png"
+  ],
+  "width": 1672,
+  "height": 941,
+  "generatedAt": "2026-10-30T02:05:53.507Z",
+  "sha256": "0f88ce0bd685738698f90d7cf864eb866e8e6ef0b817f4c6ef0626f8799d6ae9",
+  "processing": "Original PNG preserved unchanged. WebP resize and compression only; no painted edits."
+}

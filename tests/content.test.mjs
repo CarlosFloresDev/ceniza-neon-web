@@ -4,6 +4,50 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { posts } from "../content/editorial.mjs";
 import { wiki } from "../content/wiki.mjs";
+test("Every page has its own illustration while generated art remains separate from gameplay captures", async () => {
+  const manifest = JSON.parse(
+    await fs.readFile("content/page-art.json", "utf8"),
+  );
+  assert.equal(manifest.entries.length, 34);
+  const used = new Set();
+  const originals = new Set();
+  for (const file of (await files("dist")).filter((file) =>
+    file.endsWith(".html"),
+  )) {
+    const html = await fs.readFile(file, "utf8");
+    const art = [...html.matchAll(/data-page-art="([^"]+)"/g)];
+    assert.equal(art.length, 1, file);
+    assert.ok(!used.has(art[0][1]), file + " reused a page illustration");
+    used.add(art[0][1]);
+    await fs.access("public" + art[0][1]);
+    if (!["/media/hero.webp", "/media/station.webp"].includes(art[0][1]))
+      assert.match(html, /ARTE CONCEPTUAL/);
+  }
+  assert.equal(used.size, 36);
+  for (const entry of manifest.entries) {
+    await fs.access(entry.source);
+    const record = JSON.parse(
+      await fs.readFile(`art/page-records/${entry.key}.json`, "utf8"),
+    );
+    assert.equal(record.route, entry.route);
+    assert.equal(record.prompt, entry.prompt);
+    assert.ok(
+      !originals.has(record.sha256),
+      entry.key + " duplicated another generated original",
+    );
+    originals.add(record.sha256);
+  }
+  assert.equal(originals.size, 34);
+  const walk = await fs.readFile(
+    "dist/bitacora/caminar-es-mas-que-mover-un-sprite/index.html",
+    "utf8",
+  );
+  assert.match(walk, /data-page-art="\/media\/pages\/walking-v1.webp"/);
+  assert.match(
+    walk,
+    /class="container article-cover"><img[^>]+marcha_vigente_20261029/,
+  );
+});
 test("The journal dates come from verified commits and distinguish retrospective entries", async () => {
   const history = JSON.parse(
     await fs.readFile("content/development-history.json", "utf8"),

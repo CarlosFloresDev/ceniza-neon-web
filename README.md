@@ -39,6 +39,7 @@ La autenticación pertenece a la sesión local de Wrangler. No colocar tokens en
 | `content/editorial.mjs` | Entradas recientes de bitácora, fichas públicas de personajes, distritos y roadmap |
 | `content/archive-posts.mjs` | Relatos retrospectivos de las primeras etapas |
 | `content/development-history.json` | Referencias de Git para las fechas reales de los avances |
+| `content/page-art.json` | Ilustraciones, rutas y prompts propios de las 34 cabeceras nuevas |
 | `content/wiki.mjs` | Los 15 artículos de la wiki |
 | `content/soundtrack.json` | 21 pistas, títulos extraídos de metadatos y duración |
 | `scripts/build.mjs` | Plantillas, SEO, RSS, sitemap y cabeceras de seguridad |
@@ -47,7 +48,7 @@ La autenticación pertenece a la sesión local de Wrangler. No colocar tokens en
 | `public/effects.js` | Partículas, profundidad de portada y progreso de lectura; respeta movimiento reducido |
 | `public/media/` | Arte optimizado, capturas, logotipo y teaser |
 | `public/audio/` | Audio MP3 para reproducción web |
-| `art/` | Tres originales PNG y prompts completos de las nuevas ilustraciones |
+| `art/` | Originales PNG, referencias, prompts y registros de procedencia de las ilustraciones |
 | `narrativa/` | Biblia, personajes, 36 escenas e instrucciones de integración; no se publica |
 | `tests/` | Comprobaciones de contenido y pruebas de navegador |
 | `docs/` | Guías de edición y despliegue |
@@ -64,6 +65,8 @@ El teaser conceptual dura 36 segundos e incluye arte, capturas de desarrollo y �
 
 Las capturas de jefes y colonia se renovaron con los diseños ilustrados vigentes. La entrada de caminar muestra la galería real y un detalle actual del Prefecto. Las imágenes sustituidas se retiraron del sitio, y el teaser corregido usa `teaser-v2.mp4` para evitar recuperar el vídeo anterior desde la caché.
 
+Cada una de las 36 páginas tiene una cabecera ilustrada distinta: se conservan las de Inicio y Universo y se añaden 34 escenas nuevas para secciones, artículos, fichas de wiki y 404. Las miniaturas de bitácora usan su ilustración propia, mientras que las capturas verificadas permanecen dentro del artículo. Los rótulos distinguen siempre el arte conceptual de una captura jugable. Los PNG originales están en `art/sources/pages/`; sus copias WebP optimizadas, en `public/media/pages/`.
+
 Los campos de Discord y correo se dejan vacíos hasta recibir sus valores oficiales. En ese estado, la web muestra que están pendientes y no publica enlaces falsos. El canal de errores de GitHub pertenece al repositorio público del juego.
 
 ## Verificación
@@ -72,7 +75,7 @@ Los campos de Discord y correo se dejan vacíos hasta recibir sus valores oficia
 
 Las capturas de navegador se guardan en `build/review/`. Son material de comprobación, no nuevos recursos permanentes de producción.
 
-La primera publicación pasó tres pruebas de contenido y seis de navegador. La revisión de tipografía, cronología y capturas añade dos pruebas de contenido y dos de navegador. También se comprueba la versión pública: rutas, RSS, sitemap, 404, exclusión del guion, reproducción musical y teaser. El estado de la publicación original se conserva en [la entrega inicial](docs/ENTREGA_INICIAL.md).
+La revisión actual comprende seis pruebas de contenido y nueve de navegador, incluido un recorrido por las 36 cabeceras ilustradas. La primera publicación pasó tres pruebas de contenido y seis de navegador. La revisión de tipografía, cronología y capturas añade dos pruebas de contenido y dos de navegador. También se comprueba la versión pública: rutas, RSS, sitemap, 404, exclusión del guion, reproducción musical y teaser. El estado de la publicación original se conserva en [la entrega inicial](docs/ENTREGA_INICIAL.md).
 
 ## Arte, música y derechos
 

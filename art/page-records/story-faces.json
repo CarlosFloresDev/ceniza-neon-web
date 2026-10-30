@@ -1,0 +1,17 @@
+{
+  "tool": "OpenAI image_gen (built-in)",
+  "key": "story-faces",
+  "route": "/bitacora/la-historia-encuentra-sus-rostros/",
+  "source": "art/sources/pages/story-faces-v1.png",
+  "output": "/media/pages/story-faces-v1.webp",
+  "prompt": "Create ONE original cinematic widescreen 16:9 colored manga key illustration for CENIZA NEON. Reference image 1 is the website cover: match its sophisticated confident ink linework, engraved cross-hatching, painterly textured color, tactile weathered metal, realistic anatomy and atmospheric industrial gothic cyberpunk world. Other reference sheets, when present, establish character and machine identities ONLY: never copy their grid, labels or layout. A single richly detailed coherent scene, NOT a collage, sprite sheet or panel montage. PALETTE: charcoal black, desaturated steel teal, antique brass, muted ivory, restrained amber and cyan practical light. COMPOSITION: place the focal subject on the RIGHT 55%, keeping the LEFT 45% atmospheric and naturally darker with enough negative space for a webpage title; preserve meaningful architecture there, not empty black. The illustration must be beautiful on its own and readable when cropped on mobile. No text, numbers, labels, logos, watermarks, UI, speech bubbles or fake game screenshot. Do not reproduce the existing cover composition; this is a fresh image for a different page. Scene: Vera, short black hair and violet scarf, and Ivo, older dark-skinned white-haired physician with cyan monocle and white coat, converse quietly in a station infirmary beneath warm lamps. Close half-length expressive faces on right, hanging gauze, old window with cool rain, no words or speech bubbles. Emotional colored manga dialogue key art, not collage.",
+  "references": [
+    "art/sources/hero.png",
+    "art/references/portraits.png"
+  ],
+  "width": 1672,
+  "height": 941,
+  "generatedAt": "2026-10-30T02:08:03.817Z",
+  "sha256": "af0415092b5a259e6557357f33fac18e89a90dad4da60fa7de46bb7612492b8a",
+  "processing": "Original PNG preserved unchanged. WebP resize and compression only; no painted edits."
+}

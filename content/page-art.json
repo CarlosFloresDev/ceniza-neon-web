@@ -1,0 +1,435 @@
+{
+  "tool": "OpenAI image_gen (built-in)",
+  "purpose": "Unique conceptual hero art for each route; original gameplay captures stay in article bodies",
+  "entries": [
+    {
+      "key": "journal",
+      "route": "/bitacora/",
+      "src": "/media/pages/journal-v1.webp",
+      "source": "art/sources/pages/journal-v1.png",
+      "alt": "Mara registra reparaciones en un taller industrial iluminado por una lámpara.",
+      "prompt": "Create ONE original cinematic widescreen 16:9 colored manga key illustration for CENIZA NEON. Reference image 1 is the website cover: match its sophisticated confident ink linework, engraved cross-hatching, painterly textured color, tactile weathered metal, realistic anatomy and atmospheric industrial gothic cyberpunk world. Other reference sheets, when present, establish character and machine identities ONLY: never copy their grid, labels or layout. A single richly detailed coherent scene, NOT a collage, sprite sheet or panel montage. PALETTE: charcoal black, desaturated steel teal, antique brass, muted ivory, restrained amber and cyan practical light. COMPOSITION: place the focal subject on the RIGHT 55%, keeping the LEFT 45% atmospheric and naturally darker with enough negative space for a webpage title; preserve meaningful architecture there, not empty black. The illustration must be beautiful on its own and readable when cropped on mobile. No text, numbers, labels, logos, watermarks, UI, speech bubbles or fake game screenshot. Do not reproduce the existing cover composition; this is a fresh image for a different page. Scene: Mara, auburn ponytail, amber goggles on her forehead, yellow work coat and brass prosthetic arm, records repairs in a battered notebook at a richly detailed industrial workbench. Tools, loose rivets, diagrams without readable writing, rain on high windows. She occupies the right half. Warm amber desk lamp and cold cyan distant foundry.",
+      "references": [
+        "art/sources/hero.png",
+        "art/references/portraits.png"
+      ],
+      "focus": "60% 12%"
+    },
+    {
+      "key": "roadmap",
+      "route": "/roadmap/",
+      "src": "/media/pages/roadmap-v1.webp",
+      "source": "art/sources/pages/roadmap-v1.png",
+      "alt": "Nox contempla un cruce ferroviario y las rutas que atraviesan la ciudad.",
+      "prompt": "Create ONE original cinematic widescreen 16:9 colored manga key illustration for CENIZA NEON. Reference image 1 is the website cover: match its sophisticated confident ink linework, engraved cross-hatching, painterly textured color, tactile weathered metal, realistic anatomy and atmospheric industrial gothic cyberpunk world. Other reference sheets, when present, establish character and machine identities ONLY: never copy their grid, labels or layout. A single richly detailed coherent scene, NOT a collage, sprite sheet or panel montage. PALETTE: charcoal black, desaturated steel teal, antique brass, muted ivory, restrained amber and cyan practical light. COMPOSITION: place the focal subject on the RIGHT 55%, keeping the LEFT 45% atmospheric and naturally darker with enough negative space for a webpage title; preserve meaningful architecture there, not empty black. The illustration must be beautiful on its own and readable when cropped on mobile. No text, numbers, labels, logos, watermarks, UI, speech bubbles or fake game screenshot. Do not reproduce the existing cover composition; this is a fresh image for a different page. Scene: Nox, blue-haired young male rail courier in worn dark coat, stands at a vast rail junction on a high catwalk, studying a physical route chart with no readable marks. Multiple rail bridges recede into a foggy gothic industrial city. Dawn copper light, cyan semaphore lamps. New composition focused on branching rails.",
+      "references": [
+        "art/sources/hero.png",
+        "art/references/portraits.png"
+      ],
+      "focus": "60% 12%"
+    },
+    {
+      "key": "wiki",
+      "route": "/wiki/",
+      "src": "/media/pages/wiki-v1.webp",
+      "source": "art/sources/pages/wiki-v1.png",
+      "alt": "Vera consulta mapas y archivos en una biblioteca industrial.",
+      "prompt": "Create ONE original cinematic widescreen 16:9 colored manga key illustration for CENIZA NEON. Reference image 1 is the website cover: match its sophisticated confident ink linework, engraved cross-hatching, painterly textured color, tactile weathered metal, realistic anatomy and atmospheric industrial gothic cyberpunk world. Other reference sheets, when present, establish character and machine identities ONLY: never copy their grid, labels or layout. A single richly detailed coherent scene, NOT a collage, sprite sheet or panel montage. PALETTE: charcoal black, desaturated steel teal, antique brass, muted ivory, restrained amber and cyan practical light. COMPOSITION: place the focal subject on the RIGHT 55%, keeping the LEFT 45% atmospheric and naturally darker with enough negative space for a webpage title; preserve meaningful architecture there, not empty black. The illustration must be beautiful on its own and readable when cropped on mobile. No text, numbers, labels, logos, watermarks, UI, speech bubbles or fake game screenshot. Do not reproduce the existing cover composition; this is a fresh image for a different page. Scene: Vera, short black-haired woman with violet scarf and rugged scout jacket, opens a rolled map inside a cavernous municipal archive. Tall mechanical shelves, brass card drawers, coils of survey tape and worn atlases. Beautiful detailed face on right, warm directional reading lamp and deep slate-blue shadows.",
+      "references": [
+        "art/sources/hero.png",
+        "art/references/portraits.png"
+      ],
+      "focus": "60% 12%"
+    },
+    {
+      "key": "music",
+      "route": "/banda-sonora/",
+      "src": "/media/pages/music-v1.webp",
+      "source": "art/sources/pages/music-v1.png",
+      "alt": "Grabadores de cinta y resonadores en una sala sonora de la estación.",
+      "prompt": "Create ONE original cinematic widescreen 16:9 colored manga key illustration for CENIZA NEON. Reference image 1 is the website cover: match its sophisticated confident ink linework, engraved cross-hatching, painterly textured color, tactile weathered metal, realistic anatomy and atmospheric industrial gothic cyberpunk world. Other reference sheets, when present, establish character and machine identities ONLY: never copy their grid, labels or layout. A single richly detailed coherent scene, NOT a collage, sprite sheet or panel montage. PALETTE: charcoal black, desaturated steel teal, antique brass, muted ivory, restrained amber and cyan practical light. COMPOSITION: place the focal subject on the RIGHT 55%, keeping the LEFT 45% atmospheric and naturally darker with enough negative space for a webpage title; preserve meaningful architecture there, not empty black. The illustration must be beautiful on its own and readable when cropped on mobile. No text, numbers, labels, logos, watermarks, UI, speech bubbles or fake game screenshot. Do not reproduce the existing cover composition; this is a fresh image for a different page. Scene: An abandoned yet lovingly restored railway sound studio. A sophisticated brass reel-to-reel recorder, oscillating mechanical resonators, copper speaker horns, a pair of worn headphones on an engineer's seat, softly illuminated cyan vacuum tubes and amber meters WITHOUT numbers. Open arched window reveals rainy rail bridges. NO people. Elegant moody music cover.",
+      "references": [
+        "art/sources/hero.png"
+      ],
+      "focus": "60% 12%"
+    },
+    {
+      "key": "community",
+      "route": "/comunidad/",
+      "src": "/media/pages/community-v1.webp",
+      "source": "art/sources/pages/community-v1.png",
+      "alt": "Habitantes del refugio comparten una mesa bajo las luces de la estación.",
+      "prompt": "Create ONE original cinematic widescreen 16:9 colored manga key illustration for CENIZA NEON. Reference image 1 is the website cover: match its sophisticated confident ink linework, engraved cross-hatching, painterly textured color, tactile weathered metal, realistic anatomy and atmospheric industrial gothic cyberpunk world. Other reference sheets, when present, establish character and machine identities ONLY: never copy their grid, labels or layout. A single richly detailed coherent scene, NOT a collage, sprite sheet or panel montage. PALETTE: charcoal black, desaturated steel teal, antique brass, muted ivory, restrained amber and cyan practical light. COMPOSITION: place the focal subject on the RIGHT 55%, keeping the LEFT 45% atmospheric and naturally darker with enough negative space for a webpage title; preserve meaningful architecture there, not empty black. The illustration must be beautiful on its own and readable when cropped on mobile. No text, numbers, labels, logos, watermarks, UI, speech bubbles or fake game screenshot. Do not reproduce the existing cover composition; this is a fresh image for a different page. Scene: A warm communal station canteen in a vast ruined industrial hall. Mara in yellow work coat and Nox with blue hair share a long wooden table with a handful of diverse adult workers in worn coats. Small meals, warm lanterns, practical tools put aside. Humans on right, distant broken arches and rain beyond. Intimate hopeful solidarity, not a crowd poster.",
+      "references": [
+        "art/sources/hero.png",
+        "art/references/portraits.png"
+      ],
+      "focus": "60% 12%"
+    },
+    {
+      "key": "contact",
+      "route": "/contacto/",
+      "src": "/media/pages/contact-v1.webp",
+      "source": "art/sources/pages/contact-v1.png",
+      "alt": "Vera escucha una transmisión desde el puesto de radio de la estación.",
+      "prompt": "Create ONE original cinematic widescreen 16:9 colored manga key illustration for CENIZA NEON. Reference image 1 is the website cover: match its sophisticated confident ink linework, engraved cross-hatching, painterly textured color, tactile weathered metal, realistic anatomy and atmospheric industrial gothic cyberpunk world. Other reference sheets, when present, establish character and machine identities ONLY: never copy their grid, labels or layout. A single richly detailed coherent scene, NOT a collage, sprite sheet or panel montage. PALETTE: charcoal black, desaturated steel teal, antique brass, muted ivory, restrained amber and cyan practical light. COMPOSITION: place the focal subject on the RIGHT 55%, keeping the LEFT 45% atmospheric and naturally darker with enough negative space for a webpage title; preserve meaningful architecture there, not empty black. The illustration must be beautiful on its own and readable when cropped on mobile. No text, numbers, labels, logos, watermarks, UI, speech bubbles or fake game screenshot. Do not reproduce the existing cover composition; this is a fresh image for a different page. Scene: Vera, short black hair and purple scarf, sits at a beautifully crafted analog radio transceiver by a rainy station window. One hand adjusting a brass tuning dial, headset, coils of copper wire, tiny cyan signal lamp. Her attentive face on right. Long distant antenna masts visible outside. No words or readable labels.",
+      "references": [
+        "art/sources/hero.png",
+        "art/references/portraits.png"
+      ],
+      "focus": "60% 12%"
+    },
+    {
+      "key": "press",
+      "route": "/prensa/",
+      "src": "/media/pages/press-v1.webp",
+      "source": "art/sources/pages/press-v1.png",
+      "alt": "El Portador en una terraza industrial sobre la ciudad.",
+      "prompt": "Create ONE original cinematic widescreen 16:9 colored manga key illustration for CENIZA NEON. Reference image 1 is the website cover: match its sophisticated confident ink linework, engraved cross-hatching, painterly textured color, tactile weathered metal, realistic anatomy and atmospheric industrial gothic cyberpunk world. Other reference sheets, when present, establish character and machine identities ONLY: never copy their grid, labels or layout. A single richly detailed coherent scene, NOT a collage, sprite sheet or panel montage. PALETTE: charcoal black, desaturated steel teal, antique brass, muted ivory, restrained amber and cyan practical light. COMPOSITION: place the focal subject on the RIGHT 55%, keeping the LEFT 45% atmospheric and naturally darker with enough negative space for a webpage title; preserve meaningful architecture there, not empty black. The illustration must be beautiful on its own and readable when cropped on mobile. No text, numbers, labels, logos, watermarks, UI, speech bubbles or fake game screenshot. Do not reproduce the existing cover composition; this is a fresh image for a different page. Scene: The Portador, black-haired amber-eyed young man with thin cyan cheek circuit, charcoal scarf and brass-fastened dark coat, stands on the right of a sunlit ruined corporate railway balcony. Low angle medium portrait, ivory stone, weathered brass railings, hanging black-and-gold industrial banners, city far below. Editorial character key art, confident and restrained, no camera prop.",
+      "references": [
+        "art/sources/hero.png",
+        "art/references/portraits.png"
+      ],
+      "focus": "60% 0%"
+    },
+    {
+      "key": "privacy",
+      "route": "/privacidad/",
+      "src": "/media/pages/privacy-v1.webp",
+      "source": "art/sources/pages/privacy-v1.png",
+      "alt": "ECO examina una llave neuronal junto a los archivos de la red.",
+      "prompt": "Create ONE original cinematic widescreen 16:9 colored manga key illustration for CENIZA NEON. Reference image 1 is the website cover: match its sophisticated confident ink linework, engraved cross-hatching, painterly textured color, tactile weathered metal, realistic anatomy and atmospheric industrial gothic cyberpunk world. Other reference sheets, when present, establish character and machine identities ONLY: never copy their grid, labels or layout. A single richly detailed coherent scene, NOT a collage, sprite sheet or panel montage. PALETTE: charcoal black, desaturated steel teal, antique brass, muted ivory, restrained amber and cyan practical light. COMPOSITION: place the focal subject on the RIGHT 55%, keeping the LEFT 45% atmospheric and naturally darker with enough negative space for a webpage title; preserve meaningful architecture there, not empty black. The illustration must be beautiful on its own and readable when cropped on mobile. No text, numbers, labels, logos, watermarks, UI, speech bubbles or fake game screenshot. Do not reproduce the existing cover composition; this is a fresh image for a different page. Scene: ECO, androgynous pale white-haired cyan-eyed holographic figure in translucent technological coat, carefully examines a physical neural key at an archive vault. Worn metal cabinets, glass cylinders, crystalline cyan filaments and a mechanical lock. One thoughtful figure on right, profound dark teal shadows. Protection, memory and restraint. Not a modern laptop stock image.",
+      "references": [
+        "art/sources/hero.png",
+        "art/references/portraits.png"
+      ],
+      "focus": "60% 0%"
+    },
+    {
+      "key": "lost",
+      "route": "/404.html",
+      "src": "/media/pages/lost-v1.webp",
+      "source": "art/sources/pages/lost-v1.png",
+      "alt": "Una señal encendida al final de una vía ferroviaria interrumpida.",
+      "prompt": "Create ONE original cinematic widescreen 16:9 colored manga key illustration for CENIZA NEON. Reference image 1 is the website cover: match its sophisticated confident ink linework, engraved cross-hatching, painterly textured color, tactile weathered metal, realistic anatomy and atmospheric industrial gothic cyberpunk world. Other reference sheets, when present, establish character and machine identities ONLY: never copy their grid, labels or layout. A single richly detailed coherent scene, NOT a collage, sprite sheet or panel montage. PALETTE: charcoal black, desaturated steel teal, antique brass, muted ivory, restrained amber and cyan practical light. COMPOSITION: place the focal subject on the RIGHT 55%, keeping the LEFT 45% atmospheric and naturally darker with enough negative space for a webpage title; preserve meaningful architecture there, not empty black. The illustration must be beautiful on its own and readable when cropped on mobile. No text, numbers, labels, logos, watermarks, UI, speech bubbles or fake game screenshot. Do not reproduce the existing cover composition; this is a fresh image for a different page. Scene: A single broken railway track ends at a collapsed gothic-industrial tunnel. A small red signal lamp, frayed hanging cables, rain and cold cyan haze. A battered warm amber railway lantern rests on the intact right-side rail. No people, no signs, no numbers. Quiet mysterious lost-route scene, distinct from skyline cover.",
+      "references": [
+        "art/sources/hero.png"
+      ],
+      "focus": "60% 12%"
+    },
+    {
+      "key": "first-steps",
+      "route": "/wiki/primeros-pasos/",
+      "src": "/media/pages/first-steps-v1.webp",
+      "source": "art/sources/pages/first-steps-v1.png",
+      "alt": "El Portador llega a un primer refugio entre materiales recuperados.",
+      "prompt": "Create ONE original cinematic widescreen 16:9 colored manga key illustration for CENIZA NEON. Reference image 1 is the website cover: match its sophisticated confident ink linework, engraved cross-hatching, painterly textured color, tactile weathered metal, realistic anatomy and atmospheric industrial gothic cyberpunk world. Other reference sheets, when present, establish character and machine identities ONLY: never copy their grid, labels or layout. A single richly detailed coherent scene, NOT a collage, sprite sheet or panel montage. PALETTE: charcoal black, desaturated steel teal, antique brass, muted ivory, restrained amber and cyan practical light. COMPOSITION: place the focal subject on the RIGHT 55%, keeping the LEFT 45% atmospheric and naturally darker with enough negative space for a webpage title; preserve meaningful architecture there, not empty black. The illustration must be beautiful on its own and readable when cropped on mobile. No text, numbers, labels, logos, watermarks, UI, speech bubbles or fake game screenshot. Do not reproduce the existing cover composition; this is a fresh image for a different page. Scene: The Portador, dark hair, charcoal scarf and weathered coat, arrives from the right toward a humble first refuge built inside an abandoned railway service shed. Tiny amber lamp, stacks of salvaged timber, one compact generator and rain-soaked pavement. Full figure small in the environment; intimate grounded beginning, not a castle.",
+      "references": [
+        "art/sources/hero.png",
+        "art/references/portraits.png"
+      ],
+      "focus": "60% 12%"
+    },
+    {
+      "key": "day-night",
+      "route": "/wiki/ciclo-dia-noche/",
+      "src": "/media/pages/day-night-v1.webp",
+      "source": "art/sources/pages/day-night-v1.png",
+      "alt": "El cambio de luz transforma los puentes y canales del distrito.",
+      "prompt": "Create ONE original cinematic widescreen 16:9 colored manga key illustration for CENIZA NEON. Reference image 1 is the website cover: match its sophisticated confident ink linework, engraved cross-hatching, painterly textured color, tactile weathered metal, realistic anatomy and atmospheric industrial gothic cyberpunk world. Other reference sheets, when present, establish character and machine identities ONLY: never copy their grid, labels or layout. A single richly detailed coherent scene, NOT a collage, sprite sheet or panel montage. PALETTE: charcoal black, desaturated steel teal, antique brass, muted ivory, restrained amber and cyan practical light. COMPOSITION: place the focal subject on the RIGHT 55%, keeping the LEFT 45% atmospheric and naturally darker with enough negative space for a webpage title; preserve meaningful architecture there, not empty black. The illustration must be beautiful on its own and readable when cropped on mobile. No text, numbers, labels, logos, watermarks, UI, speech bubbles or fake game screenshot. Do not reproduce the existing cover composition; this is a fresh image for a different page. Scene: One continuous industrial city at blue-hour transition: low amber sunset on far left, cold night rising over chimney stacks at right, street lamps beginning to glow across suspended bridges and canals. No split-screen, no montage. Dramatic atmospheric clouds and long reflections, no people.",
+      "references": [
+        "art/sources/hero.png"
+      ],
+      "focus": "60% 12%"
+    },
+    {
+      "key": "core",
+      "route": "/wiki/nucleo-y-construccion/",
+      "src": "/media/pages/core-v1.webp",
+      "source": "art/sources/pages/core-v1.png",
+      "alt": "Mara inspecciona los mecanismos del núcleo energético de la colonia.",
+      "prompt": "Create ONE original cinematic widescreen 16:9 colored manga key illustration for CENIZA NEON. Reference image 1 is the website cover: match its sophisticated confident ink linework, engraved cross-hatching, painterly textured color, tactile weathered metal, realistic anatomy and atmospheric industrial gothic cyberpunk world. Other reference sheets, when present, establish character and machine identities ONLY: never copy their grid, labels or layout. A single richly detailed coherent scene, NOT a collage, sprite sheet or panel montage. PALETTE: charcoal black, desaturated steel teal, antique brass, muted ivory, restrained amber and cyan practical light. COMPOSITION: place the focal subject on the RIGHT 55%, keeping the LEFT 45% atmospheric and naturally darker with enough negative space for a webpage title; preserve meaningful architecture there, not empty black. The illustration must be beautiful on its own and readable when cropped on mobile. No text, numbers, labels, logos, watermarks, UI, speech bubbles or fake game screenshot. Do not reproduce the existing cover composition; this is a fresh image for a different page. Scene: Mara, auburn ponytail, goggles, yellow coat and brass prosthesis, inspects the open service panel of a magnificent colony power core. Riveted copper cylindrical generator, ceramic insulators, cyan glass reservoir, grounded foundation, organized cables, nearby scaffold. Detailed believable engineering, right-side subject, no floating UI.",
+      "references": [
+        "art/sources/hero.png",
+        "art/references/portraits.png"
+      ],
+      "focus": "60% 12%"
+    },
+    {
+      "key": "defenses",
+      "route": "/wiki/murallas-y-torretas/",
+      "src": "/media/pages/defenses-v1.webp",
+      "source": "art/sources/pages/defenses-v1.png",
+      "alt": "Trabajadores refuerzan una muralla y su torreta defensiva.",
+      "prompt": "Create ONE original cinematic widescreen 16:9 colored manga key illustration for CENIZA NEON. Reference image 1 is the website cover: match its sophisticated confident ink linework, engraved cross-hatching, painterly textured color, tactile weathered metal, realistic anatomy and atmospheric industrial gothic cyberpunk world. Other reference sheets, when present, establish character and machine identities ONLY: never copy their grid, labels or layout. A single richly detailed coherent scene, NOT a collage, sprite sheet or panel montage. PALETTE: charcoal black, desaturated steel teal, antique brass, muted ivory, restrained amber and cyan practical light. COMPOSITION: place the focal subject on the RIGHT 55%, keeping the LEFT 45% atmospheric and naturally darker with enough negative space for a webpage title; preserve meaningful architecture there, not empty black. The illustration must be beautiful on its own and readable when cropped on mobile. No text, numbers, labels, logos, watermarks, UI, speech bubbles or fake game screenshot. Do not reproduce the existing cover composition; this is a fresh image for a different page. Scene: Armored adult workers weld a reinforced industrial barricade and install a heavy articulated turret on a grounded stone-and-steel platform. Broad metal shielding, rivets, brass recoil mechanism, safety lamp, distant hostile fog. Figures small and faces not emphasized. Strong perspective along a defensive wall on right.",
+      "references": [
+        "art/sources/hero.png"
+      ],
+      "focus": "60% 12%"
+    },
+    {
+      "key": "units",
+      "route": "/wiki/reclutas-y-profesiones/",
+      "src": "/media/pages/units-v1.webp",
+      "source": "art/sources/pages/units-v1.png",
+      "alt": "Ivo atiende a un recluta mientras la escuadra prepara sus herramientas.",
+      "prompt": "Create ONE original cinematic widescreen 16:9 colored manga key illustration for CENIZA NEON. Reference image 1 is the website cover: match its sophisticated confident ink linework, engraved cross-hatching, painterly textured color, tactile weathered metal, realistic anatomy and atmospheric industrial gothic cyberpunk world. Other reference sheets, when present, establish character and machine identities ONLY: never copy their grid, labels or layout. A single richly detailed coherent scene, NOT a collage, sprite sheet or panel montage. PALETTE: charcoal black, desaturated steel teal, antique brass, muted ivory, restrained amber and cyan practical light. COMPOSITION: place the focal subject on the RIGHT 55%, keeping the LEFT 45% atmospheric and naturally darker with enough negative space for a webpage title; preserve meaningful architecture there, not empty black. The illustration must be beautiful on its own and readable when cropped on mobile. No text, numbers, labels, logos, watermarks, UI, speech bubbles or fake game screenshot. Do not reproduce the existing cover composition; this is a fresh image for a different page. Scene: Ivo, older dark-skinned white-haired man with cyan technical monocle and white medical work coat, checks a recruit's arm while a guardian and technician prepare equipment at a station quartermaster bench. Warm human faces, thoughtfully different practical roles, shields and tool belts. Quiet care, no fighting, main group right.",
+      "references": [
+        "art/sources/hero.png",
+        "art/references/portraits.png"
+      ],
+      "focus": "60% 12%"
+    },
+    {
+      "key": "portals",
+      "route": "/wiki/escuadras-y-portales/",
+      "src": "/media/pages/portals-v1.webp",
+      "source": "art/sources/pages/portals-v1.png",
+      "alt": "Una escuadra aliada avanza hacia una brecha defendida de la red.",
+      "prompt": "Create ONE original cinematic widescreen 16:9 colored manga key illustration for CENIZA NEON. Reference image 1 is the website cover: match its sophisticated confident ink linework, engraved cross-hatching, painterly textured color, tactile weathered metal, realistic anatomy and atmospheric industrial gothic cyberpunk world. Other reference sheets, when present, establish character and machine identities ONLY: never copy their grid, labels or layout. A single richly detailed coherent scene, NOT a collage, sprite sheet or panel montage. PALETTE: charcoal black, desaturated steel teal, antique brass, muted ivory, restrained amber and cyan practical light. COMPOSITION: place the focal subject on the RIGHT 55%, keeping the LEFT 45% atmospheric and naturally darker with enough negative space for a webpage title; preserve meaningful architecture there, not empty black. The illustration must be beautiful on its own and readable when cropped on mobile. No text, numbers, labels, logos, watermarks, UI, speech bubbles or fake game screenshot. Do not reproduce the existing cover composition; this is a fresh image for a different page. Scene: A small squad of armored riflemen and one shield-bearing guardian advance together toward a violet energy breach within a broken industrial arch. No recognizable protagonist in front: the allied squad leads. Heavy rain, scattered brass shell casings, cyan weapon indicator lamps, looming shadow defenders inside portal. Action on right, left moody atmosphere.",
+      "references": [
+        "art/sources/hero.png"
+      ],
+      "focus": "60% 12%"
+    },
+    {
+      "key": "upgrades",
+      "route": "/wiki/experiencia-y-mejoras/",
+      "src": "/media/pages/upgrades-v1.webp",
+      "source": "art/sources/pages/upgrades-v1.png",
+      "alt": "Módulos, ópticas y condensadores recuperados sobre una mesa de trabajo.",
+      "prompt": "Create ONE original cinematic widescreen 16:9 colored manga key illustration for CENIZA NEON. Reference image 1 is the website cover: match its sophisticated confident ink linework, engraved cross-hatching, painterly textured color, tactile weathered metal, realistic anatomy and atmospheric industrial gothic cyberpunk world. Other reference sheets, when present, establish character and machine identities ONLY: never copy their grid, labels or layout. A single richly detailed coherent scene, NOT a collage, sprite sheet or panel montage. PALETTE: charcoal black, desaturated steel teal, antique brass, muted ivory, restrained amber and cyan practical light. COMPOSITION: place the focal subject on the RIGHT 55%, keeping the LEFT 45% atmospheric and naturally darker with enough negative space for a webpage title; preserve meaningful architecture there, not empty black. The illustration must be beautiful on its own and readable when cropped on mobile. No text, numbers, labels, logos, watermarks, UI, speech bubbles or fake game screenshot. Do not reproduce the existing cover composition; this is a fresh image for a different page. Scene: Close environment still life of recovered weapon modules on an engineer's dark workbench: exquisitely detailed Tesla coil, blue glass capacitor, small autonomous drone frame, optics and ceramic circuit pieces, all physical objects rather than floating cards. Amber task lamp and delicate cyan energy. No UI, no diagrams with text, no people.",
+      "references": [
+        "art/sources/hero.png"
+      ],
+      "focus": "60% 12%"
+    },
+    {
+      "key": "operations",
+      "route": "/wiki/operaciones-y-viaje/",
+      "src": "/media/pages/operations-v1.webp",
+      "source": "art/sources/pages/operations-v1.png",
+      "alt": "Nox organiza una evacuación y la carga de un transporte ferroviario.",
+      "prompt": "Create ONE original cinematic widescreen 16:9 colored manga key illustration for CENIZA NEON. Reference image 1 is the website cover: match its sophisticated confident ink linework, engraved cross-hatching, painterly textured color, tactile weathered metal, realistic anatomy and atmospheric industrial gothic cyberpunk world. Other reference sheets, when present, establish character and machine identities ONLY: never copy their grid, labels or layout. A single richly detailed coherent scene, NOT a collage, sprite sheet or panel montage. PALETTE: charcoal black, desaturated steel teal, antique brass, muted ivory, restrained amber and cyan practical light. COMPOSITION: place the focal subject on the RIGHT 55%, keeping the LEFT 45% atmospheric and naturally darker with enough negative space for a webpage title; preserve meaningful architecture there, not empty black. The illustration must be beautiful on its own and readable when cropped on mobile. No text, numbers, labels, logos, watermarks, UI, speech bubbles or fake game screenshot. Do not reproduce the existing cover composition; this is a fresh image for a different page. Scene: Nox, blue-haired courier in layered dark coat, helps evacuees board a rugged industrial rail transport while a technician locks medical cargo safely in place. Floodlit station platform, huge old locomotive, warm carriage windows, wet rails leading into distance. Hopeful practical evacuation, not combat, subjects right.",
+      "references": [
+        "art/sources/hero.png",
+        "art/references/portraits.png"
+      ],
+      "focus": "60% 12%"
+    },
+    {
+      "key": "collector",
+      "route": "/wiki/recaudador/",
+      "src": "/media/pages/collector-v1.webp",
+      "source": "art/sources/pages/collector-v1.png",
+      "alt": "El Recaudador y sus pinzas hidráulicas dominan un depósito ferroviario.",
+      "prompt": "Create ONE original cinematic widescreen 16:9 colored manga key illustration for CENIZA NEON. Reference image 1 is the website cover: match its sophisticated confident ink linework, engraved cross-hatching, painterly textured color, tactile weathered metal, realistic anatomy and atmospheric industrial gothic cyberpunk world. Other reference sheets, when present, establish character and machine identities ONLY: never copy their grid, labels or layout. A single richly detailed coherent scene, NOT a collage, sprite sheet or panel montage. PALETTE: charcoal black, desaturated steel teal, antique brass, muted ivory, restrained amber and cyan practical light. COMPOSITION: place the focal subject on the RIGHT 55%, keeping the LEFT 45% atmospheric and naturally darker with enough negative space for a webpage title; preserve meaningful architecture there, not empty black. The illustration must be beautiful on its own and readable when cropped on mobile. No text, numbers, labels, logos, watermarks, UI, speech bubbles or fake game screenshot. Do not reproduce the existing cover composition; this is a fresh image for a different page. Scene: The Recaudador robot faithful to sprite reference: wide compact bronze tracked industrial hull, large hydraulic pincer arms, visible segmented treads, protected front plates and circular cyan central reactor. Looming in a railway collection depot with stacked crates and wet rails. No humanoid face or upright human body. Painted manga mechanical detail, robot on right.",
+      "references": [
+        "art/sources/hero.png",
+        "art/references/machines.png"
+      ],
+      "focus": "60% 12%"
+    },
+    {
+      "key": "furnace",
+      "route": "/wiki/santa-caldera/",
+      "src": "/media/pages/furnace-v1.webp",
+      "source": "art/sources/pages/furnace-v1.png",
+      "alt": "Santa Caldera libera vapor y calor en el interior de la Fundición.",
+      "prompt": "Create ONE original cinematic widescreen 16:9 colored manga key illustration for CENIZA NEON. Reference image 1 is the website cover: match its sophisticated confident ink linework, engraved cross-hatching, painterly textured color, tactile weathered metal, realistic anatomy and atmospheric industrial gothic cyberpunk world. Other reference sheets, when present, establish character and machine identities ONLY: never copy their grid, labels or layout. A single richly detailed coherent scene, NOT a collage, sprite sheet or panel montage. PALETTE: charcoal black, desaturated steel teal, antique brass, muted ivory, restrained amber and cyan practical light. COMPOSITION: place the focal subject on the RIGHT 55%, keeping the LEFT 45% atmospheric and naturally darker with enough negative space for a webpage title; preserve meaningful architecture there, not empty black. The illustration must be beautiful on its own and readable when cropped on mobile. No text, numbers, labels, logos, watermarks, UI, speech bubbles or fake game screenshot. Do not reproduce the existing cover composition; this is a fresh image for a different page. Scene: Santa Caldera faithful to sprite reference: massive walking copper furnace with three tall pressure chimneys, glowing orange grille, curved riveted boiler, many valves and short articulated mechanical feet. Molten metal and sparks within enormous foundry, heavy amber smoke and cyan cold shadows. No human face. Robot right.",
+      "references": [
+        "art/sources/hero.png",
+        "art/references/machines.png"
+      ],
+      "focus": "60% 12%"
+    },
+    {
+      "key": "choir",
+      "route": "/wiki/coro-sumergido/",
+      "src": "/media/pages/choir-v1.webp",
+      "source": "art/sources/pages/choir-v1.png",
+      "alt": "El Coro Sumergido entre antenas, pasarelas y reflejos del barrio inundado.",
+      "prompt": "Create ONE original cinematic widescreen 16:9 colored manga key illustration for CENIZA NEON. Reference image 1 is the website cover: match its sophisticated confident ink linework, engraved cross-hatching, painterly textured color, tactile weathered metal, realistic anatomy and atmospheric industrial gothic cyberpunk world. Other reference sheets, when present, establish character and machine identities ONLY: never copy their grid, labels or layout. A single richly detailed coherent scene, NOT a collage, sprite sheet or panel montage. PALETTE: charcoal black, desaturated steel teal, antique brass, muted ivory, restrained amber and cyan practical light. COMPOSITION: place the focal subject on the RIGHT 55%, keeping the LEFT 45% atmospheric and naturally darker with enough negative space for a webpage title; preserve meaningful architecture there, not empty black. The illustration must be beautiful on its own and readable when cropped on mobile. No text, numbers, labels, logos, watermarks, UI, speech bubbles or fake game screenshot. Do not reproduce the existing cover composition; this is a fresh image for a different page. Scene: Coro Sumergido faithful to sprite reference: four-legged low mechanical resonator, teal glass central hull, three asymmetric sonar dish antennae on articulated masts, oxidized copper tubing and hanging wet cables. It stands amid flooded railway pylons, concentric subtle water ripples, cold cyan reflections. NO humanoid singer. Robot right.",
+      "references": [
+        "art/sources/hero.png",
+        "art/references/machines.png"
+      ],
+      "focus": "60% 12%"
+    },
+    {
+      "key": "prefect",
+      "route": "/wiki/prefecto/",
+      "src": "/media/pages/prefect-v1.webp",
+      "source": "art/sources/pages/prefect-v1.png",
+      "alt": "El Prefecto adopta una guardia de duelo en la terraza de la Ciudadela.",
+      "prompt": "Create ONE original cinematic widescreen 16:9 colored manga key illustration for CENIZA NEON. Reference image 1 is the website cover: match its sophisticated confident ink linework, engraved cross-hatching, painterly textured color, tactile weathered metal, realistic anatomy and atmospheric industrial gothic cyberpunk world. Other reference sheets, when present, establish character and machine identities ONLY: never copy their grid, labels or layout. A single richly detailed coherent scene, NOT a collage, sprite sheet or panel montage. PALETTE: charcoal black, desaturated steel teal, antique brass, muted ivory, restrained amber and cyan practical light. COMPOSITION: place the focal subject on the RIGHT 55%, keeping the LEFT 45% atmospheric and naturally darker with enough negative space for a webpage title; preserve meaningful architecture there, not empty black. The illustration must be beautiful on its own and readable when cropped on mobile. No text, numbers, labels, logos, watermarks, UI, speech bubbles or fake game screenshot. Do not reproduce the existing cover composition; this is a fresh image for a different page. Scene: The Prefecto matching antagonist portrait exactly: stern mature man, black hair with white streak, angular golden cheek implant, ivory and antique-gold industrial armor, ceremonial dark cape, broad shield and slender red-edged sword. Defensive duel stance on a monumental corporate terrace, polished stone and broken brass balustrade. Full body on right, solemn threat, no extra enemy.",
+      "references": [
+        "art/sources/hero.png",
+        "art/references/antagonists.png"
+      ],
+      "focus": "60% 0%"
+    },
+    {
+      "key": "mother",
+      "route": "/wiki/madre-cero/",
+      "src": "/media/pages/mother-v1.webp",
+      "source": "art/sources/pages/mother-v1.png",
+      "alt": "Madre Cero aparece entre filamentos y relés del núcleo de la red.",
+      "prompt": "Create ONE original cinematic widescreen 16:9 colored manga key illustration for CENIZA NEON. Reference image 1 is the website cover: match its sophisticated confident ink linework, engraved cross-hatching, painterly textured color, tactile weathered metal, realistic anatomy and atmospheric industrial gothic cyberpunk world. Other reference sheets, when present, establish character and machine identities ONLY: never copy their grid, labels or layout. A single richly detailed coherent scene, NOT a collage, sprite sheet or panel montage. PALETTE: charcoal black, desaturated steel teal, antique brass, muted ivory, restrained amber and cyan practical light. COMPOSITION: place the focal subject on the RIGHT 55%, keeping the LEFT 45% atmospheric and naturally darker with enough negative space for a webpage title; preserve meaningful architecture there, not empty black. The illustration must be beautiful on its own and readable when cropped on mobile. No text, numbers, labels, logos, watermarks, UI, speech bubbles or fake game screenshot. Do not reproduce the existing cover composition; this is a fresh image for a different page. Scene: Madre Cero matching antagonist portrait exactly: pale woman, long flowing white hair, red eyes, layered white-and-charcoal technological gown, golden neural halo and thin crimson cable arms. Suspended within an immense server cathedral above concentric cyan relays. Beautiful detailed manga face, dignified ominous presence, main figure right, no gore or throne cliché.",
+      "references": [
+        "art/sources/hero.png",
+        "art/references/antagonists.png"
+      ],
+      "focus": "60% 0%"
+    },
+    {
+      "key": "controls",
+      "route": "/wiki/controles-y-accesibilidad/",
+      "src": "/media/pages/controls-v1.webp",
+      "source": "art/sources/pages/controls-v1.png",
+      "alt": "Mandos físicos y señales de una consola de mantenimiento ferroviario.",
+      "prompt": "Create ONE original cinematic widescreen 16:9 colored manga key illustration for CENIZA NEON. Reference image 1 is the website cover: match its sophisticated confident ink linework, engraved cross-hatching, painterly textured color, tactile weathered metal, realistic anatomy and atmospheric industrial gothic cyberpunk world. Other reference sheets, when present, establish character and machine identities ONLY: never copy their grid, labels or layout. A single richly detailed coherent scene, NOT a collage, sprite sheet or panel montage. PALETTE: charcoal black, desaturated steel teal, antique brass, muted ivory, restrained amber and cyan practical light. COMPOSITION: place the focal subject on the RIGHT 55%, keeping the LEFT 45% atmospheric and naturally darker with enough negative space for a webpage title; preserve meaningful architecture there, not empty black. The illustration must be beautiful on its own and readable when cropped on mobile. No text, numbers, labels, logos, watermarks, UI, speech bubbles or fake game screenshot. Do not reproduce the existing cover composition; this is a fresh image for a different page. Scene: A carefully designed railway control station viewed close and low: large tactile brass levers, differently shaped physical buttons, textured grip surfaces, adjustable amber task lamp, a simple mechanical damping knob and thoughtful human-scale access. Cool dark steel, refined cyan indicators, NO readable labels or keyboard letters. No people.",
+      "references": [
+        "art/sources/hero.png"
+      ],
+      "focus": "60% 12%"
+    },
+    {
+      "key": "cooperative",
+      "route": "/wiki/cooperativo/",
+      "src": "/media/pages/cooperative-v1.webp",
+      "source": "art/sources/pages/cooperative-v1.png",
+      "alt": "Dos enlaces sostienen un paso compartido entre relés de la ciudad.",
+      "prompt": "Create ONE original cinematic widescreen 16:9 colored manga key illustration for CENIZA NEON. Reference image 1 is the website cover: match its sophisticated confident ink linework, engraved cross-hatching, painterly textured color, tactile weathered metal, realistic anatomy and atmospheric industrial gothic cyberpunk world. Other reference sheets, when present, establish character and machine identities ONLY: never copy their grid, labels or layout. A single richly detailed coherent scene, NOT a collage, sprite sheet or panel montage. PALETTE: charcoal black, desaturated steel teal, antique brass, muted ivory, restrained amber and cyan practical light. COMPOSITION: place the focal subject on the RIGHT 55%, keeping the LEFT 45% atmospheric and naturally darker with enough negative space for a webpage title; preserve meaningful architecture there, not empty black. The illustration must be beautiful on its own and readable when cropped on mobile. No text, numbers, labels, logos, watermarks, UI, speech bubbles or fake game screenshot. Do not reproduce the existing cover composition; this is a fresh image for a different page. Scene: The Portador, young dark-haired man with cyan cheek circuit, scarf and worn charcoal coat, and a second anonymous adult maintenance courier with full-face industrial helmet, stand on separate sides of a shared relay bridge connecting two power consoles. Two distinct silhouettes, no romantic pose, amber and cyan light meeting along one cable. Conceptual future cooperation, not gameplay screenshot.",
+      "references": [
+        "art/sources/hero.png",
+        "art/references/portraits.png"
+      ],
+      "focus": "60% 12%"
+    },
+    {
+      "key": "living-city",
+      "route": "/bitacora/una-ciudad-que-respira/",
+      "src": "/media/pages/living-city-v1.webp",
+      "source": "art/sources/pages/living-city-v1.png",
+      "alt": "Vapor, conductos y pasarelas superpuestos dan vida al paisaje industrial.",
+      "prompt": "Create ONE original cinematic widescreen 16:9 colored manga key illustration for CENIZA NEON. Reference image 1 is the website cover: match its sophisticated confident ink linework, engraved cross-hatching, painterly textured color, tactile weathered metal, realistic anatomy and atmospheric industrial gothic cyberpunk world. Other reference sheets, when present, establish character and machine identities ONLY: never copy their grid, labels or layout. A single richly detailed coherent scene, NOT a collage, sprite sheet or panel montage. PALETTE: charcoal black, desaturated steel teal, antique brass, muted ivory, restrained amber and cyan practical light. COMPOSITION: place the focal subject on the RIGHT 55%, keeping the LEFT 45% atmospheric and naturally darker with enough negative space for a webpage title; preserve meaningful architecture there, not empty black. The illustration must be beautiful on its own and readable when cropped on mobile. No text, numbers, labels, logos, watermarks, UI, speech bubbles or fake game screenshot. Do not reproduce the existing cover composition; this is a fresh image for a different page. Scene: Intricate atmospheric close panorama of living industrial infrastructure: spinning vent housings, warm furnace ducts, layered rail gantries, fluttering strips of weathered cloth, dripping conduits and low canals with shimmering cyan reflections. Thick architectural depth, no central castle or protagonist. Main machinery on right, left dark open mist.",
+      "references": [
+        "art/sources/hero.png"
+      ],
+      "focus": "60% 12%"
+    },
+    {
+      "key": "walking",
+      "route": "/bitacora/caminar-es-mas-que-mover-un-sprite/",
+      "src": "/media/pages/walking-v1.webp",
+      "source": "art/sources/pages/walking-v1.png",
+      "alt": "El Portador camina por una pasarela mojada con el abrigo siguiendo su movimiento.",
+      "prompt": "Create ONE original cinematic widescreen 16:9 colored manga key illustration for CENIZA NEON. Reference image 1 is the website cover: match its sophisticated confident ink linework, engraved cross-hatching, painterly textured color, tactile weathered metal, realistic anatomy and atmospheric industrial gothic cyberpunk world. Other reference sheets, when present, establish character and machine identities ONLY: never copy their grid, labels or layout. A single richly detailed coherent scene, NOT a collage, sprite sheet or panel montage. PALETTE: charcoal black, desaturated steel teal, antique brass, muted ivory, restrained amber and cyan practical light. COMPOSITION: place the focal subject on the RIGHT 55%, keeping the LEFT 45% atmospheric and naturally darker with enough negative space for a webpage title; preserve meaningful architecture there, not empty black. The illustration must be beautiful on its own and readable when cropped on mobile. No text, numbers, labels, logos, watermarks, UI, speech bubbles or fake game screenshot. Do not reproduce the existing cover composition; this is a fresh image for a different page. Scene: The Portador exactly matching reference, black hair amber eyes cyan cheek circuit charcoal scarf and dark layered coat, shown full body striding naturally to the left across a rain-wet elevated service walkway. Clear contrapposto, planted front boot, bent trailing knee, coat following movement. Single elegant manga action illustration, not multi-pose sheet. Subject right and readable anatomy.",
+      "references": [
+        "art/sources/hero.png",
+        "art/references/portraits.png"
+      ],
+      "focus": "60% 50%"
+    },
+    {
+      "key": "boss-language",
+      "route": "/bitacora/cinco-jefes-cinco-lenguajes/",
+      "src": "/media/pages/boss-language-v1.webp",
+      "source": "art/sources/pages/boss-language-v1.png",
+      "alt": "El Portador busca una apertura entre coberturas y maquinaria hostil.",
+      "prompt": "Create ONE original cinematic widescreen 16:9 colored manga key illustration for CENIZA NEON. Reference image 1 is the website cover: match its sophisticated confident ink linework, engraved cross-hatching, painterly textured color, tactile weathered metal, realistic anatomy and atmospheric industrial gothic cyberpunk world. Other reference sheets, when present, establish character and machine identities ONLY: never copy their grid, labels or layout. A single richly detailed coherent scene, NOT a collage, sprite sheet or panel montage. PALETTE: charcoal black, desaturated steel teal, antique brass, muted ivory, restrained amber and cyan practical light. COMPOSITION: place the focal subject on the RIGHT 55%, keeping the LEFT 45% atmospheric and naturally darker with enough negative space for a webpage title; preserve meaningful architecture there, not empty black. The illustration must be beautiful on its own and readable when cropped on mobile. No text, numbers, labels, logos, watermarks, UI, speech bubbles or fake game screenshot. Do not reproduce the existing cover composition; this is a fresh image for a different page. Scene: A dramatic industrial arena viewed from behind a shattered steel cover. The Portador small at right in a low ready stance, a huge mechanical pincer casting a long shadow from outside frame, copper rubble and blue signal conduits. Threat is communicated through space and silhouette. No collage of bosses. Unmistakable manga action composition, no UI.",
+      "references": [
+        "art/sources/hero.png",
+        "art/references/portraits.png"
+      ],
+      "focus": "60% 12%"
+    },
+    {
+      "key": "project-state",
+      "route": "/bitacora/lo-que-ya-existe-y-lo-que-falta/",
+      "src": "/media/pages/project-state-v1.webp",
+      "source": "art/sources/pages/project-state-v1.png",
+      "alt": "Un taller reúne piezas terminadas y mecanismos todavía en reparación.",
+      "prompt": "Create ONE original cinematic widescreen 16:9 colored manga key illustration for CENIZA NEON. Reference image 1 is the website cover: match its sophisticated confident ink linework, engraved cross-hatching, painterly textured color, tactile weathered metal, realistic anatomy and atmospheric industrial gothic cyberpunk world. Other reference sheets, when present, establish character and machine identities ONLY: never copy their grid, labels or layout. A single richly detailed coherent scene, NOT a collage, sprite sheet or panel montage. PALETTE: charcoal black, desaturated steel teal, antique brass, muted ivory, restrained amber and cyan practical light. COMPOSITION: place the focal subject on the RIGHT 55%, keeping the LEFT 45% atmospheric and naturally darker with enough negative space for a webpage title; preserve meaningful architecture there, not empty black. The illustration must be beautiful on its own and readable when cropped on mobile. No text, numbers, labels, logos, watermarks, UI, speech bubbles or fake game screenshot. Do not reproduce the existing cover composition; this is a fresh image for a different page. Scene: An expansive restoration workshop with an unfinished grounded turret, a repaired colony lamp, neat boxes of mechanical modules, pinned papers without writing and an open window over ruined railways. No people. Organized work in progress, beauty of real materials, amber work lights against deep teal dawn.",
+      "references": [
+        "art/sources/hero.png"
+      ],
+      "focus": "60% 12%"
+    },
+    {
+      "key": "first-commit",
+      "route": "/bitacora/el-primer-paso/",
+      "src": "/media/pages/first-commit-v1.webp",
+      "source": "art/sources/pages/first-commit-v1.png",
+      "alt": "Una mano enciende la primera lámpara en un andén abandonado.",
+      "prompt": "Create ONE original cinematic widescreen 16:9 colored manga key illustration for CENIZA NEON. Reference image 1 is the website cover: match its sophisticated confident ink linework, engraved cross-hatching, painterly textured color, tactile weathered metal, realistic anatomy and atmospheric industrial gothic cyberpunk world. Other reference sheets, when present, establish character and machine identities ONLY: never copy their grid, labels or layout. A single richly detailed coherent scene, NOT a collage, sprite sheet or panel montage. PALETTE: charcoal black, desaturated steel teal, antique brass, muted ivory, restrained amber and cyan practical light. COMPOSITION: place the focal subject on the RIGHT 55%, keeping the LEFT 45% atmospheric and naturally darker with enough negative space for a webpage title; preserve meaningful architecture there, not empty black. The illustration must be beautiful on its own and readable when cropped on mobile. No text, numbers, labels, logos, watermarks, UI, speech bubbles or fake game screenshot. Do not reproduce the existing cover composition; this is a fresh image for a different page. Scene: A lone old railway signal lantern being lit by a gloved human hand on the right edge of a dark abandoned platform. Beyond it only a faint emerging industrial skyline and quiet wet rail tracks. Tiny beginning, warm ember against vast charcoal darkness. No recognizable character face, no symbols or readable writing.",
+      "references": [
+        "art/sources/hero.png"
+      ],
+      "focus": "60% 12%"
+    },
+    {
+      "key": "wanderer",
+      "route": "/bitacora/el-errante-empieza-a-moverse/",
+      "src": "/media/pages/wanderer-v1.webp",
+      "source": "art/sources/pages/wanderer-v1.png",
+      "alt": "Una figura mecánica errante avanza bajo las tuberías de un callejón industrial.",
+      "prompt": "Create ONE original cinematic widescreen 16:9 colored manga key illustration for CENIZA NEON. Reference image 1 is the website cover: match its sophisticated confident ink linework, engraved cross-hatching, painterly textured color, tactile weathered metal, realistic anatomy and atmospheric industrial gothic cyberpunk world. Other reference sheets, when present, establish character and machine identities ONLY: never copy their grid, labels or layout. A single richly detailed coherent scene, NOT a collage, sprite sheet or panel montage. PALETTE: charcoal black, desaturated steel teal, antique brass, muted ivory, restrained amber and cyan practical light. COMPOSITION: place the focal subject on the RIGHT 55%, keeping the LEFT 45% atmospheric and naturally darker with enough negative space for a webpage title; preserve meaningful architecture there, not empty black. The illustration must be beautiful on its own and readable when cropped on mobile. No text, numbers, labels, logos, watermarks, UI, speech bubbles or fake game screenshot. Do not reproduce the existing cover composition; this is a fresh image for a different page. Scene: One lean faceless wandering industrial automaton in a torn maintenance hood and oxidized jointed limbs, taking a hesitant step under a leaking pipe. No human face, no gore, no fantasy armor. Dense rain, steel stairwells, dim violet threat indicator, reflective cyan puddles. Mechanical gait suggested by a planted foot and shifted center of mass. Figure right.",
+      "references": [
+        "art/sources/hero.png"
+      ],
+      "focus": "60% 12%"
+    },
+    {
+      "key": "rail-arena",
+      "route": "/bitacora/el-ferrocarril-llega-a-la-arena/",
+      "src": "/media/pages/rail-arena-v1.webp",
+      "source": "art/sources/pages/rail-arena-v1.png",
+      "alt": "Un tren industrial cruza un puente hacia un depósito de mantenimiento.",
+      "prompt": "Create ONE original cinematic widescreen 16:9 colored manga key illustration for CENIZA NEON. Reference image 1 is the website cover: match its sophisticated confident ink linework, engraved cross-hatching, painterly textured color, tactile weathered metal, realistic anatomy and atmospheric industrial gothic cyberpunk world. Other reference sheets, when present, establish character and machine identities ONLY: never copy their grid, labels or layout. A single richly detailed coherent scene, NOT a collage, sprite sheet or panel montage. PALETTE: charcoal black, desaturated steel teal, antique brass, muted ivory, restrained amber and cyan practical light. COMPOSITION: place the focal subject on the RIGHT 55%, keeping the LEFT 45% atmospheric and naturally darker with enough negative space for a webpage title; preserve meaningful architecture there, not empty black. The illustration must be beautiful on its own and readable when cropped on mobile. No text, numbers, labels, logos, watermarks, UI, speech bubbles or fake game screenshot. Do not reproduce the existing cover composition; this is a fresh image for a different page. Scene: A powerful old copper-and-black industrial locomotive crawls across a narrow elevated bridge toward a distant circular railway maintenance depot. Steam, massive wheels, lamp beam and tall gantries. Low diagonal composition, train on right, landscape in fog to left. Distinctive travel scene, no people or text.",
+      "references": [
+        "art/sources/hero.png"
+      ],
+      "focus": "60% 12%"
+    },
+    {
+      "key": "five-chapters",
+      "route": "/bitacora/cinco-capitulos-una-ruta/",
+      "src": "/media/pages/five-chapters-v1.webp",
+      "source": "art/sources/pages/five-chapters-v1.png",
+      "alt": "Una vía elevada conecta los barrios y las grandes instalaciones de la ciudad.",
+      "prompt": "Create ONE original cinematic widescreen 16:9 colored manga key illustration for CENIZA NEON. Reference image 1 is the website cover: match its sophisticated confident ink linework, engraved cross-hatching, painterly textured color, tactile weathered metal, realistic anatomy and atmospheric industrial gothic cyberpunk world. Other reference sheets, when present, establish character and machine identities ONLY: never copy their grid, labels or layout. A single richly detailed coherent scene, NOT a collage, sprite sheet or panel montage. PALETTE: charcoal black, desaturated steel teal, antique brass, muted ivory, restrained amber and cyan practical light. COMPOSITION: place the focal subject on the RIGHT 55%, keeping the LEFT 45% atmospheric and naturally darker with enough negative space for a webpage title; preserve meaningful architecture there, not empty black. The illustration must be beautiful on its own and readable when cropped on mobile. No text, numbers, labels, logos, watermarks, UI, speech bubbles or fake game screenshot. Do not reproduce the existing cover composition; this is a fresh image for a different page. Scene: One sweeping oblique aerial vista of a believable connected industrial city: low rusted perimeter on near right, immense copper foundry deeper back, flooded canal quarter, imposing ivory corporate terraces and distant cyan network spine. Continuous geography, not five panels, no map labels or icons, no UI. Rail viaduct unifies the landscape. Atmospheric manga city painting.",
+      "references": [
+        "art/sources/hero.png"
+      ],
+      "focus": "60% 12%"
+    },
+    {
+      "key": "story-faces",
+      "route": "/bitacora/la-historia-encuentra-sus-rostros/",
+      "src": "/media/pages/story-faces-v1.webp",
+      "source": "art/sources/pages/story-faces-v1.png",
+      "alt": "Vera e Ivo conversan bajo las lámparas de la enfermería de la estación.",
+      "prompt": "Create ONE original cinematic widescreen 16:9 colored manga key illustration for CENIZA NEON. Reference image 1 is the website cover: match its sophisticated confident ink linework, engraved cross-hatching, painterly textured color, tactile weathered metal, realistic anatomy and atmospheric industrial gothic cyberpunk world. Other reference sheets, when present, establish character and machine identities ONLY: never copy their grid, labels or layout. A single richly detailed coherent scene, NOT a collage, sprite sheet or panel montage. PALETTE: charcoal black, desaturated steel teal, antique brass, muted ivory, restrained amber and cyan practical light. COMPOSITION: place the focal subject on the RIGHT 55%, keeping the LEFT 45% atmospheric and naturally darker with enough negative space for a webpage title; preserve meaningful architecture there, not empty black. The illustration must be beautiful on its own and readable when cropped on mobile. No text, numbers, labels, logos, watermarks, UI, speech bubbles or fake game screenshot. Do not reproduce the existing cover composition; this is a fresh image for a different page. Scene: Vera, short black hair and violet scarf, and Ivo, older dark-skinned white-haired physician with cyan monocle and white coat, converse quietly in a station infirmary beneath warm lamps. Close half-length expressive faces on right, hanging gauze, old window with cool rain, no words or speech bubbles. Emotional colored manga dialogue key art, not collage.",
+      "references": [
+        "art/sources/hero.png",
+        "art/references/portraits.png"
+      ],
+      "focus": "60% 12%"
+    },
+    {
+      "key": "approved-art",
+      "route": "/bitacora/el-diseno-aprobado-llega-al-combate/",
+      "src": "/media/pages/approved-art-v1.webp",
+      "source": "art/sources/pages/approved-art-v1.png",
+      "alt": "El Prefecto atraviesa un pasaje de mantenimiento con su armadura ceremonial.",
+      "prompt": "Create ONE original cinematic widescreen 16:9 colored manga key illustration for CENIZA NEON. Reference image 1 is the website cover: match its sophisticated confident ink linework, engraved cross-hatching, painterly textured color, tactile weathered metal, realistic anatomy and atmospheric industrial gothic cyberpunk world. Other reference sheets, when present, establish character and machine identities ONLY: never copy their grid, labels or layout. A single richly detailed coherent scene, NOT a collage, sprite sheet or panel montage. PALETTE: charcoal black, desaturated steel teal, antique brass, muted ivory, restrained amber and cyan practical light. COMPOSITION: place the focal subject on the RIGHT 55%, keeping the LEFT 45% atmospheric and naturally darker with enough negative space for a webpage title; preserve meaningful architecture there, not empty black. The illustration must be beautiful on its own and readable when cropped on mobile. No text, numbers, labels, logos, watermarks, UI, speech bubbles or fake game screenshot. Do not reproduce the existing cover composition; this is a fresh image for a different page. Scene: The Prefecto matching portrait, black hair with white streak and gold cheek implant, ivory antique-gold armor, ceremonial black cape, carrying his shield lowered and sword sheathed, walks through a narrow maintenance passage toward a shaft of pale gold light. Portrait focus on face, detailed layered armor and weight shift, right-side three-quarter figure. No duel, distinct from terrace boss page.",
+      "references": [
+        "art/sources/hero.png",
+        "art/references/antagonists.png"
+      ],
+      "focus": "60% 0%"
+    }
+  ]
+}

@@ -10,6 +10,10 @@ La referencia de commit es obligatoria en este archivo de avances: si no existe 
 
 Identifica las imágenes como captura, arte ambiental o ilustración conceptual. Una entrada debe explicar qué cambió, cómo se comprobó y qué sigue pendiente. No utilices una captura antigua para demostrar el estado de una función nueva. Si no hay una captura histórica verificada, usa `image: null`: aparecerá una ficha editorial expresamente identificada, no una imagen inventada del prototipo.
 
+Cada ruta nueva necesita además una ilustración exclusiva en `content/page-art.json`. Define `route`, `key`, `src`, `source`, `alt`, `prompt` y referencias. Guarda el original generado y monta su copia web mediante `node scripts/install-page-art.mjs CLAVE "PNG_GENERADO"`. No reutilices la cabecera de otro artículo para llenar el hueco: las comprobaciones exigen una imagen distinta por página. Las fuentes y prompts originales quedan fuera de la publicación.
+
+La cabecera y miniatura utilizan la ilustración conceptual. El campo `image` de la entrada sigue describiendo la captura o ficha documental que aparece dentro del artículo. Son dos funciones diferentes: la ilustración comunica el tema y la captura permite revisar lo implementado.
+
 ## Wiki
 
 Cada artículo de `content/wiki.mjs` tiene `slug`, grupo, título, resumen y Markdown. La búsqueda utiliza título, resumen y grupo, sin depender de tildes. Si añades un tema importante, usa también sus términos en el resumen para que se encuentre. Las categorías y enlaces relacionados se generan desde los datos.

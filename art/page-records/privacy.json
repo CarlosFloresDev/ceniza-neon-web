@@ -1,0 +1,17 @@
+{
+  "tool": "OpenAI image_gen (built-in)",
+  "key": "privacy",
+  "route": "/privacidad/",
+  "source": "art/sources/pages/privacy-v1.png",
+  "output": "/media/pages/privacy-v1.webp",
+  "prompt": "Create ONE original cinematic widescreen 16:9 colored manga key illustration for CENIZA NEON. Reference image 1 is the website cover: match its sophisticated confident ink linework, engraved cross-hatching, painterly textured color, tactile weathered metal, realistic anatomy and atmospheric industrial gothic cyberpunk world. Other reference sheets, when present, establish character and machine identities ONLY: never copy their grid, labels or layout. A single richly detailed coherent scene, NOT a collage, sprite sheet or panel montage. PALETTE: charcoal black, desaturated steel teal, antique brass, muted ivory, restrained amber and cyan practical light. COMPOSITION: place the focal subject on the RIGHT 55%, keeping the LEFT 45% atmospheric and naturally darker with enough negative space for a webpage title; preserve meaningful architecture there, not empty black. The illustration must be beautiful on its own and readable when cropped on mobile. No text, numbers, labels, logos, watermarks, UI, speech bubbles or fake game screenshot. Do not reproduce the existing cover composition; this is a fresh image for a different page. Scene: ECO, androgynous pale white-haired cyan-eyed holographic figure in translucent technological coat, carefully examines a physical neural key at an archive vault. Worn metal cabinets, glass cylinders, crystalline cyan filaments and a mechanical lock. One thoughtful figure on right, profound dark teal shadows. Protection, memory and restraint. Not a modern laptop stock image.",
+  "width": 1672,
+  "height": 941,
+  "generatedAt": "2026-10-30T01:52:33.433Z",
+  "sha256": "16a7d3684cd9b7dd459d3fb2e0b29b2c2859bcf8f7aed9be5bc23ee7f07656ea",
+  "processing": "Original PNG preserved unchanged. WebP resize and compression only; no painted edits.",
+  "references": [
+    "art/sources/hero.png",
+    "art/references/portraits.png"
+  ]
+}

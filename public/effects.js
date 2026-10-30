@@ -6,7 +6,7 @@
   progress.setAttribute("aria-hidden", "true");
   document.body.append(progress);
   let scrollFrame = 0;
-  const hero = document.querySelector(".hero");
+  const hero = document.querySelector(".hero, .section-hero, .universe-hero");
   function updateScroll() {
     scrollFrame = 0;
     const distance = document.documentElement.scrollHeight - innerHeight;
