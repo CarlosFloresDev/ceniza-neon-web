@@ -36,19 +36,24 @@ for (const zone of [
     kind: "environment-art",
   });
 }
-for (const name of [
-  "colonia_actual",
-  "combat_hud_madre",
-  "recaudador_actual",
-  "caldera_actual",
-  "coro_actual",
-  "prefecto_actual",
-  "novela_visual",
-  "profesiones",
-]) {
+for (const name of ["novela_visual", "profesiones"]) {
   await image(`docs/media/${name}.png`, name, {
     kind: "development-screenshot",
   });
+}
+// Use reviewed runtime captures, never the superseded boss images in docs/media.
+// Re-render the game's capture suites first when importing another game revision.
+for (const [source, name] of [
+  [".godot/combat-art/hud_jefe_0.png", "recaudador_arena_20261029"],
+  [".godot/combat-art/hud_jefe_1.png", "caldera_arena_20261029"],
+  [".godot/combat-art/hud_jefe_2.png", "coro_arena_20261029"],
+  [".godot/combat-art/hud_jefe_3.png", "prefecto_arena_20261029"],
+  [".godot/combat-art/hud_jefe_4.png", "madre_arena_20261029"],
+  ["build/validation/latest/capas_periphery.png", "colonia_vigente_20261029"],
+  [".godot/combat-art/galeria_caminar.png", "marcha_vigente_20261029"],
+  [".godot/combat-art/detalle_prefecto.png", "prefecto_detalle_20261029"],
+]) {
+  await image(source, name, { kind: "reviewed-runtime-capture" });
 }
 const actors = ["mara", "ivo", "vera", "nox", "eco", "portador"];
 for (let i = 0; i < 6; i++)

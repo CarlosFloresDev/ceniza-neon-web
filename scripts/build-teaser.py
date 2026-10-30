@@ -8,11 +8,11 @@ WORK.mkdir(parents=True, exist_ok=True)
 SHOTS = [
     ('hero', 'LA EMERGENCIA TERMINÓ.', 'ARTE CONCEPTUAL'),
     ('station', 'LA ORDEN, NO.', 'ARTE CONCEPTUAL'),
-    ('colonia_actual', 'CONSTRUYE UNA LUZ PROPIA.', 'CAPTURA DE DESARROLLO'),
+    ('colonia_vigente_20261029', 'CONSTRUYE UNA LUZ PROPIA.', 'CAPTURA DE DESARROLLO'),
     ('foundry', 'RECUPERA LO QUE NOS SOSTIENE.', 'ARTE AMBIENTAL'),
     ('flooded', 'ESCUCHA A QUIENES QUEDAN.', 'ARTE AMBIENTAL'),
-    ('prefecto_actual', 'ENFRÉNTATE A QUIENES DECIDIERON.', 'CAPTURA DE DESARROLLO'),
-    ('combat_hud_madre', 'NADIE MANTIENE EL ENLACE A SOLAS.', 'CAPTURA DE DESARROLLO'),
+    ('prefecto_arena_20261029', 'ENFRÉNTATE A QUIENES DECIDIERON.', 'CAPTURA DE DESARROLLO'),
+    ('madre_arena_20261029', 'NADIE MANTIENE EL ENLACE A SOLAS.', 'CAPTURA DE DESARROLLO'),
     ('hero', 'ESTA NOCHE, LA LUZ SE QUEDA.', 'EN DESARROLLO · SIN BETA PÚBLICA'),
 ]
 
@@ -50,12 +50,12 @@ for index, (image, text, label) in enumerate(SHOTS):
 run(['-f','concat','-safe','0','-i',str(WORK/'concat.txt'),'-i','public/audio/menu.mp3',
      '-map','0:v:0','-map','1:a:0','-c:v','copy','-c:a','aac','-b:a','160k',
      '-af','afade=t=in:st=0:d=1.5,afade=t=out:st=32:d=4','-t','36',
-     '-movflags','+faststart','public/media/teaser.mp4'])
+     '-movflags','+faststart','public/media/teaser-v2.mp4'])
 vtt='WEBVTT\n\n'
 for i, (_, text, label) in enumerate(SHOTS):
     def stamp(seconds):
         return f'00:{int(seconds//60):02}:{int(seconds%60):02}.{int(seconds%1*1000):03}'
     vtt+=f'{stamp(i*4.5)} --> {stamp((i+1)*4.5)}\n{text}\n[{label.lower()}; música instrumental: Dusk Beacon]\n\n'
-(ROOT/'public/media/teaser.vtt').write_text(vtt.rstrip()+'\n',encoding='utf-8')
-assert (ROOT/'public/media/teaser.mp4').stat().st_size < 25*1024*1024
+(ROOT/'public/media/teaser-v2.vtt').write_text(vtt.rstrip()+'\n',encoding='utf-8')
+assert (ROOT/'public/media/teaser-v2.mp4').stat().st_size < 25*1024*1024
 print('36-second conceptual teaser complete; below the 25 MiB static asset limit')

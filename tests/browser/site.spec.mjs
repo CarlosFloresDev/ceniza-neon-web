@@ -11,6 +11,74 @@ const pages = [
   "/contacto/",
   "/prensa/",
 ];
+test("The archive exposes real development dates and the walking record shows current designs", async ({
+  page,
+}) => {
+  await page.goto("/bitacora/");
+  await expect(page.locator(".history-track li")).toHaveCount(10);
+  await expect(page.locator(".history-track time").first()).toContainText(
+    /22 de (septiembre|setiembre) de 2026/,
+  );
+  await page.goto("/bitacora/el-primer-paso/");
+  await expect(page.locator(".editorial-note")).toContainText(
+    "29 de octubre de 2026",
+  );
+  await expect(page.locator(".archive-visual")).toBeVisible();
+  await page.goto("/bitacora/caminar-es-mas-que-mover-un-sprite/");
+  await expect(page.locator(".article-cover img")).toHaveAttribute(
+    "src",
+    "/media/marcha_vigente_20261029.webp",
+  );
+  await expect(page.locator(".article-body img")).toHaveAttribute(
+    "src",
+    "/media/prefecto_detalle_20261029.webp",
+  );
+});
+
+test("Custom type and ambient depth load, and reduced motion stops the effects", async ({
+  page,
+}) => {
+  await page.goto("/");
+  await page.evaluate(() => document.fonts.ready);
+  expect(
+    await page
+      .locator(".hero-tagline")
+      .evaluate((el) => getComputedStyle(el).fontFamily),
+  ).toContain("Rajdhani");
+  expect(
+    await page
+      .locator(".eyebrow")
+      .first()
+      .evaluate((el) => getComputedStyle(el).fontFamily),
+  ).toContain("Plex Mono");
+  expect(
+    await page
+      .locator("h2 em")
+      .first()
+      .evaluate((el) => getComputedStyle(el).fontFamily),
+  ).toContain("Cormorant");
+  expect(
+    await page.evaluate(() => document.fonts.check("600 20px Rajdhani")),
+  ).toBeTruthy();
+  await expect(page.locator(".ambient-canvas")).toHaveCount(1);
+  await page.mouse.move(110, 210);
+  await expect
+    .poll(() =>
+      page
+        .locator(".hero")
+        .evaluate((el) =>
+          Math.abs(parseFloat(el.style.getPropertyValue("--hero-x")) || 0),
+        ),
+    )
+    .toBeGreaterThan(0.1);
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  await expect(page.locator(".ambient-canvas")).toHaveCount(0);
+  expect(
+    await page
+      .locator(".hero-art")
+      .evaluate((el) => getComputedStyle(el).transform),
+  ).toBe("none");
+});
 async function revealForCapture(page) {
   await page.evaluate(async () => {
     for (let y = 0; y < document.body.scrollHeight; y += 650) {

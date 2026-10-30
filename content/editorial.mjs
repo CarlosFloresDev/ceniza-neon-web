@@ -1,9 +1,10 @@
-export const posts = [
+import fs from "node:fs";
+import { archivePosts } from "./archive-posts.mjs";
+
+const recentPosts = [
   {
     slug: "una-ciudad-que-respira",
-    date: "2026-10-29",
     category: "Arte y atmósfera",
-    number: "004",
     title: "Una ciudad que respira",
     excerpt:
       "Cinco distritos, varias capas de profundidad y pequeños movimientos que cuentan dónde estás. Así estamos dando vida a los escenarios.",
@@ -41,14 +42,12 @@ Queremos seguir mejorando la animación y la identidad de cada lugar. La bitáco
   },
   {
     slug: "caminar-es-mas-que-mover-un-sprite",
-    date: "2026-10-29",
     category: "Diario de desarrollo",
-    number: "003",
     title: "Caminar es más que mover un sprite",
     excerpt:
       "Apoyo, dirección y ritmo: una revisión del Portador, el Prefecto y Madre Cero, con fuentes independientes para seguir trabajando.",
-    image: "prefecto_actual",
-    imageLabel: "Captura del prototipo · El Prefecto",
+    image: "marcha_vigente_20261029",
+    imageLabel: "Galería de caminar · Diseños vigentes · 29 oct 2026",
     read: "3 min",
     commit: "26fe467",
     body: `## El problema que vimos
@@ -60,6 +59,10 @@ Estamos trabajando sobre las poses del Portador, el Prefecto y Madre Cero manten
 ## Dos formas de mirar al Portador
 
 La colonia utiliza una vista lateral. Las arenas necesitan direcciones cenitales. Son necesidades distintas y el Portador tiene fuentes separadas para ambas perspectivas. La escala visible también importa: el protagonista debe convivir con aliados y edificios sin parecer de otro mundo.
+
+![Detalle del Prefecto en la galería de caminar](/media/prefecto_detalle_20261029.webp)
+
+*Detalle del diseño vigente del Prefecto en la galería de caminar, capturado el 29 de octubre de 2026.*
 
 ## Fuentes para iterar
 
@@ -73,13 +76,11 @@ La sensación de caminar se juzga al jugar. Queremos contrastar la marcha con el
   },
   {
     slug: "cinco-jefes-cinco-lenguajes",
-    date: "2026-10-29",
     category: "Combate y pruebas",
-    number: "002",
     title: "Cinco jefes, cinco lenguajes",
     excerpt:
       "Coberturas, calor, antenas, duelo y relés. La dificultad necesita reglas que puedas aprender, no solamente más vida.",
-    image: "combat_hud_madre",
+    image: "madre_arena_20261029",
     imageLabel: "Captura del prototipo · Madre Cero",
     read: "4 min",
     commit: "b12120a",
@@ -109,13 +110,11 @@ Queremos que el último jefe cierre una campaña sobre organizar y proteger, ade
   },
   {
     slug: "lo-que-ya-existe-y-lo-que-falta",
-    date: "2026-10-29",
     category: "Estado del proyecto",
-    number: "001",
     title: "Lo que ya existe. Lo que falta.",
     excerpt:
       "Abrimos el archivo de desarrollo con una promesa sencilla: mostrar el trabajo real y distinguirlo de lo que queremos construir.",
-    image: "colonia_actual",
+    image: "colonia_vigente_20261029",
     imageLabel: "Captura real de desarrollo · Colonia",
     read: "4 min",
     commit: "9eeb853",
@@ -142,6 +141,33 @@ La wiki describe reglas actuales y señala lo previsto. El roadmap utiliza hitos
 Cuando exista una prueba pública, aparecerán aquí sus condiciones y cómo participar. Hasta entonces no hay descarga de beta ni formulario que simule apuntarte a una lista inexistente.`,
   },
 ];
+
+const history = JSON.parse(
+  fs.readFileSync(
+    new URL("./development-history.json", import.meta.url),
+    "utf8",
+  ),
+);
+export const posts = [...recentPosts, ...archivePosts]
+  .map((post) => {
+    const source = history.commits.find((commit) =>
+      commit.sha.startsWith(post.commit),
+    );
+    if (!source) throw new Error("Missing verified history for " + post.slug);
+    return {
+      ...post,
+      date: source.authoredAt.slice(0, 10),
+      timestamp: source.authoredAt,
+      recordedOn: post.recordedOn || "2026-10-29",
+      retrospective:
+        source.authoredAt.slice(0, 10) < (post.recordedOn || "2026-10-29"),
+    };
+  })
+  .sort((a, b) => Date.parse(b.timestamp) - Date.parse(a.timestamp))
+  .map((post, index, array) => ({
+    ...post,
+    number: String(array.length - index).padStart(3, "0"),
+  }));
 
 export const characters = [
   {

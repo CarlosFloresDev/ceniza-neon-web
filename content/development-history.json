@@ -1,0 +1,427 @@
+{
+  "source": "Current game branch history; author dates preserved; no inferred dates",
+  "repository": "https://github.com/chefsitturchey-web/Ceniza-ne-n",
+  "snapshotDate": "2026-10-29",
+  "commits": [
+    {
+      "sha": "26fe4674fdb5a64b5941bbedb0c5266d8a5e8d4f",
+      "authoredAt": "2026-10-29T16:55:33-05:00",
+      "committedAt": "2026-10-29T16:55:33-05:00",
+      "subject": "Separa fuentes editables de caminar del Portador, Prefecto y Madre"
+    },
+    {
+      "sha": "4cbae0ebb1340ac75be26e3d37df31434d4541f0",
+      "authoredAt": "2026-10-29T16:53:25-05:00",
+      "committedAt": "2026-10-29T16:53:25-05:00",
+      "subject": "Anima los cinco distritos con capas de profundidad y marcos de vida ornamentales"
+    },
+    {
+      "sha": "9eeb853638c75a3bb00809e03ab68e3c17c77afd",
+      "authoredAt": "2026-10-29T16:06:34-05:00",
+      "committedAt": "2026-10-29T16:06:34-05:00",
+      "subject": "Depura recursos sustituidos y organiza personajes, escenarios y documentación"
+    },
+    {
+      "sha": "6e49a2384d36d20e9f7f151b9fc3a6fd8bf84e66",
+      "authoredAt": "2026-10-29T15:31:31-05:00",
+      "committedAt": "2026-10-29T15:31:31-05:00",
+      "subject": "Organiza herramientas y documentación y centraliza las validaciones"
+    },
+    {
+      "sha": "f5f250efc7eb61e48104a57e685381e3665ba413",
+      "authoredAt": "2026-10-29T15:17:06-05:00",
+      "committedAt": "2026-10-29T15:17:06-05:00",
+      "subject": "Añade vida del Portador y marcos temáticos para los cinco jefes"
+    },
+    {
+      "sha": "b12120abe8cc1ebd46565ef8be17c5d8850e61cc",
+      "authoredAt": "2026-10-29T14:57:21-05:00",
+      "committedAt": "2026-10-29T14:57:21-05:00",
+      "subject": "Corrige la marcha articulada y refuerza ataques y efectos de los cinco jefes"
+    },
+    {
+      "sha": "646591d591de5bed41eb543a77749270e10545fa",
+      "authoredAt": "2026-10-29T03:34:06-05:00",
+      "committedAt": "2026-10-29T03:34:06-05:00",
+      "subject": "Renueva Portador y jefes con poses ilustradas y animaciones en LibreSprite"
+    },
+    {
+      "sha": "2c149a2e8b7c848b0591d43735988c102061fd3a",
+      "authoredAt": "2026-10-29T02:10:07-05:00",
+      "committedAt": "2026-10-29T02:10:07-05:00",
+      "subject": "Integra musica 8-bit en rama local de pruebas"
+    },
+    {
+      "sha": "ae821e25983d8e852580d33ffba61c9fb80e655e",
+      "authoredAt": "2026-10-29T01:47:29-05:00",
+      "committedAt": "2026-10-29T01:47:29-05:00",
+      "subject": "Rehace anatomia y vistas 3-4 sin rotar los sprites completos"
+    },
+    {
+      "sha": "41e9613940a93a04bfe3523ca8a54f1b5e1ccaf4",
+      "authoredAt": "2026-10-29T01:29:40-05:00",
+      "committedAt": "2026-10-29T01:29:40-05:00",
+      "subject": "feat(audio): integra la banda sonora 8-bit y aleatoriza la música de jefe"
+    },
+    {
+      "sha": "68847bba565d9212866e8d02ff7eca66d739071c",
+      "authoredAt": "2026-10-29T01:03:16-05:00",
+      "committedAt": "2026-10-29T01:03:16-05:00",
+      "subject": "Corrige perspectiva cenital, identidad y escala del Portador en LibreSprite"
+    },
+    {
+      "sha": "8112630133f98f99b3ed68aea05c032ff66fa9ff",
+      "authoredAt": "2026-10-29T00:25:16-05:00",
+      "committedAt": "2026-10-29T00:25:16-05:00",
+      "subject": "Dibuja y anima al Portador y cinco jefes en LibreSprite"
+    },
+    {
+      "sha": "793fd8105db7deaf5a5ebce06d396512811896a0",
+      "authoredAt": "2026-10-28T23:28:16-05:00",
+      "committedAt": "2026-10-28T23:28:16-05:00",
+      "subject": "Agrega laboratorio de depuracion con practica de jefes y control de colonia"
+    },
+    {
+      "sha": "f1e181bdf9977344962520e1fdb38565ca63884e",
+      "authoredAt": "2026-10-28T22:51:01-05:00",
+      "committedAt": "2026-10-28T22:51:01-05:00",
+      "subject": "Mejora los cinco jefes con decisiones, refuerzos y arenas activas"
+    },
+    {
+      "sha": "1eed6b88150296bb2c5ffec46c4f1e63f9245f4f",
+      "authoredAt": "2026-10-28T20:38:35-05:00",
+      "committedAt": "2026-10-28T20:38:35-05:00",
+      "subject": "Renueva el Recaudador, activa el distrito y corrige las profesiones"
+    },
+    {
+      "sha": "d6fd93531534440772efb89dd11de979ecf6c1c0",
+      "authoredAt": "2026-10-28T19:53:00-05:00",
+      "committedAt": "2026-10-28T19:53:00-05:00",
+      "subject": "Publica campaña, novela visual y animaciones de CENIZA NEÓN"
+    },
+    {
+      "sha": "21c9ca1cd5fb280b4cd508ef41a5f8908e9e7ccf",
+      "authoredAt": "2026-10-28T19:51:45-05:00",
+      "committedAt": "2026-10-28T19:51:45-05:00",
+      "subject": "Actualiza README, capturas y guias para publicar la campa?a actual"
+    },
+    {
+      "sha": "bbdae8e7154e919ce2170d50fd11ae382f287c10",
+      "authoredAt": "2026-10-28T19:46:37-05:00",
+      "committedAt": "2026-10-28T19:46:37-05:00",
+      "subject": "Anima aliados y civiles con sprites editables de LibreSprite"
+    },
+    {
+      "sha": "fb1e71179bb2f33f2ef299c3c9ef824d30112a78",
+      "authoredAt": "2026-10-28T19:02:40-05:00",
+      "committedAt": "2026-10-28T19:02:40-05:00",
+      "subject": "Integra novela visual manga y unifica las estructuras industriales"
+    },
+    {
+      "sha": "8f4e9aa1f385a68870b51781c3e7dc6d5ebcffb2",
+      "authoredAt": "2026-10-28T14:47:54-05:00",
+      "committedAt": "2026-10-28T14:47:54-05:00",
+      "subject": "Unifica escala y añade núcleo, defensas por niveles y transporte eléctrico"
+    },
+    {
+      "sha": "20fa1c09c023c4dd486e2204ff50ab541185c2cf",
+      "authoredAt": "2026-10-28T13:46:07-05:00",
+      "committedAt": "2026-10-28T13:46:07-05:00",
+      "subject": "Conecta cinco capítulos con operaciones narrativas y los jefes finales"
+    },
+    {
+      "sha": "edae723f868842833fdb7463e00fe0761863d203",
+      "authoredAt": "2026-10-28T13:18:56-05:00",
+      "committedAt": "2026-10-28T13:18:56-05:00",
+      "subject": "Convierte al Portador en comandante y renueva tropas, portales e iconos"
+    },
+    {
+      "sha": "646d5c8417eaa462d86006a8f2bc8fb31b7f9d14",
+      "authoredAt": "2026-10-28T12:32:44-05:00",
+      "committedAt": "2026-10-28T12:32:44-05:00",
+      "subject": "Alinea colonia y experiencia con el GDD y renueva Caldera e interfaz"
+    },
+    {
+      "sha": "49f1513a6dbc839a51dd5161474121e958bdc777",
+      "authoredAt": "2026-10-28T07:18:23-05:00",
+      "committedAt": "2026-10-28T07:18:23-05:00",
+      "subject": "Amplía colonias con instalaciones, aliados y nuevas amenazas animadas"
+    },
+    {
+      "sha": "e1ed9fc6962c03b5cc8f4a90059ccdbc5e7f67ae",
+      "authoredAt": "2026-10-28T06:38:54-05:00",
+      "committedAt": "2026-10-28T06:38:54-05:00",
+      "subject": "Conecta tres distritos y añade Caldera y Coro con ataques legibles"
+    },
+    {
+      "sha": "471e25571541039054cde31586d2f8af4618bf42",
+      "authoredAt": "2026-10-28T03:25:51-05:00",
+      "committedAt": "2026-10-28T03:25:51-05:00",
+      "subject": "Pulir torretas articuladas, animaciones y recorrido completo de la demo"
+    },
+    {
+      "sha": "323827b1c4e6e907f894e0ea4c48b95c1612ebe6",
+      "authoredAt": "2026-10-28T02:39:19-05:00",
+      "committedAt": "2026-10-28T02:39:19-05:00",
+      "subject": "Dar siluetas mecánicas animadas a Blindado, Saltador y Ariete"
+    },
+    {
+      "sha": "6e9b8812a4c8e9a397c5f4e132f63add2d537915",
+      "authoredAt": "2026-10-28T02:30:15-05:00",
+      "committedAt": "2026-10-28T02:30:15-05:00",
+      "subject": "Añadir módulos automáticos, pasivas y evoluciones con núcleo de enlace"
+    },
+    {
+      "sha": "503905e22404da28e33158351fd82e92ea5e4756",
+      "authoredAt": "2026-10-28T02:17:43-05:00",
+      "committedAt": "2026-10-28T02:17:43-05:00",
+      "subject": "Añadir menú ilustrado y opciones persistentes de audio y accesibilidad"
+    },
+    {
+      "sha": "58868fbc11f27cfc17dbc78f3c53b9432986e15e",
+      "authoredAt": "2026-10-28T01:57:58-05:00",
+      "committedAt": "2026-10-28T01:57:58-05:00",
+      "subject": "Añadir clínica neuronal, audio por fases y ambiente del distrito"
+    },
+    {
+      "sha": "a332ba49fe27005a53db475fe7cc9bc8d1bd424b",
+      "authoredAt": "2026-10-12T08:54:14-05:00",
+      "committedAt": "2026-10-12T08:54:14-05:00",
+      "subject": "docs: hoja de ruta y tests del README al día"
+    },
+    {
+      "sha": "44aaf900b8b926961116d1d5bde9fa5cb2e8009d",
+      "authoredAt": "2026-10-12T08:54:01-05:00",
+      "committedAt": "2026-10-12T08:54:01-05:00",
+      "subject": "docs: README con los enemigos nuevos y la arena ambientada"
+    },
+    {
+      "sha": "e33f3ce3daece36af1fc7b8814da4489099e5766",
+      "authoredAt": "2026-10-12T08:53:23-05:00",
+      "committedAt": "2026-10-12T08:53:23-05:00",
+      "subject": "merge: enemigos Blindado, Saltador y Ariete"
+    },
+    {
+      "sha": "c807ccc15a887a99bddde73b7065b9fa419bf26e",
+      "authoredAt": "2026-10-12T08:53:23-05:00",
+      "committedAt": "2026-10-12T08:53:23-05:00",
+      "subject": "feat: enemigos Blindado, Saltador y Ariete"
+    },
+    {
+      "sha": "55d2a2438c5140d6f29544d25dba1be5e5cda9ee",
+      "authoredAt": "2026-10-12T08:42:36-05:00",
+      "committedAt": "2026-10-12T08:42:36-05:00",
+      "subject": "feat: ambientación de la arena del Recaudador"
+    },
+    {
+      "sha": "5298f81d1e3ad2459b8a0c20bb420eef8e4b5488",
+      "authoredAt": "2026-10-12T08:35:15-05:00",
+      "committedAt": "2026-10-12T08:35:15-05:00",
+      "subject": "docs: README profesional con banner, GIFs, características, hoja de ruta y créditos"
+    },
+    {
+      "sha": "6a9b3f4cf5b1af6d7f453102c5a73ae4038ff323",
+      "authoredAt": "2026-10-12T05:03:35-05:00",
+      "committedAt": "2026-10-12T05:03:35-05:00",
+      "subject": "docs: README e INICIO al día con expedición, jefe, HUD y herramientas"
+    },
+    {
+      "sha": "207b8b6d04a8ce3c26c568504763e67acf12c70d",
+      "authoredAt": "2026-10-12T04:48:04-05:00",
+      "committedAt": "2026-10-12T04:48:04-05:00",
+      "subject": "merge: arena cenital y jefe El Recaudador"
+    },
+    {
+      "sha": "bab7e802fcf086cfe69dc38b102ce0e811af5c84",
+      "authoredAt": "2026-10-12T04:47:10-05:00",
+      "committedAt": "2026-10-12T04:47:10-05:00",
+      "subject": "feat: arena cenital y jefe El Recaudador"
+    },
+    {
+      "sha": "706e73e3f07b48df355a486f83f9f2034ba4bdd5",
+      "authoredAt": "2026-10-12T04:35:18-05:00",
+      "committedAt": "2026-10-12T04:35:18-05:00",
+      "subject": "assets: piezas del Recaudador y vistas del Portador para la arena"
+    },
+    {
+      "sha": "913c6d7b4a8fb90e6a47f4f463b10578699d5df6",
+      "authoredAt": "2026-10-12T04:33:35-05:00",
+      "committedAt": "2026-10-12T04:33:35-05:00",
+      "subject": "assets: tiles cenitales para la arena del Recaudador"
+    },
+    {
+      "sha": "d5a922d5e02712e4b577ebabed8e6b9c30e0ce08",
+      "authoredAt": "2026-10-12T04:32:52-05:00",
+      "committedAt": "2026-10-12T04:32:52-05:00",
+      "subject": "merge: repetidores, estación ferroviaria y base de expediciones"
+    },
+    {
+      "sha": "5d969e10c75c8133d1247b008825bd44d1bb0045",
+      "authoredAt": "2026-10-12T04:31:52-05:00",
+      "committedAt": "2026-10-12T04:31:52-05:00",
+      "subject": "feat: repetidores, estación ferroviaria y base de expediciones"
+    },
+    {
+      "sha": "dc718c3d3177d6c8ea2a66f905bd1bec7bb96474",
+      "authoredAt": "2026-10-12T04:19:46-05:00",
+      "committedAt": "2026-10-12T04:19:46-05:00",
+      "subject": "merge: fuente pixel y menos texto"
+    },
+    {
+      "sha": "1bba124f5c4c1ec6f982115cedb3c26951b56473",
+      "authoredAt": "2026-10-12T04:18:45-05:00",
+      "committedAt": "2026-10-12T04:18:45-05:00",
+      "subject": "feat: fuente pixel, sin símbolos y menos texto"
+    },
+    {
+      "sha": "4c8dc0bc6ce20c07614b27c9ec2e5c418b43c4e2",
+      "authoredAt": "2026-10-12T04:01:36-05:00",
+      "committedAt": "2026-10-12T04:01:36-05:00",
+      "subject": "merge: HUD limpio y diegético"
+    },
+    {
+      "sha": "b834d6b52d8b3e6516eafbf1cd9da45560b70d6e",
+      "authoredAt": "2026-10-12T04:01:36-05:00",
+      "committedAt": "2026-10-12T04:01:36-05:00",
+      "subject": "feat: HUD limpio y diegético con panel de pausa"
+    },
+    {
+      "sha": "b306ff4b1c048c09dfa183223022017d27916086",
+      "authoredAt": "2026-10-12T03:44:29-05:00",
+      "committedAt": "2026-10-12T03:44:29-05:00",
+      "subject": "merge: HUD con íconos y más efectos de vida"
+    },
+    {
+      "sha": "5b8c9477746483a9d7e766b74cee1364ae9d6ed0",
+      "authoredAt": "2026-10-12T03:44:29-05:00",
+      "committedAt": "2026-10-12T03:44:29-05:00",
+      "subject": "feat: HUD con íconos y más efectos de vida"
+    },
+    {
+      "sha": "286e1dfb51e70b1107824044a790ff540e65316c",
+      "authoredAt": "2026-10-12T03:34:35-05:00",
+      "committedAt": "2026-10-12T03:34:35-05:00",
+      "subject": "feat: ciclo de luz día/atardecer/noche"
+    },
+    {
+      "sha": "8dbafc4b01c3d5729ff711300e84419ab094d52e",
+      "authoredAt": "2026-10-12T03:29:43-05:00",
+      "committedAt": "2026-10-12T03:29:43-05:00",
+      "subject": "feat: decoración del distrito y farolas encendidas de noche"
+    },
+    {
+      "sha": "1073309be8ea05fb38da7b8df1906ad722d5b075",
+      "authoredAt": "2026-10-12T03:21:05-05:00",
+      "committedAt": "2026-10-12T03:21:05-05:00",
+      "subject": "merge: efectos de construcción, daño y escombros"
+    },
+    {
+      "sha": "d7b29d258b400f6f543030700cf9d63b89598d67",
+      "authoredAt": "2026-10-12T03:21:05-05:00",
+      "committedAt": "2026-10-12T03:21:05-05:00",
+      "subject": "feat: efectos de construcción, daño y escombros"
+    },
+    {
+      "sha": "28c22398d2ddae4b783a1e3962c682db2560ceef",
+      "authoredAt": "2026-10-12T03:19:55-05:00",
+      "committedAt": "2026-10-12T03:19:55-05:00",
+      "subject": "fix: muralla más legible generada con IA local (ComfyUI + SD 1.5)"
+    },
+    {
+      "sha": "d22092c7cce28ec1f9e3fa5d747f98bd1d37db1e",
+      "authoredAt": "2026-10-12T03:03:31-05:00",
+      "committedAt": "2026-10-12T03:03:31-05:00",
+      "subject": "chore: script para integrar animaciones de PixelLab"
+    },
+    {
+      "sha": "b87ce2c2e50e6afd14cfe1143f2d2b4aa9e495a2",
+      "authoredAt": "2026-10-12T03:03:14-05:00",
+      "committedAt": "2026-10-12T03:03:14-05:00",
+      "subject": "feat: fondo con dos capas de parallax"
+    },
+    {
+      "sha": "3ebe19fa88514ee75c3c3bfce5d8d1c167ada1b0",
+      "authoredAt": "2026-10-12T02:59:06-05:00",
+      "committedAt": "2026-10-12T02:59:06-05:00",
+      "subject": "feat: nuevo Errante con el estilo del Portador"
+    },
+    {
+      "sha": "11fbd0dad7da960e8a16d8fa922dda1e6bd77033",
+      "authoredAt": "2026-10-12T02:38:58-05:00",
+      "committedAt": "2026-10-12T02:38:58-05:00",
+      "subject": "feat: sprites y animaciones del Recuperador"
+    },
+    {
+      "sha": "88434d67ed763beccf339ccc712f301c4c84a2e4",
+      "authoredAt": "2026-10-12T02:33:24-05:00",
+      "committedAt": "2026-10-12T02:33:24-05:00",
+      "subject": "fix: estructuras en vista lateral plana"
+    },
+    {
+      "sha": "c0a38197254df1e79f7f529afa047ec70eef79da",
+      "authoredAt": "2026-10-12T02:27:47-05:00",
+      "committedAt": "2026-10-12T02:27:47-05:00",
+      "subject": "feat: sprites de muralla, torreta, núcleo y suelo"
+    },
+    {
+      "sha": "b2410e35e74cf03473a51215691f32dfab532242",
+      "authoredAt": "2026-10-12T02:22:27-05:00",
+      "committedAt": "2026-10-12T02:22:27-05:00",
+      "subject": "merge: sistema de guardado y carga"
+    },
+    {
+      "sha": "e573caddbbc762d1b041599a9e047b408fb0db22",
+      "authoredAt": "2026-10-12T02:16:13-05:00",
+      "committedAt": "2026-10-12T02:16:13-05:00",
+      "subject": "feat: sprites y animaciones del Portador"
+    },
+    {
+      "sha": "ca7a89bb0ba785eb75c67d633d76077071c33273",
+      "authoredAt": "2026-10-12T02:11:12-05:00",
+      "committedAt": "2026-10-12T02:11:12-05:00",
+      "subject": "feat: sistema de guardado y carga"
+    },
+    {
+      "sha": "5668ee7d413cd7ff0f0284f767d82690091a13fb",
+      "authoredAt": "2026-10-12T01:37:27-05:00",
+      "committedAt": "2026-10-12T01:37:27-05:00",
+      "subject": "refactor: arquitectura escalable por funcionalidad"
+    },
+    {
+      "sha": "7197193dff037fdd79f2f76759974b10d7f2550e",
+      "authoredAt": "2026-09-23T09:42:50-05:00",
+      "committedAt": "2026-09-23T09:42:50-05:00",
+      "subject": "assets: guardar sprites y escenas de corredor y constructor"
+    },
+    {
+      "sha": "bcae175ae3dedb91c440d032df7944ede234cc67",
+      "authoredAt": "2026-09-23T07:10:18-05:00",
+      "committedAt": "2026-09-23T07:10:18-05:00",
+      "subject": "feat: integrar sprites y cinco animaciones del errante"
+    },
+    {
+      "sha": "2ff3236118ce7a54f98aaf47c0c6423fbc958c81",
+      "authoredAt": "2026-09-22T09:55:55-05:00",
+      "committedAt": "2026-09-22T09:55:55-05:00",
+      "subject": "docs: agregar README con instalacion y guia del prototipo"
+    },
+    {
+      "sha": "5af77d656abdf2012e302022215109b459132e52",
+      "authoredAt": "2026-09-22T09:52:08-05:00",
+      "committedAt": "2026-09-22T09:52:08-05:00",
+      "subject": "chore: registrar metadatos generados por Godot"
+    },
+    {
+      "sha": "ec13bc45a0b72b4698b6582db562770329dc5877",
+      "authoredAt": "2026-09-22T09:33:57-05:00",
+      "committedAt": "2026-09-22T09:33:57-05:00",
+      "subject": "feat: agregar colonia y tres asedios con guia de arte"
+    },
+    {
+      "sha": "d0557a691c834828ccc7bb07dc4dc3f5eeb1a27f",
+      "authoredAt": "2026-09-22T09:17:40-05:00",
+      "committedAt": "2026-09-22T09:17:40-05:00",
+      "subject": "feat: iniciar Ceniza Neon con movimiento y combate de practica"
+    }
+  ]
+}

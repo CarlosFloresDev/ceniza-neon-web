@@ -33,42 +33,6 @@
       "processing": "WebP optimization; portrait atlas cell extraction where applicable"
     },
     {
-      "file": "/media/colonia_actual.webp",
-      "source": "docs/media/colonia_actual.png",
-      "kind": "development-screenshot",
-      "processing": "WebP optimization; portrait atlas cell extraction where applicable"
-    },
-    {
-      "file": "/media/combat_hud_madre.webp",
-      "source": "docs/media/combat_hud_madre.png",
-      "kind": "development-screenshot",
-      "processing": "WebP optimization; portrait atlas cell extraction where applicable"
-    },
-    {
-      "file": "/media/recaudador_actual.webp",
-      "source": "docs/media/recaudador_actual.png",
-      "kind": "development-screenshot",
-      "processing": "WebP optimization; portrait atlas cell extraction where applicable"
-    },
-    {
-      "file": "/media/caldera_actual.webp",
-      "source": "docs/media/caldera_actual.png",
-      "kind": "development-screenshot",
-      "processing": "WebP optimization; portrait atlas cell extraction where applicable"
-    },
-    {
-      "file": "/media/coro_actual.webp",
-      "source": "docs/media/coro_actual.png",
-      "kind": "development-screenshot",
-      "processing": "WebP optimization; portrait atlas cell extraction where applicable"
-    },
-    {
-      "file": "/media/prefecto_actual.webp",
-      "source": "docs/media/prefecto_actual.png",
-      "kind": "development-screenshot",
-      "processing": "WebP optimization; portrait atlas cell extraction where applicable"
-    },
-    {
       "file": "/media/novela_visual.webp",
       "source": "docs/media/novela_visual.png",
       "kind": "development-screenshot",
@@ -127,6 +91,70 @@
       "source": "assets/characters/portraits/antagonists_manga_v2.png",
       "kind": "approved-character-portrait",
       "processing": "WebP optimization; portrait atlas cell extraction where applicable"
+    },
+    {
+      "file": "/media/recaudador_arena_20261029.webp",
+      "source": ".godot/combat-art/hud_jefe_0.png",
+      "kind": "verified-current-development-capture",
+      "captureDate": "2026-10-29",
+      "version": "26fe467",
+      "processing": "Approved game capture; WebP optimization only. Reviewed current illustrated sprites and HUD."
+    },
+    {
+      "file": "/media/caldera_arena_20261029.webp",
+      "source": ".godot/combat-art/hud_jefe_1.png",
+      "kind": "verified-current-development-capture",
+      "captureDate": "2026-10-29",
+      "version": "26fe467",
+      "processing": "Approved game capture; WebP optimization only. Reviewed current illustrated sprites and HUD."
+    },
+    {
+      "file": "/media/coro_arena_20261029.webp",
+      "source": ".godot/combat-art/hud_jefe_2.png",
+      "kind": "verified-current-development-capture",
+      "captureDate": "2026-10-29",
+      "version": "26fe467",
+      "processing": "Approved game capture; WebP optimization only. Reviewed current illustrated sprites and HUD."
+    },
+    {
+      "file": "/media/prefecto_arena_20261029.webp",
+      "source": ".godot/combat-art/hud_jefe_3.png",
+      "kind": "verified-current-development-capture",
+      "captureDate": "2026-10-29",
+      "version": "26fe467",
+      "processing": "Approved game capture; WebP optimization only. Reviewed current illustrated sprites and HUD."
+    },
+    {
+      "file": "/media/madre_arena_20261029.webp",
+      "source": ".godot/combat-art/hud_jefe_4.png",
+      "kind": "verified-current-development-capture",
+      "captureDate": "2026-10-29",
+      "version": "26fe467",
+      "processing": "Approved game capture; WebP optimization only. Reviewed current illustrated sprites and HUD."
+    },
+    {
+      "file": "/media/colonia_vigente_20261029.webp",
+      "source": "build/validation/latest/capas_periphery.png",
+      "kind": "verified-current-development-capture",
+      "captureDate": "2026-10-29",
+      "version": "26fe467",
+      "processing": "Approved game capture; WebP optimization only. Reviewed current illustrated sprites and HUD."
+    },
+    {
+      "file": "/media/marcha_vigente_20261029.webp",
+      "source": ".godot/combat-art/galeria_caminar.png",
+      "kind": "verified-current-development-capture",
+      "captureDate": "2026-10-29",
+      "version": "26fe467",
+      "processing": "Approved game capture; WebP optimization only. Reviewed current illustrated sprites and HUD."
+    },
+    {
+      "file": "/media/prefecto_detalle_20261029.webp",
+      "source": ".godot/combat-art/detalle_prefecto.png",
+      "kind": "verified-current-development-capture",
+      "captureDate": "2026-10-29",
+      "version": "26fe467",
+      "processing": "Approved game capture; WebP optimization only. Reviewed current illustrated sprites and HUD."
     }
   ],
   "audio": "21 tracks imported from active MusicLibrary; embedded Vorbis TITLE preserved. MP3 transcoded at 160 kbps. No invented composer credits."

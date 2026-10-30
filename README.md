@@ -36,12 +36,15 @@ La autenticación pertenece a la sesión local de Wrangler. No colocar tokens en
 | Ruta | Contenido |
 | --- | --- |
 | `content/site.json` | URL pública, invitación de Discord, correo y estado del proyecto |
-| `content/editorial.mjs` | Entradas de bitácora, fichas públicas de personajes, distritos y roadmap |
+| `content/editorial.mjs` | Entradas recientes de bitácora, fichas públicas de personajes, distritos y roadmap |
+| `content/archive-posts.mjs` | Relatos retrospectivos de las primeras etapas |
+| `content/development-history.json` | Referencias de Git para las fechas reales de los avances |
 | `content/wiki.mjs` | Los 15 artículos de la wiki |
 | `content/soundtrack.json` | 21 pistas, títulos extraídos de metadatos y duración |
 | `scripts/build.mjs` | Plantillas, SEO, RSS, sitemap y cabeceras de seguridad |
 | `public/styles.css` | Diseño responsive, tipografía y animaciones |
 | `public/app.js` | Navegación móvil, búsqueda, galería, teaser y reproductor |
+| `public/effects.js` | Partículas, profundidad de portada y progreso de lectura; respeta movimiento reducido |
 | `public/media/` | Arte optimizado, capturas, logotipo y teaser |
 | `public/audio/` | Audio MP3 para reproducción web |
 | `art/` | Tres originales PNG y prompts completos de las nuevas ilustraciones |
@@ -53,11 +56,13 @@ La autenticación pertenece a la sesión local de Wrangler. No colocar tokens en
 
 ## Contenido inicial
 
-30 páginas HTML: inicio y secciones, cuatro registros de bitácora, quince artículos de wiki y página 404. El historial editorial inicial se redactó el 29 de octubre de 2026 a partir de avances locales comprobados; no se inventan fechas de publicaciones anteriores.
+36 páginas HTML: inicio y secciones, diez registros de bitácora, quince artículos de wiki y página 404. La cronología recorre avances del 22 de septiembre al 29 de octubre de 2026. Sus fechas proceden de un manifiesto de 70 commits del juego. Las entradas se redactaron el 29 de octubre: las retrospectivas distinguen esa fecha de la del avance, sin fingir publicaciones anteriores de esta web.
 
 El guion de producción contiene aproximadamente 11.600 palabras: prólogo, cinco capítulos y epílogo, con biblia del mundo, personajes y consecuencias propuestas. No está integrado en el juego. La web pública solo presenta una síntesis del universo sin las revelaciones principales.
 
 El teaser conceptual dura 36 segundos e incluye arte, capturas de desarrollo y «Dusk Beacon». No se presenta como una grabación de gameplay. El logotipo transparente y dos ilustraciones manga originales se generaron con OpenAI image_gen; sus especificaciones están en `art/prompts.json`.
+
+Las capturas de jefes y colonia se renovaron con los diseños ilustrados vigentes. La entrada de caminar muestra la galería real y un detalle actual del Prefecto. Las imágenes sustituidas se retiraron del sitio, y el teaser corregido usa `teaser-v2.mp4` para evitar recuperar el vídeo anterior desde la caché.
 
 Los campos de Discord y correo se dejan vacíos hasta recibir sus valores oficiales. En ese estado, la web muestra que están pendientes y no publica enlaces falsos. El canal de errores de GitHub pertenece al repositorio público del juego.
 
@@ -67,7 +72,7 @@ Los campos de Discord y correo se dejan vacíos hasta recibir sus valores oficia
 
 Las capturas de navegador se guardan en `build/review/`. Son material de comprobación, no nuevos recursos permanentes de producción.
 
-La primera publicación pasó tres pruebas de contenido y seis de navegador. También se comprobó la versión pública: rutas, RSS, sitemap, 404, exclusión del guion, reproducción musical y teaser de 36 segundos. Detalles en [la entrega inicial](docs/ENTREGA_INICIAL.md).
+La primera publicación pasó tres pruebas de contenido y seis de navegador. La revisión de tipografía, cronología y capturas añade dos pruebas de contenido y dos de navegador. También se comprueba la versión pública: rutas, RSS, sitemap, 404, exclusión del guion, reproducción musical y teaser. El estado de la publicación original se conserva en [la entrega inicial](docs/ENTREGA_INICIAL.md).
 
 ## Arte, música y derechos
 
@@ -75,6 +80,6 @@ La primera publicación pasó tres pruebas de contenido y seis de navegador. Tam
 
 El importador lee `TITLE` de los comentarios Vorbis de los OGG: por eso el nombre público puede diferir del nombre técnico de archivo. Algunas variantes comparten título. Las pistas sin ese metadato se marcan como «Sin título»; no se inventa un compositor.
 
-Las tipografías Manrope y Barlow Condensed se sirven localmente con sus licencias OFL. El contenido original del proyecto mantiene todos los derechos reservados de su titular; las dependencias y recursos de terceros conservan sus licencias. No se concede una licencia general de reutilización de la banda sonora.
+La tipografía usa Rajdhani en títulos, IBM Plex Mono en etiquetas técnicas, Cormorant Garamond en cursivas narrativas y Manrope en lectura. Barlow Condensed se conserva para renderizar los rótulos del teaser. Se sirven localmente con sus licencias OFL; las tres fuentes nuevas utilizan WOFF2. El contenido original del proyecto mantiene todos los derechos reservados de su titular; las dependencias y recursos de terceros conservan sus licencias. No se concede una licencia general de reutilización de la banda sonora.
 
 Referencias de implementación: [Cloudflare Static Assets](https://developers.cloudflare.com/workers/static-assets/), [Playwright](https://playwright.dev/docs/intro) y las guías de diseño de la skill Sites. Se usa Wrangler para publicar en la cuenta Cloudflare del usuario, sin registrar una copia adicional en el servicio Sites.
