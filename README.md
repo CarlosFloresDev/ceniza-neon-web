@@ -2,6 +2,8 @@
 
 Sitio independiente del proyecto Godot: inicio, universo, bitácora, roadmap, wiki, comunidad, contacto, dossier y banda sonora. Sitio estático en español, sin cuentas ni formularios simulados, desplegable en Cloudflare Workers con assets.
 
+**Web pública:** https://ceniza-neon.chefsitturchey.workers.dev · **Repositorio privado:** https://github.com/CarlosFloresDev/ceniza-neon-web
+
 El juego sigue en desarrollo, sin beta pública. El cooperativo para dos jugadores es una función prevista. La web diferencia las mecánicas comprobadas del prototipo y la ampliación narrativa propuesta.
 
 ## Trabajar en local
@@ -64,6 +66,8 @@ Los campos de Discord y correo se dejan vacíos hasta recibir sus valores oficia
 `npm test` comprueba metadatos musicales, unicidad del contenido, enlaces y recursos locales de las 30 páginas, y exclusión de guiones y secretos de la publicación. Playwright revisa escritorio y móvil, búsqueda sin depender de tildes, filtros, audio voluntario, selección recordada sin autoplay, diálogos, movimiento reducido y 404.
 
 Las capturas de navegador se guardan en `build/review/`. Son material de comprobación, no nuevos recursos permanentes de producción.
+
+La primera publicación pasó tres pruebas de contenido y seis de navegador. También se comprobó la versión pública: rutas, RSS, sitemap, 404, exclusión del guion, reproducción musical y teaser de 36 segundos. Detalles en [la entrega inicial](docs/ENTREGA_INICIAL.md).
 
 ## Arte, música y derechos
 
