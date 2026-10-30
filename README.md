@@ -1,0 +1,76 @@
+# CENIZA NEÓN · Web del videojuego
+
+Sitio independiente del proyecto Godot: inicio, universo, bitácora, roadmap, wiki, comunidad, contacto, dossier y banda sonora. Sitio estático en español, sin cuentas ni formularios simulados, desplegable en Cloudflare Workers con assets.
+
+El juego sigue en desarrollo, sin beta pública. El cooperativo para dos jugadores es una función prevista. La web diferencia las mecánicas comprobadas del prototipo y la ampliación narrativa propuesta.
+
+## Trabajar en local
+
+Requiere Node.js 22 o posterior y npm. FFmpeg y Python solo son necesarios para volver a generar el teaser; el vídeo final ya está incluido. No se necesitan las cuentas de generación de imágenes para reconstruir la web.
+
+```powershell
+npm ci
+npm run build
+npm run dev
+```
+
+Abre `http://127.0.0.1:4321`. El servidor sirve la última compilación; después de editar fuentes, ejecuta otra vez `npm run build`.
+
+## Publicación
+
+```powershell
+npm run build
+npm test
+npx playwright install chromium
+npm run test:browser
+npx wrangler whoami
+npm run deploy
+```
+
+La autenticación pertenece a la sesión local de Wrangler. No colocar tokens en el repositorio. `wrangler.jsonc` define un Worker estático llamado `ceniza-neon`; la dirección pública está en `content/site.json`. Cambiar de cuenta o reutilizar otro Worker requiere revisar esa configuración antes de desplegar.
+
+## Dónde editar
+
+| Ruta | Contenido |
+| --- | --- |
+| `content/site.json` | URL pública, invitación de Discord, correo y estado del proyecto |
+| `content/editorial.mjs` | Entradas de bitácora, fichas públicas de personajes, distritos y roadmap |
+| `content/wiki.mjs` | Los 15 artículos de la wiki |
+| `content/soundtrack.json` | 21 pistas, títulos extraídos de metadatos y duración |
+| `scripts/build.mjs` | Plantillas, SEO, RSS, sitemap y cabeceras de seguridad |
+| `public/styles.css` | Diseño responsive, tipografía y animaciones |
+| `public/app.js` | Navegación móvil, búsqueda, galería, teaser y reproductor |
+| `public/media/` | Arte optimizado, capturas, logotipo y teaser |
+| `public/audio/` | Audio MP3 para reproducción web |
+| `art/` | Tres originales PNG y prompts completos de las nuevas ilustraciones |
+| `narrativa/` | Biblia, personajes, 36 escenas e instrucciones de integración; no se publica |
+| `tests/` | Comprobaciones de contenido y pruebas de navegador |
+| `docs/` | Guías de edición y despliegue |
+
+`dist/` se reconstruye desde cero y se excluye de Git. `build/` guarda capturas de revisión, resultados de pruebas y archivos intermedios del teaser. Tampoco se publican. Este repositorio no depende del proyecto Godot para compilar: las copias necesarias están incluidas.
+
+## Contenido inicial
+
+30 páginas HTML: inicio y secciones, cuatro registros de bitácora, quince artículos de wiki y página 404. El historial editorial inicial se redactó el 29 de octubre de 2026 a partir de avances locales comprobados; no se inventan fechas de publicaciones anteriores.
+
+El guion de producción contiene aproximadamente 11.600 palabras: prólogo, cinco capítulos y epílogo, con biblia del mundo, personajes y consecuencias propuestas. No está integrado en el juego. La web pública solo presenta una síntesis del universo sin las revelaciones principales.
+
+El teaser conceptual dura 36 segundos e incluye arte, capturas de desarrollo y «Dusk Beacon». No se presenta como una grabación de gameplay. El logotipo transparente y dos ilustraciones manga originales se generaron con OpenAI image_gen; sus especificaciones están en `art/prompts.json`.
+
+Los campos de Discord y correo se dejan vacíos hasta recibir sus valores oficiales. En ese estado, la web muestra que están pendientes y no publica enlaces falsos. El canal de errores de GitHub pertenece al repositorio público del juego.
+
+## Verificación
+
+`npm test` comprueba metadatos musicales, unicidad del contenido, enlaces y recursos locales de las 30 páginas, y exclusión de guiones y secretos de la publicación. Playwright revisa escritorio y móvil, búsqueda sin depender de tildes, filtros, audio voluntario, selección recordada sin autoplay, diálogos, movimiento reducido y 404.
+
+Las capturas de navegador se guardan en `build/review/`. Son material de comprobación, no nuevos recursos permanentes de producción.
+
+## Arte, música y derechos
+
+`content/asset-provenance.json` conserva el origen de las capturas y el arte aprobado del juego. `art/prompts.json` conserva los prompts de las tres piezas nuevas. Los originales se mantienen sin modificar y las copias WebP se optimizan con Sharp.
+
+El importador lee `TITLE` de los comentarios Vorbis de los OGG: por eso el nombre público puede diferir del nombre técnico de archivo. Algunas variantes comparten título. Las pistas sin ese metadato se marcan como «Sin título»; no se inventa un compositor.
+
+Las tipografías Manrope y Barlow Condensed se sirven localmente con sus licencias OFL. El contenido original del proyecto mantiene todos los derechos reservados de su titular; las dependencias y recursos de terceros conservan sus licencias. No se concede una licencia general de reutilización de la banda sonora.
+
+Referencias de implementación: [Cloudflare Static Assets](https://developers.cloudflare.com/workers/static-assets/), [Playwright](https://playwright.dev/docs/intro) y las guías de diseño de la skill Sites. Se usa Wrangler para publicar en la cuenta Cloudflare del usuario, sin registrar una copia adicional en el servicio Sites.

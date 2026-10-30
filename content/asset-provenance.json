@@ -1,0 +1,133 @@
+{
+  "imported": "2026-10-29",
+  "sourceProject": "CENIZA NEÓN Godot project; approved project art and actual development captures",
+  "assets": [
+    {
+      "file": "/media/periphery_alive_v2.webp",
+      "source": "assets/world/backgrounds/references/periphery_alive_v2.png",
+      "kind": "environment-art",
+      "processing": "WebP optimization; portrait atlas cell extraction where applicable"
+    },
+    {
+      "file": "/media/foundry.webp",
+      "source": "assets/world/backgrounds/references/foundry.png",
+      "kind": "environment-art",
+      "processing": "WebP optimization; portrait atlas cell extraction where applicable"
+    },
+    {
+      "file": "/media/flooded.webp",
+      "source": "assets/world/backgrounds/references/flooded.png",
+      "kind": "environment-art",
+      "processing": "WebP optimization; portrait atlas cell extraction where applicable"
+    },
+    {
+      "file": "/media/citadel.webp",
+      "source": "assets/world/backgrounds/references/citadel.png",
+      "kind": "environment-art",
+      "processing": "WebP optimization; portrait atlas cell extraction where applicable"
+    },
+    {
+      "file": "/media/network.webp",
+      "source": "assets/world/backgrounds/references/network.png",
+      "kind": "environment-art",
+      "processing": "WebP optimization; portrait atlas cell extraction where applicable"
+    },
+    {
+      "file": "/media/colonia_actual.webp",
+      "source": "docs/media/colonia_actual.png",
+      "kind": "development-screenshot",
+      "processing": "WebP optimization; portrait atlas cell extraction where applicable"
+    },
+    {
+      "file": "/media/combat_hud_madre.webp",
+      "source": "docs/media/combat_hud_madre.png",
+      "kind": "development-screenshot",
+      "processing": "WebP optimization; portrait atlas cell extraction where applicable"
+    },
+    {
+      "file": "/media/recaudador_actual.webp",
+      "source": "docs/media/recaudador_actual.png",
+      "kind": "development-screenshot",
+      "processing": "WebP optimization; portrait atlas cell extraction where applicable"
+    },
+    {
+      "file": "/media/caldera_actual.webp",
+      "source": "docs/media/caldera_actual.png",
+      "kind": "development-screenshot",
+      "processing": "WebP optimization; portrait atlas cell extraction where applicable"
+    },
+    {
+      "file": "/media/coro_actual.webp",
+      "source": "docs/media/coro_actual.png",
+      "kind": "development-screenshot",
+      "processing": "WebP optimization; portrait atlas cell extraction where applicable"
+    },
+    {
+      "file": "/media/prefecto_actual.webp",
+      "source": "docs/media/prefecto_actual.png",
+      "kind": "development-screenshot",
+      "processing": "WebP optimization; portrait atlas cell extraction where applicable"
+    },
+    {
+      "file": "/media/novela_visual.webp",
+      "source": "docs/media/novela_visual.png",
+      "kind": "development-screenshot",
+      "processing": "WebP optimization; portrait atlas cell extraction where applicable"
+    },
+    {
+      "file": "/media/profesiones.webp",
+      "source": "docs/media/profesiones.png",
+      "kind": "development-screenshot",
+      "processing": "WebP optimization; portrait atlas cell extraction where applicable"
+    },
+    {
+      "file": "/media/mara.webp",
+      "source": "assets/characters/portraits/portraits_manga_v2.png",
+      "kind": "approved-character-portrait",
+      "processing": "WebP optimization; portrait atlas cell extraction where applicable"
+    },
+    {
+      "file": "/media/ivo.webp",
+      "source": "assets/characters/portraits/portraits_manga_v2.png",
+      "kind": "approved-character-portrait",
+      "processing": "WebP optimization; portrait atlas cell extraction where applicable"
+    },
+    {
+      "file": "/media/vera.webp",
+      "source": "assets/characters/portraits/portraits_manga_v2.png",
+      "kind": "approved-character-portrait",
+      "processing": "WebP optimization; portrait atlas cell extraction where applicable"
+    },
+    {
+      "file": "/media/nox.webp",
+      "source": "assets/characters/portraits/portraits_manga_v2.png",
+      "kind": "approved-character-portrait",
+      "processing": "WebP optimization; portrait atlas cell extraction where applicable"
+    },
+    {
+      "file": "/media/eco.webp",
+      "source": "assets/characters/portraits/portraits_manga_v2.png",
+      "kind": "approved-character-portrait",
+      "processing": "WebP optimization; portrait atlas cell extraction where applicable"
+    },
+    {
+      "file": "/media/portador.webp",
+      "source": "assets/characters/portraits/portraits_manga_v2.png",
+      "kind": "approved-character-portrait",
+      "processing": "WebP optimization; portrait atlas cell extraction where applicable"
+    },
+    {
+      "file": "/media/prefecto.webp",
+      "source": "assets/characters/portraits/antagonists_manga_v2.png",
+      "kind": "approved-character-portrait",
+      "processing": "WebP optimization; portrait atlas cell extraction where applicable"
+    },
+    {
+      "file": "/media/madre.webp",
+      "source": "assets/characters/portraits/antagonists_manga_v2.png",
+      "kind": "approved-character-portrait",
+      "processing": "WebP optimization; portrait atlas cell extraction where applicable"
+    }
+  ],
+  "audio": "21 tracks imported from active MusicLibrary; embedded Vorbis TITLE preserved. MP3 transcoded at 160 kbps. No invented composer credits."
+}

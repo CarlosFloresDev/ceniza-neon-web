@@ -1,0 +1,212 @@
+[
+  {
+    "id": "menu",
+    "title": "Dusk Beacon",
+    "displayTitle": "Dusk Beacon",
+    "duration": 76.316188,
+    "src": "/audio/menu.mp3",
+    "titleSource": "embedded Vorbis TITLE",
+    "context": "Ciudad",
+    "source": "assets/audio/music/menu.ogg"
+  },
+  {
+    "id": "colonia_dia",
+    "title": "Colony Dawn",
+    "displayTitle": "Colony Dawn",
+    "duration": 126.476083,
+    "src": "/audio/colonia_dia.mp3",
+    "titleSource": "embedded Vorbis TITLE",
+    "context": "Ciudad",
+    "source": "assets/audio/music/colonia_dia.ogg"
+  },
+  {
+    "id": "zona_fundicion",
+    "title": "Foundry District",
+    "displayTitle": "Foundry District",
+    "duration": 38.011979,
+    "src": "/audio/zona_fundicion.mp3",
+    "titleSource": "embedded Vorbis TITLE",
+    "context": "Distritos",
+    "source": "assets/audio/music/zona_fundicion.ogg"
+  },
+  {
+    "id": "zona_fundicion_b",
+    "title": "Foundry District",
+    "displayTitle": "Foundry District",
+    "duration": 37.555979,
+    "src": "/audio/zona_fundicion_b.mp3",
+    "titleSource": "embedded Vorbis TITLE",
+    "context": "Distritos",
+    "source": "assets/audio/music/zona_fundicion_b.ogg"
+  },
+  {
+    "id": "zona_inundado",
+    "title": "Drips and Pings",
+    "displayTitle": "Drips and Pings",
+    "duration": 62.371875,
+    "src": "/audio/zona_inundado.mp3",
+    "titleSource": "embedded Vorbis TITLE",
+    "context": "Distritos",
+    "source": "assets/audio/music/zona_inundado.ogg"
+  },
+  {
+    "id": "zona_ciudadela",
+    "title": "Corporate Citadel",
+    "displayTitle": "Corporate Citadel",
+    "duration": 40.724083,
+    "src": "/audio/zona_ciudadela.mp3",
+    "titleSource": "embedded Vorbis TITLE",
+    "context": "Distritos",
+    "source": "assets/audio/music/zona_ciudadela.ogg"
+  },
+  {
+    "id": "zona_red",
+    "title": "Hostile Arpeggio",
+    "displayTitle": "Hostile Arpeggio",
+    "duration": 38.372083,
+    "src": "/audio/zona_red.mp3",
+    "titleSource": "embedded Vorbis TITLE",
+    "context": "Distritos",
+    "source": "assets/audio/music/zona_red.ogg"
+  },
+  {
+    "id": "zona_red_b",
+    "title": "Hostile Core",
+    "displayTitle": "Hostile Core",
+    "duration": 38.755979,
+    "src": "/audio/zona_red_b.mp3",
+    "titleSource": "embedded Vorbis TITLE",
+    "context": "Distritos",
+    "source": "assets/audio/music/zona_red_b.ogg"
+  },
+  {
+    "id": "colonia_noche",
+    "title": "D Minor Arp",
+    "displayTitle": "D Minor Arp",
+    "duration": 37.603875,
+    "src": "/audio/colonia_noche.mp3",
+    "titleSource": "embedded Vorbis TITLE",
+    "context": "Ciudad",
+    "source": "assets/audio/music/colonia_noche.ogg"
+  },
+  {
+    "id": "aviso",
+    "title": "D Minor Pulse",
+    "displayTitle": "D Minor Pulse",
+    "duration": 8.635979,
+    "src": "/audio/aviso.mp3",
+    "titleSource": "embedded Vorbis TITLE",
+    "context": "Transiciones",
+    "source": "assets/audio/music/aviso.ogg"
+  },
+  {
+    "id": "jefe_recaudador",
+    "title": "Furnace Pressure",
+    "displayTitle": "Furnace Pressure",
+    "duration": 179.324083,
+    "src": "/audio/jefe_recaudador.mp3",
+    "titleSource": "embedded Vorbis TITLE",
+    "context": "Combate",
+    "source": "assets/audio/music/jefe_recaudador.ogg"
+  },
+  {
+    "id": "jefe_caldera",
+    "title": "Dissonant Pulse",
+    "displayTitle": "Dissonant Pulse",
+    "duration": 170.804375,
+    "src": "/audio/jefe_caldera.mp3",
+    "titleSource": "embedded Vorbis TITLE",
+    "context": "Combate",
+    "source": "assets/audio/music/jefe_caldera.ogg"
+  },
+  {
+    "id": "jefe_caldera_b",
+    "title": "Dissonant Pulse",
+    "displayTitle": "Dissonant Pulse",
+    "duration": 125.996188,
+    "src": "/audio/jefe_caldera_b.mp3",
+    "titleSource": "embedded Vorbis TITLE",
+    "context": "Combate",
+    "source": "assets/audio/music/jefe_caldera_b.ogg"
+  },
+  {
+    "id": "jefe_prefecto",
+    "title": "Contemptuous Waltz",
+    "displayTitle": "Contemptuous Waltz",
+    "duration": 179.563979,
+    "src": "/audio/jefe_prefecto.mp3",
+    "titleSource": "embedded Vorbis TITLE",
+    "context": "Combate",
+    "source": "assets/audio/music/jefe_prefecto.ogg"
+  },
+  {
+    "id": "jefe_prefecto_b",
+    "title": "Ceremonial Duel",
+    "displayTitle": "Ceremonial Duel",
+    "duration": 179.611688,
+    "src": "/audio/jefe_prefecto_b.mp3",
+    "titleSource": "embedded Vorbis TITLE",
+    "context": "Combate",
+    "source": "assets/audio/music/jefe_prefecto_b.ogg"
+  },
+  {
+    "id": "jefe_madrecero",
+    "title": "Emergency Protocol",
+    "displayTitle": "Emergency Protocol",
+    "duration": 239.611979,
+    "src": "/audio/jefe_madrecero.mp3",
+    "titleSource": "embedded Vorbis TITLE",
+    "context": "Combate",
+    "source": "assets/audio/music/jefe_madrecero.ogg"
+  },
+  {
+    "id": "jefe_alt_1",
+    "title": null,
+    "displayTitle": "Sin título · jefe alt 1",
+    "duration": 45.211979,
+    "src": "/audio/jefe_alt_1.mp3",
+    "titleSource": "No embedded title; filename identified explicitly",
+    "context": "Combate",
+    "source": "assets/audio/music/jefe_alt_1.ogg"
+  },
+  {
+    "id": "jefe_alt_2",
+    "title": "Boss Battle Loop",
+    "displayTitle": "Boss Battle Loop",
+    "duration": 68.803979,
+    "src": "/audio/jefe_alt_2.mp3",
+    "titleSource": "embedded Vorbis TITLE",
+    "context": "Combate",
+    "source": "assets/audio/music/jefe_alt_2.ogg"
+  },
+  {
+    "id": "jefe_alt_3",
+    "title": "Pixel Colony Drive",
+    "displayTitle": "Pixel Colony Drive",
+    "duration": 33.211979,
+    "src": "/audio/jefe_alt_3.mp3",
+    "titleSource": "embedded Vorbis TITLE",
+    "context": "Combate",
+    "source": "assets/audio/music/jefe_alt_3.ogg"
+  },
+  {
+    "id": "victoria",
+    "title": "Quiet Hope",
+    "displayTitle": "Quiet Hope",
+    "duration": 9.812083,
+    "src": "/audio/victoria.mp3",
+    "titleSource": "embedded Vorbis TITLE",
+    "context": "Transiciones",
+    "source": "assets/audio/music/victoria.ogg"
+  },
+  {
+    "id": "derrota",
+    "title": null,
+    "displayTitle": "Sin título · derrota",
+    "duration": 8.804271,
+    "src": "/audio/derrota.mp3",
+    "titleSource": "No embedded title; filename identified explicitly",
+    "context": "Transiciones",
+    "source": "assets/audio/music/derrota.ogg"
+  }
+]
