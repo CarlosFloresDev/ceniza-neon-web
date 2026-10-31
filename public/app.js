@@ -23,23 +23,6 @@
       toggle.focus();
     }
   });
-  if (
-    "IntersectionObserver" in window &&
-    !matchMedia("(prefers-reduced-motion: reduce)").matches
-  ) {
-    document.documentElement.classList.add("reveal-ready");
-    const observer = new IntersectionObserver(
-      (entries) =>
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("is-visible");
-            observer.unobserve(entry.target);
-          }
-        }),
-      { threshold: 0.05 },
-    );
-    $$("[data-reveal]").forEach((el) => observer.observe(el));
-  }
   const normalize = (text) =>
     text
       .normalize("NFD")
