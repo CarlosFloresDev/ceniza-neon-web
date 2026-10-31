@@ -4,22 +4,24 @@ Una ilustración por ruta (36). Sustituyen a las escenas de pixel art solo en la
 
 ## Dirección
 
-Aventura narrativa indie pintada a mano, en la línea de los juegos de aventura episódicos contemporáneos de estética pictórica:
+Estética inspirada en las aventuras narrativas episódicas de corte indie, sin personajes ni logotipos de ningún juego ajeno:
 
-- Realismo estilizado: proporciones naturales, rasgos sencillos, ni anime ni fotorrealismo.
-- Texturas pintadas con pincelada visible en todas las superficies: paredes, ropa, agua, cielo.
-- Formas simplificadas y siluetas limpias, sin contorno negro.
-- Luz suave y difusa, con un ligero resplandor en las fuentes de luz y degradados de acuarela en cielos y niebla.
-- Ambiente íntimo y cotidiano, incluso en las escenas de amenaza.
+- Ilustración pictórica de acabado impresionista, con texturas pintadas a mano de acuarela y gouache.
+- Pinceladas visibles y bordes suaves, como un concept art.
+- Luz lateral de hora dorada, con resplandor y rayos de sol entre la neblina.
+- Personajes con proporciones naturales y rasgos sencillos, ni anime ni fotorrealismo.
+- Tono melancólico de cine indie y encuadre cinematográfico.
 
-## Paleta de CENIZA NEÓN
+## Paleta
 
-- Noche pizarra azulada para los fondos (#0c121b, #24364a).
-- Ámbar de farola de sodio para la luz cálida (#f2a948).
-- Cian de señal para la tecnología y el enlace del Portador (#62d6cf).
-- Óxido (#b85c3c) para el metal viejo y las máquinas hostiles.
+Cálida y desaturada:
 
-Saturación contenida: los colores intensos solo en las fuentes de luz.
+- Ámbar (#f2a94e) y naranja (#e9844a).
+- Rosa pastel en las nubes (#e8a6a1).
+- Azul cielo lavado (#9cc3d9).
+- Sombras violetas (#4a3d63).
+
+El mundo y los personajes son los de CENIZA NEÓN. El grano de película y la viñeta los añade la web, no la imagen.
 
 ## Composición
 

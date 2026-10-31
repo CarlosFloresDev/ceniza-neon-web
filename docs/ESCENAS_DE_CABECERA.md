@@ -1,6 +1,6 @@
 # Escenas de cabecera
 
-Las 36 rutas abren con una ilustración pintada a mano en estilo de aventura narrativa, generada con OpenAI image_gen a través de Codex. Cada una se coloca como plano lejano de una escena 3D, con neblina y lluvia por delante. El resto de la web usa el pixel art y las capturas del juego.
+Las 36 rutas abren con una ilustración pictórica en hora dorada, generada con OpenAI image_gen a través de Codex. Cada una se coloca como plano lejano de una escena 3D, con neblina y lluvia por delante. El resto de la web usa el pixel art y las capturas del juego.
 
 ## Ilustraciones
 
@@ -9,7 +9,8 @@ Las 36 rutas abren con una ilustración pintada a mano en estilo de aventura nar
 - Los PNG originales y su registro (prompt exacto, herramienta, fecha) quedan en `art/heroes/` y `art/heroes/records/`.
 - `node scripts/install-hero-art.mjs` crea los WebP de `public/media/heroes/` y el manifiesto `content/hero-art.json` con dimensiones y SHA-256.
 - Si una ruta no tiene ilustración, su cabecera vuelve a la composición de pixel art descrita abajo.
-- Las cabeceras pintadas llevan el rótulo «Ilustración de cabecera · No es una captura del juego».
+- Las cabeceras pintadas llevan una nota a mano: «Ilustración pintada, no es una captura».
+- Variantes: la portada y el universo añaden polaroids de capturas reales; las páginas de los cinco jefes, la captura de su arena; el resto, solo la ilustración.
 
 ## Composición de pixel art (respaldo)
 

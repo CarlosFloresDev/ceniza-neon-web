@@ -51,7 +51,7 @@ const backdrop = (name, src, priority) =>
 
 // Ilustración pintada: un plano lejano que la cámara inclina y acerca, con neblina y lluvia delante.
 function renderPainting(scene, painting, priority) {
-  return `<div class="scene" data-scene="${scene.key}" data-painted role="img" aria-label="${esc(scene.alt)}"><div class="scene-stage">${plane(-160, `<img class="scene-painting" src="${painting.src}" alt="" width="${painting.width}" height="${painting.height}" decoding="async"${priority ? ' fetchpriority="high"' : ""}>`)}${plane(-40, "", " scene-haze")}${plane(160, "", " scene-rain")}</div></div>`;
+  return `<div class="scene" data-scene="${scene.key}" data-painted role="img" aria-label="${esc(scene.alt)}"><div class="scene-stage">${plane(-60, `<img class="scene-painting" src="${painting.src}" alt="" width="${painting.width}" height="${painting.height}" decoding="async"${priority ? ' fetchpriority="high"' : ""}>`)}${plane(-40, "", " scene-haze")}${plane(160, "", " scene-rain")}</div></div>`;
 }
 
 export function renderScene(route, { priority = true } = {}) {

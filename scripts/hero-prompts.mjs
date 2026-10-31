@@ -4,24 +4,25 @@ import fs from "node:fs/promises";
 import { scenes } from "../content/scenes.mjs";
 
 const STYLE =
-  "Stylized hand-painted look of a contemporary episodic narrative adventure game: simplified 3D forms with hand-painted gouache and watercolor textures, soft flat shading, low-detail brushwork with visible strokes, slightly simplified friendly faces with natural proportions (not anime, not photorealistic, not hyper-detailed concept art), gentle cinematic color grading, soft diffused light and gentle bloom around lamps, airy watercolor gradients in sky and mist, quiet intimate everyday atmosphere.";
+  "Painterly illustration with impressionistic rendering in the spirit of episodic indie narrative adventure games: hand-painted textures like watercolor and gouache, visible brushstrokes, soft edges like concept art, simplified 3D forms, slightly simplified faces with natural proportions (not anime, not photorealistic). Lighting: low lateral golden-hour sunlight with bloom and soft sun rays cutting through haze and dust.";
 const PALETTE =
-  "Palette: muted slate-blue night (#0c121b, #24364a), warm sodium amber light (#f2a948), small cyan accents (#62d6cf), rust tones (#b85c3c); saturation kept low except at light sources.";
+  "Palette: warm desaturated amber and orange light, pastel pink clouds, washed-out pale sky blue, violet-tinted shadows (#f2a94e, #e9844a, #e8a6a1, #9cc3d9, #4a3d63); low saturation overall. Melancholic indie film mood with cinematic widescreen framing.";
 const COMPOSITION =
-  "Composition: the left 40% of the frame stays calm and dark (misty sky, wall, shadow or distant silhouettes) for a headline; the subject sits in the right half; horizon in the lower third; characters full body at human scale. No text, no letters, no logos, no watermark, no border.";
+  "Composition: the left 40% of the frame stays calm and soft (hazy sky, wall, shadow or distant silhouettes) for a headline; the subject sits in the right half; horizon in the lower third; characters full body at human scale. No text, no letters, no logos, no watermark, no border, no film grain.";
 
 const PLACES = {
   periphery:
-    "a rusted industrial periphery of a ruined city at dusk turning to night: an elevated rail viaduct, tall brick smokestacks, small workshops with warm amber windows and a dark still canal reflecting the lights",
+    "a rusted industrial periphery of a ruined city at sunset: an elevated rail viaduct, tall brick smokestacks, small workshops with warm windows and a still canal reflecting the sky",
   foundry:
-    "a furnace district at night: glowing molten metal pouring in the distance, steel catwalks, cranes and orange heat haze",
+    "a furnace district at sunset: steaming foundry halls, steel catwalks, cranes and molten metal glowing in the distance under a hazy sky",
   flooded:
-    "a flooded neighbourhood at night: walkways over still black water, leaning radio antennas, lamp reflections and light drizzle",
+    "a flooded neighbourhood at sunset: wooden walkways over still water, leaning radio antennas, reflections of the low sun and pastel clouds",
   citadel:
-    "a corporate citadel at night: a monumental stone gate with a brass circular emblem, dark hanging banners, thin cyan window strips and a wet plaza with mist",
+    "a corporate citadel at sunset: a monumental stone gate with a brass circular emblem, hanging banners and a wet plaza catching the golden light",
   network:
-    "the core of a machine network: an enormous circular aperture, server towers with thin cyan and red light strips, heavy cables and a metal deck",
-  dawn: "an open horizon at dusk: a distant spired city skyline in silhouette and an empty rail line fading into the dark",
+    "the edge of a machine network complex at sunset: an enormous circular aperture, cable-wrapped server towers with small cyan lights and a metal deck",
+  dawn:
+    "an open horizon at sunset: a distant spired city skyline in silhouette and an empty rail line fading toward the sun",
 };
 
 const PORTADOR =
@@ -72,11 +73,11 @@ const SUBJECTS = {
   choir: `${CAST.coro} standing in shallow water, its horns sending rings of sound across the canal. Eerie mood`,
   prefect: `${CAST.prefecto} lunging forward with his red blade before the citadel gate. Cold, imposing mood`,
   mother: `${CAST.madre} floating at the center of the network core, her red filaments reaching toward the towers. Haunting mood`,
-  controls: `${PORTADOR}, facing the viewer in a ready stance next to a weathered sign, as if waiting for the player's first move`,
+  controls: `${PORTADOR}, facing the viewer in a ready stance next to a weathered sign, as if waiting for the first move of the player`,
   cooperative: `${PORTADOR} and ${CAST.ranger} side by side on the deck, about to cross a narrow bridge together`,
   "living-city": `a living street: an abandoned car, rusted barrels and ${CAST.civilian} walking past, steam rising from vents`,
   walking: `${PORTADOR}, walking in profile along the waterfront, coat and scarf swaying with his stride`,
-  "boss-language": `five hostile machines and figures lined up before the gate like a rogues' gallery: ${CAST.recaudador}; ${CAST.caldera}; ${CAST.coro}; ${CAST.prefecto}; ${CAST.madre}`,
+  "boss-language": `five hostile machines and figures lined up before the gate like a gallery of rogues: ${CAST.recaudador}; ${CAST.caldera}; ${CAST.coro}; ${CAST.prefecto}; ${CAST.madre}`,
   "project-state": `a half-built colony: a finished power core, a section of wall still in scaffolding, scrap piles and ${CAST.builder} taking a break`,
   "first-commit": `seen from behind and small in the frame, ${PORTADOR}, standing beside a single street lamp at the very beginning of the journey`,
   wanderer: `a skinny stalking robot and a small quadruped runner robot prowling along a catwalk, red sensor lights`,
@@ -89,7 +90,7 @@ const SUBJECTS = {
 const prompts = Object.entries(scenes).map(([route, scene]) => {
   const subject = SUBJECTS[scene.key];
   if (!subject) throw new Error("Missing hero subject for " + scene.key);
-  const night = scene.night ? " Deep night, darker than usual." : "";
+  const night = scene.night ? " Late blue hour, the last light fading and the first lamps turning on." : "";
   return {
     key: scene.key,
     route,
