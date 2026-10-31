@@ -87,7 +87,9 @@ const SUBJECTS = {
   "approved-art": `${PORTADOR} and ${CAST.prefecto} facing each other across a wet plaza, blades drawn. Tense duel mood`,
 };
 
-const prompts = Object.entries(scenes).map(([route, scene]) => {
+const prompts = Object.entries(scenes)
+  .filter(([route]) => !route.startsWith("/bitacora/"))
+  .map(([route, scene]) => {
   const subject = SUBJECTS[scene.key];
   if (!subject) throw new Error("Missing hero subject for " + scene.key);
   const night = scene.night ? " Late blue hour, the last light fading and the first lamps turning on." : "";

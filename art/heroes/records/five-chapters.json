@@ -1,7 +1,0 @@
-{
-  "key": "five-chapters",
-  "route": "/bitacora/cinco-capitulos-una-ruta/",
-  "prompt": "Painterly illustration with impressionistic rendering in the spirit of episodic indie narrative adventure games: hand-painted textures like watercolor and gouache, visible brushstrokes, soft edges like concept art, simplified 3D forms, slightly simplified faces with natural proportions (not anime, not photorealistic). Lighting: low lateral golden-hour sunlight with bloom and soft sun rays cutting through haze and dust. Scene: the edge of a machine network complex at sunset: an enormous circular aperture, cable-wrapped server towers with small cyan lights and a metal deck. a train crossing a long bridge toward the final station deep in the network, a route of five lit stations behind it. Palette: warm desaturated amber and orange light, pastel pink clouds, washed-out pale sky blue, violet-tinted shadows (#f2a94e, #e9844a, #e8a6a1, #9cc3d9, #4a3d63); low saturation overall. Melancholic indie film mood with cinematic widescreen framing. Composition: the left 40% of the frame stays calm and soft (hazy sky, wall, shadow or distant silhouettes) for a headline; the subject sits in the right half; horizon in the lower third; characters full body at human scale. No text, no letters, no logos, no watermark, no border, no film grain.",
-  "tool": "OpenAI image_gen vía Codex CLI 0.166.0",
-  "created": "2026-10-31"
-}

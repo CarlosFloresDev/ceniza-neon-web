@@ -1,6 +1,6 @@
 // Fotogramas planos de cada escena para redes sociales, tarjetas y póster del teaser.
 import sharp from "sharp";
-import { groundOf, paintingFor } from "./scene.mjs";
+import { captureFor, groundOf, paintingFor } from "./scene.mjs";
 
 const WIDTH = 1200;
 const HEIGHT = 630;
@@ -29,7 +29,7 @@ async function place(data, info, left, top) {
 }
 
 export async function renderStill(scene, file) {
-  const painting = paintingFor(scene);
+  const painting = captureFor(scene) || paintingFor(scene);
   if (painting) {
     const flat = await sharp("public" + painting.src)
       .resize({ width: WIDTH, height: HEIGHT, fit: "cover", position: "attention" })

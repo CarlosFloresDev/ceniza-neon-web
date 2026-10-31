@@ -1,7 +1,7 @@
 // Inserta la escena de cabecera en cada página manteniendo un único H1.
 // Variantes: portada y universo con polaroids de capturas reales, jefes con la captura
 // de su arena, y el resto solo con la ilustración y una nota escrita a mano.
-import { paintingFor, renderScene, sceneFor } from "./scene.mjs";
+import { captureFor, paintingFor, renderScene, sceneFor } from "./scene.mjs";
 import { esc } from "./lib/html.mjs";
 
 // Capturas reales del juego que se pegan como polaroids sobre la ilustración.
@@ -29,10 +29,12 @@ function polaroids(route) {
     .join("")}</div>`;
 }
 
-const caption = (route) =>
-  paintingFor(sceneFor(route))
-    ? "Ilustración pintada, no es una captura"
-    : "Pixel art del juego, montado para la web";
+const caption = (route) => {
+  const scene = sceneFor(route);
+  if (captureFor(scene)) return "Imagen del juego en desarrollo";
+  if (paintingFor(scene)) return "Ilustración pintada, no es una captura";
+  return "Pixel art del juego, montado para la web";
+};
 
 function shell(route, content) {
   return `<section class="section-hero">${renderScene(route)}<div class="section-hero-shade" aria-hidden="true"></div>${polaroids(route)}${content}<span class="art-caption">${caption(route)}</span></section>`;

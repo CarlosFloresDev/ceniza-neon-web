@@ -1,7 +1,10 @@
-// Escenas de cabecera dispuestas en profundidad 3D. Si la ruta tiene ilustración pintada
-// (content/hero-art.json) se usa como plano principal; si no, se compone con el pixel art del juego.
+// Escenas de cabecera dispuestas en profundidad 3D. Orden de preferencia:
+// 1. Registros de bitácora con captura: la captura real del juego.
+// 2. Ilustración pintada (content/hero-art.json), salvo en la bitácora.
+// 3. Composición con el pixel art del juego.
 import fs from "node:fs";
 import { scenes } from "../content/scenes.mjs";
+import { posts } from "../content/editorial.mjs";
 import { esc } from "./lib/html.mjs";
 
 const art = JSON.parse(
@@ -10,7 +13,17 @@ const art = JSON.parse(
 const paintings = JSON.parse(
   fs.readFileSync(new URL("../content/hero-art.json", import.meta.url)),
 );
-export const paintingFor = (scene) => paintings[scene.key] || null;
+const routeOf = new Map(Object.entries(scenes).map(([route, scene]) => [scene, route]));
+const journal = (scene) => routeOf.get(scene).startsWith("/bitacora/");
+// La bitácora documenta el desarrollo: muestra el juego, no ilustraciones.
+export const paintingFor = (scene) => (journal(scene) ? null : paintings[scene.key] || null);
+const captures = new Map(
+  posts.filter((post) => post.image).map((post) => [`/bitacora/${post.slug}/`, post]),
+);
+export const captureFor = (scene) => {
+  const post = captures.get(routeOf.get(scene));
+  return post ? { src: `/media/${post.image}.webp`, label: post.imageLabel } : null;
+};
 // Profundidad de los fondos en px; los actores usan la suya propia.
 const LAYER_DEPTH = { far: -520, zone: -240 };
 // Altura del suelo pisable de cada fondo, en % desde abajo. "dawn" pinta su propio suelo.
@@ -51,11 +64,14 @@ const backdrop = (name, src, priority) =>
 
 // Ilustración pintada: un plano lejano que la cámara inclina y acerca, con neblina y lluvia delante.
 function renderPainting(scene, painting, priority) {
-  return `<div class="scene" data-scene="${scene.key}" data-painted role="img" aria-label="${esc(scene.alt)}"><div class="scene-stage">${plane(-60, `<img class="scene-painting" src="${painting.src}" alt="" width="${painting.width}" height="${painting.height}" decoding="async"${priority ? ' fetchpriority="high"' : ""}>`)}${plane(-40, "", " scene-haze")}${plane(160, "", " scene-rain")}</div></div>`;
+  return `<div class="scene" data-scene="${scene.key}" data-painted role="img" aria-label="${esc(scene.alt)}"><div class="scene-stage">${plane(0, `<img class="scene-painting" src="${painting.src}" alt="" width="${painting.width}" height="${painting.height}" decoding="async"${priority ? ' fetchpriority="high"' : ""}>`)}${plane(-40, "", " scene-haze")}${plane(160, "", " scene-rain")}</div></div>`;
 }
 
 export function renderScene(route, { priority = true } = {}) {
   const scene = sceneFor(route);
+  const capture = captureFor(scene);
+  if (capture)
+    return `<div class="scene" data-scene="${scene.key}" data-capture role="img" aria-label="${esc(capture.label)}"><div class="scene-stage">${plane(0, `<img class="scene-painting" src="${capture.src}" alt="" decoding="async"${priority ? ' fetchpriority="high"' : ""}>`)}${plane(-40, "", " scene-haze")}</div></div>`;
   const painting = paintingFor(scene);
   if (painting) return renderPainting(scene, painting, priority);
   const ground = GROUND[scene.zone];

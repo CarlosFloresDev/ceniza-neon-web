@@ -45,6 +45,11 @@ test("Every header has a registered painted illustration and keeps its honest ca
   const paintings = JSON.parse(await fs.readFile("content/hero-art.json", "utf8"));
   const hashes = new Set();
   for (const [route, scene] of Object.entries(scenes)) {
+    // La bitácora muestra capturas o pixel art del juego, nunca ilustraciones.
+    if (route.startsWith("/bitacora/")) {
+      assert.ok(!paintings[scene.key], route + " should not use a painting");
+      continue;
+    }
     const painting = paintings[scene.key];
     assert.ok(painting, "missing illustration for " + route);
     assert.equal(painting.route, route);
@@ -57,6 +62,10 @@ test("Every header has a registered painted illustration and keeps its honest ca
   const wiki = await fs.readFile("dist/wiki/prefecto/index.html", "utf8");
   assert.match(wiki, /data-painted/);
   assert.match(wiki, /no es una captura/i);
+  const walk = await fs.readFile("dist/bitacora/caminar-es-mas-que-mover-un-sprite/index.html", "utf8");
+  assert.match(walk, /data-capture[^>]*>.*marcha_vigente_20261029/);
+  const journal = await fs.readFile("dist/bitacora/index.html", "utf8");
+  assert.doesNotMatch(journal, /media\/heroes\//);
 });
 test("The journal dates come from verified commits and distinguish retrospective entries", async () => {
   const history = JSON.parse(

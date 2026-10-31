@@ -1,24 +1,4 @@
 {
-  "approved-art": {
-    "src": "/media/heroes/approved-art.webp",
-    "route": "/bitacora/el-diseno-aprobado-llega-al-combate/",
-    "width": 1672,
-    "height": 941,
-    "tool": "OpenAI image_gen vía Codex CLI 0.166.0",
-    "created": "2026-10-31",
-    "prompt": "Painterly illustration with impressionistic rendering in the spirit of episodic indie narrative adventure games: hand-painted textures like watercolor and gouache, visible brushstrokes, soft edges like concept art, simplified 3D forms, slightly simplified faces with natural proportions (not anime, not photorealistic). Lighting: low lateral golden-hour sunlight with bloom and soft sun rays cutting through haze and dust. Scene: a corporate citadel at sunset: a monumental stone gate with a brass circular emblem, hanging banners and a wet plaza catching the golden light. a young man with messy black hair in a long dark brown leather coat with brass buttons and a grey scarf, a faint cyan glow line along his cheek and the Prefect, a dark-haired man in ceremonial white and gold armor with a red cape, a tall shield and a red energy blade facing each other across a wet plaza, blades drawn. Tense duel mood. Palette: warm desaturated amber and orange light, pastel pink clouds, washed-out pale sky blue, violet-tinted shadows (#f2a94e, #e9844a, #e8a6a1, #9cc3d9, #4a3d63); low saturation overall. Melancholic indie film mood with cinematic widescreen framing. Composition: the left 40% of the frame stays calm and soft (hazy sky, wall, shadow or distant silhouettes) for a headline; the subject sits in the right half; horizon in the lower third; characters full body at human scale. No text, no letters, no logos, no watermark, no border, no film grain.",
-    "sha256": "b3e4d48cf67b5f0f93c0b430b30eec295f485c0034db6f017ef01d8be00f7951"
-  },
-  "boss-language": {
-    "src": "/media/heroes/boss-language.webp",
-    "route": "/bitacora/cinco-jefes-cinco-lenguajes/",
-    "width": 1942,
-    "height": 809,
-    "tool": "OpenAI image_gen vía Codex CLI 0.166.0",
-    "created": "2026-10-31",
-    "prompt": "Painterly illustration with impressionistic rendering in the spirit of episodic indie narrative adventure games: hand-painted textures like watercolor and gouache, visible brushstrokes, soft edges like concept art, simplified 3D forms, slightly simplified faces with natural proportions (not anime, not photorealistic). Lighting: low lateral golden-hour sunlight with bloom and soft sun rays cutting through haze and dust. Scene: a corporate citadel at sunset: a monumental stone gate with a brass circular emblem, hanging banners and a wet plaza catching the golden light. five hostile machines and figures lined up before the gate like a rogues' gallery: the Collector, a huge copper crab-like machine on tank treads with a glowing cyan core and hydraulic pincers; Saint Cauldron, a furnace machine on spider legs with a glowing orange belly and smoking chimneys; the Sunken Choir, a spider-like machine with a teal glass dome and brass gramophone horns emitting visible sound waves; the Prefect, a dark-haired man in ceremonial white and gold armor with a red cape, a tall shield and a red energy blade; Mother Zero, a pale woman with very long white hair in torn white robes, red filament threads floating around her. Palette: warm desaturated amber and orange light, pastel pink clouds, washed-out pale sky blue, violet-tinted shadows (#f2a94e, #e9844a, #e8a6a1, #9cc3d9, #4a3d63); low saturation overall. Melancholic indie film mood with cinematic widescreen framing. Composition: the left 40% of the frame stays calm and soft (hazy sky, wall, shadow or distant silhouettes) for a headline; the subject sits in the right half; horizon in the lower third; characters full body at human scale. No text, no letters, no logos, no watermark, no border, no film grain.",
-    "sha256": "1c15fdbcb10adb4fda49053b48afd8097d80e1914ad1e5d14818723580642a8b"
-  },
   "choir": {
     "src": "/media/heroes/choir.webp",
     "route": "/wiki/coro-sumergido/",
@@ -109,16 +89,6 @@
     "prompt": "Painterly illustration with impressionistic rendering in the spirit of episodic indie narrative adventure games: hand-painted textures like watercolor and gouache, visible brushstrokes, soft edges like concept art, simplified 3D forms, slightly simplified faces with natural proportions (not anime, not photorealistic). Lighting: low lateral golden-hour sunlight with bloom and soft sun rays cutting through haze and dust. Scene: a furnace district at sunset: steaming foundry halls, steel catwalks, cranes and molten metal glowing in the distance under a hazy sky. a guardian in heavy scuffed armor with a tall riot shield painted with a gear emblem bracing behind a riveted defensive wall next to a mounted turret, sparks in the air. Palette: warm desaturated amber and orange light, pastel pink clouds, washed-out pale sky blue, violet-tinted shadows (#f2a94e, #e9844a, #e8a6a1, #9cc3d9, #4a3d63); low saturation overall. Melancholic indie film mood with cinematic widescreen framing. Composition: the left 40% of the frame stays calm and soft (hazy sky, wall, shadow or distant silhouettes) for a headline; the subject sits in the right half; horizon in the lower third; characters full body at human scale. No text, no letters, no logos, no watermark, no border, no film grain.",
     "sha256": "29e56a54ec42cade485a61fcfca88973ce589389671e7f11e0248685b922f376"
   },
-  "first-commit": {
-    "src": "/media/heroes/first-commit.webp",
-    "route": "/bitacora/el-primer-paso/",
-    "width": 1942,
-    "height": 809,
-    "tool": "OpenAI image_gen vía Codex CLI 0.166.0",
-    "created": "2026-10-31",
-    "prompt": "Painterly illustration with impressionistic rendering in the spirit of episodic indie narrative adventure games: hand-painted textures like watercolor and gouache, visible brushstrokes, soft edges like concept art, simplified 3D forms, slightly simplified faces with natural proportions (not anime, not photorealistic). Lighting: low lateral golden-hour sunlight with bloom and soft sun rays cutting through haze and dust. Scene: an open horizon at sunset: a distant spired city skyline in silhouette and an empty rail line fading toward the sun. seen from behind and small in the frame, a young man with messy black hair in a long dark brown leather coat with brass buttons and a grey scarf, a faint cyan glow line along his cheek, standing beside a single street lamp at the very beginning of the journey. Palette: warm desaturated amber and orange light, pastel pink clouds, washed-out pale sky blue, violet-tinted shadows (#f2a94e, #e9844a, #e8a6a1, #9cc3d9, #4a3d63); low saturation overall. Melancholic indie film mood with cinematic widescreen framing. Composition: the left 40% of the frame stays calm and soft (hazy sky, wall, shadow or distant silhouettes) for a headline; the subject sits in the right half; horizon in the lower third; characters full body at human scale. No text, no letters, no logos, no watermark, no border, no film grain.",
-    "sha256": "b632ae78015807d3e0cf49c19ed425999d670febe5802bb6f213254af6065767"
-  },
   "first-steps": {
     "src": "/media/heroes/first-steps.webp",
     "route": "/wiki/primeros-pasos/",
@@ -128,16 +98,6 @@
     "created": "2026-10-31",
     "prompt": "Painterly illustration with impressionistic rendering in the spirit of episodic indie narrative adventure games: hand-painted textures like watercolor and gouache, visible brushstrokes, soft edges like concept art, simplified 3D forms, slightly simplified faces with natural proportions (not anime, not photorealistic). Lighting: low lateral golden-hour sunlight with bloom and soft sun rays cutting through haze and dust. Scene: a rusted industrial periphery of a ruined city at sunset: an elevated rail viaduct, tall brick smokestacks, small workshops with warm windows and a still canal reflecting the sky. a young man with messy black hair in a long dark brown leather coat with brass buttons and a grey scarf, a faint cyan glow line along his cheek, arriving at an empty shelter among salvaged scrap and crates, setting down his bag. Palette: warm desaturated amber and orange light, pastel pink clouds, washed-out pale sky blue, violet-tinted shadows (#f2a94e, #e9844a, #e8a6a1, #9cc3d9, #4a3d63); low saturation overall. Melancholic indie film mood with cinematic widescreen framing. Composition: the left 40% of the frame stays calm and soft (hazy sky, wall, shadow or distant silhouettes) for a headline; the subject sits in the right half; horizon in the lower third; characters full body at human scale. No text, no letters, no logos, no watermark, no border, no film grain.",
     "sha256": "1cd35fa35e59015945af6ebd042880ef4d48fa1c6e406456e42010a840c9e823"
-  },
-  "five-chapters": {
-    "src": "/media/heroes/five-chapters.webp",
-    "route": "/bitacora/cinco-capitulos-una-ruta/",
-    "width": 1774,
-    "height": 887,
-    "tool": "OpenAI image_gen vía Codex CLI 0.166.0",
-    "created": "2026-10-31",
-    "prompt": "Painterly illustration with impressionistic rendering in the spirit of episodic indie narrative adventure games: hand-painted textures like watercolor and gouache, visible brushstrokes, soft edges like concept art, simplified 3D forms, slightly simplified faces with natural proportions (not anime, not photorealistic). Lighting: low lateral golden-hour sunlight with bloom and soft sun rays cutting through haze and dust. Scene: the edge of a machine network complex at sunset: an enormous circular aperture, cable-wrapped server towers with small cyan lights and a metal deck. a train crossing a long bridge toward the final station deep in the network, a route of five lit stations behind it. Palette: warm desaturated amber and orange light, pastel pink clouds, washed-out pale sky blue, violet-tinted shadows (#f2a94e, #e9844a, #e8a6a1, #9cc3d9, #4a3d63); low saturation overall. Melancholic indie film mood with cinematic widescreen framing. Composition: the left 40% of the frame stays calm and soft (hazy sky, wall, shadow or distant silhouettes) for a headline; the subject sits in the right half; horizon in the lower third; characters full body at human scale. No text, no letters, no logos, no watermark, no border, no film grain.",
-    "sha256": "50b3ee5322761be623ec9ceaf9def4b2d32548cdc4d475fbaf7fa9e053b1b9a8"
   },
   "furnace": {
     "src": "/media/heroes/furnace.webp",
@@ -158,26 +118,6 @@
     "created": "2026-10-31",
     "prompt": "Painterly illustration with impressionistic rendering in the spirit of episodic indie narrative adventure games: hand-painted textures like watercolor and gouache, visible brushstrokes, soft edges like concept art, simplified 3D forms, slightly simplified faces with natural proportions (not anime, not photorealistic). Lighting: low lateral golden-hour sunlight with bloom and soft sun rays cutting through haze and dust. Scene: a rusted industrial periphery of a ruined city at sunset: an elevated rail viaduct, tall brick smokestacks, small workshops with warm windows and a still canal reflecting the sky. seen from behind, a young man with messy black hair in a long dark brown leather coat with brass buttons and a grey scarf, a faint cyan glow line along his cheek, standing on the quay looking at the city beside a tall old street lamp; further right a guardian in heavy scuffed armor with a tall riot shield painted with a gear emblem; behind them a small worker in a yellow hooded coat and gas mask carrying a wrench. Quiet, hopeful mood despite the decay. Palette: warm desaturated amber and orange light, pastel pink clouds, washed-out pale sky blue, violet-tinted shadows (#f2a94e, #e9844a, #e8a6a1, #9cc3d9, #4a3d63); low saturation overall. Melancholic indie film mood with cinematic widescreen framing. Composition: the left 40% of the frame stays calm and soft (hazy sky, wall, shadow or distant silhouettes) for a headline; the subject sits in the right half; horizon in the lower third; characters full body at human scale. No text, no letters, no logos, no watermark, no border, no film grain.",
     "sha256": "cfd09d210443cee310f31b73640358b5a2d0e8ef8948bce76ceabe9e0d52a178"
-  },
-  "journal": {
-    "src": "/media/heroes/journal.webp",
-    "route": "/bitacora/",
-    "width": 1942,
-    "height": 809,
-    "tool": "OpenAI image_gen vía Codex CLI 0.166.0",
-    "created": "2026-10-31",
-    "prompt": "Painterly illustration with impressionistic rendering in the spirit of episodic indie narrative adventure games: hand-painted textures like watercolor and gouache, visible brushstrokes, soft edges like concept art, simplified 3D forms, slightly simplified faces with natural proportions (not anime, not photorealistic). Lighting: low lateral golden-hour sunlight with bloom and soft sun rays cutting through haze and dust. Scene: a furnace district at sunset: steaming foundry halls, steel catwalks, cranes and molten metal glowing in the distance under a hazy sky. a cluttered repair workshop corner under a street lamp, a small worker in a yellow hooded coat and gas mask carrying a wrench kneeling to fix a machine among crates and cable spools. Warm, patient mood. Palette: warm desaturated amber and orange light, pastel pink clouds, washed-out pale sky blue, violet-tinted shadows (#f2a94e, #e9844a, #e8a6a1, #9cc3d9, #4a3d63); low saturation overall. Melancholic indie film mood with cinematic widescreen framing. Composition: the left 40% of the frame stays calm and soft (hazy sky, wall, shadow or distant silhouettes) for a headline; the subject sits in the right half; horizon in the lower third; characters full body at human scale. No text, no letters, no logos, no watermark, no border, no film grain.",
-    "sha256": "b5a52288614ac6e41132aa34dee69a1b538b93c3a9bc0e302406fb1b872d64a9"
-  },
-  "living-city": {
-    "src": "/media/heroes/living-city.webp",
-    "route": "/bitacora/una-ciudad-que-respira/",
-    "width": 1942,
-    "height": 809,
-    "tool": "OpenAI image_gen vía Codex CLI 0.166.0",
-    "created": "2026-10-31",
-    "prompt": "Painterly illustration with impressionistic rendering in the spirit of episodic indie narrative adventure games: hand-painted textures like watercolor and gouache, visible brushstrokes, soft edges like concept art, simplified 3D forms, slightly simplified faces with natural proportions (not anime, not photorealistic). Lighting: low lateral golden-hour sunlight with bloom and soft sun rays cutting through haze and dust. Scene: a furnace district at sunset: steaming foundry halls, steel catwalks, cranes and molten metal glowing in the distance under a hazy sky. a living street: an abandoned car, rusted barrels and a traveler in a brown hood, scarf and heavy backpack walking past, steam rising from vents. Palette: warm desaturated amber and orange light, pastel pink clouds, washed-out pale sky blue, violet-tinted shadows (#f2a94e, #e9844a, #e8a6a1, #9cc3d9, #4a3d63); low saturation overall. Melancholic indie film mood with cinematic widescreen framing. Composition: the left 40% of the frame stays calm and soft (hazy sky, wall, shadow or distant silhouettes) for a headline; the subject sits in the right half; horizon in the lower third; characters full body at human scale. No text, no letters, no logos, no watermark, no border, no film grain.",
-    "sha256": "b5481bba4664220585ea70a3da70e5250b6dfcebe64975da16459e57864b5643"
   },
   "lost": {
     "src": "/media/heroes/lost.webp",
@@ -259,26 +199,6 @@
     "prompt": "Painterly illustration with impressionistic rendering in the spirit of episodic indie narrative adventure games: hand-painted textures like watercolor and gouache, visible brushstrokes, soft edges like concept art, simplified 3D forms, slightly simplified faces with natural proportions (not anime, not photorealistic). Lighting: low lateral golden-hour sunlight with bloom and soft sun rays cutting through haze and dust. Scene: the edge of a machine network complex at sunset: an enormous circular aperture, cable-wrapped server towers with small cyan lights and a metal deck. a dormant colony power core on the deck, a small white hovering medical drone with a cyan eye and claw arms scanning it with a soft cyan beam. Palette: warm desaturated amber and orange light, pastel pink clouds, washed-out pale sky blue, violet-tinted shadows (#f2a94e, #e9844a, #e8a6a1, #9cc3d9, #4a3d63); low saturation overall. Melancholic indie film mood with cinematic widescreen framing. Composition: the left 40% of the frame stays calm and soft (hazy sky, wall, shadow or distant silhouettes) for a headline; the subject sits in the right half; horizon in the lower third; characters full body at human scale. No text, no letters, no logos, no watermark, no border, no film grain.",
     "sha256": "862400f7b428f13608901e8003c9113d3502633fdd5ad49ab322a009384c3523"
   },
-  "project-state": {
-    "src": "/media/heroes/project-state.webp",
-    "route": "/bitacora/lo-que-ya-existe-y-lo-que-falta/",
-    "width": 1942,
-    "height": 809,
-    "tool": "OpenAI image_gen vía Codex CLI 0.166.0",
-    "created": "2026-10-31",
-    "prompt": "Painterly illustration with impressionistic rendering in the spirit of episodic indie narrative adventure games: hand-painted textures like watercolor and gouache, visible brushstrokes, soft edges like concept art, simplified 3D forms, slightly simplified faces with natural proportions (not anime, not photorealistic). Lighting: low lateral golden-hour sunlight with bloom and soft sun rays cutting through haze and dust. Scene: a rusted industrial periphery of a ruined city at sunset: an elevated rail viaduct, tall brick smokestacks, small workshops with warm windows and a still canal reflecting the sky. a half-built colony: a finished power core, a section of wall still in scaffolding, scrap piles and a small worker in a yellow hooded coat and gas mask carrying a wrench taking a break. Palette: warm desaturated amber and orange light, pastel pink clouds, washed-out pale sky blue, violet-tinted shadows (#f2a94e, #e9844a, #e8a6a1, #9cc3d9, #4a3d63); low saturation overall. Melancholic indie film mood with cinematic widescreen framing. Composition: the left 40% of the frame stays calm and soft (hazy sky, wall, shadow or distant silhouettes) for a headline; the subject sits in the right half; horizon in the lower third; characters full body at human scale. No text, no letters, no logos, no watermark, no border, no film grain.",
-    "sha256": "2ffc04fdd9062adc7922d016d48e4724ea8bebf20b5dbcaa562f61caa0ee4a7e"
-  },
-  "rail-arena": {
-    "src": "/media/heroes/rail-arena.webp",
-    "route": "/bitacora/el-ferrocarril-llega-a-la-arena/",
-    "width": 1774,
-    "height": 887,
-    "tool": "OpenAI image_gen vía Codex CLI 0.166.0",
-    "created": "2026-10-31",
-    "prompt": "Painterly illustration with impressionistic rendering in the spirit of episodic indie narrative adventure games: hand-painted textures like watercolor and gouache, visible brushstrokes, soft edges like concept art, simplified 3D forms, slightly simplified faces with natural proportions (not anime, not photorealistic). Lighting: low lateral golden-hour sunlight with bloom and soft sun rays cutting through haze and dust. Scene: a corporate citadel at sunset: a monumental stone gate with a brass circular emblem, hanging banners and a wet plaza catching the golden light. a service train arriving at the citadel beside a tall signal repeater, headlights cutting through mist. Palette: warm desaturated amber and orange light, pastel pink clouds, washed-out pale sky blue, violet-tinted shadows (#f2a94e, #e9844a, #e8a6a1, #9cc3d9, #4a3d63); low saturation overall. Melancholic indie film mood with cinematic widescreen framing. Composition: the left 40% of the frame stays calm and soft (hazy sky, wall, shadow or distant silhouettes) for a headline; the subject sits in the right half; horizon in the lower third; characters full body at human scale. No text, no letters, no logos, no watermark, no border, no film grain.",
-    "sha256": "de1046f0be8aae415287bdf2309888fc73e23e12b5c6e108c1dd6727e796334c"
-  },
   "roadmap": {
     "src": "/media/heroes/roadmap.webp",
     "route": "/roadmap/",
@@ -288,16 +208,6 @@
     "created": "2026-10-31",
     "prompt": "Painterly illustration with impressionistic rendering in the spirit of episodic indie narrative adventure games: hand-painted textures like watercolor and gouache, visible brushstrokes, soft edges like concept art, simplified 3D forms, slightly simplified faces with natural proportions (not anime, not photorealistic). Lighting: low lateral golden-hour sunlight with bloom and soft sun rays cutting through haze and dust. Scene: a rusted industrial periphery of a ruined city at sunset: an elevated rail viaduct, tall brick smokestacks, small workshops with warm windows and a still canal reflecting the sky. a small service train waiting at a lonely platform, a traveler in a brown hood, scarf and heavy backpack standing at the edge watching the tracks curve away into the city. Palette: warm desaturated amber and orange light, pastel pink clouds, washed-out pale sky blue, violet-tinted shadows (#f2a94e, #e9844a, #e8a6a1, #9cc3d9, #4a3d63); low saturation overall. Melancholic indie film mood with cinematic widescreen framing. Composition: the left 40% of the frame stays calm and soft (hazy sky, wall, shadow or distant silhouettes) for a headline; the subject sits in the right half; horizon in the lower third; characters full body at human scale. No text, no letters, no logos, no watermark, no border, no film grain.",
     "sha256": "d6e90b16f9721d0a25f089049021c48a45a2977063f15e1d30cee7ce39174048"
-  },
-  "story-faces": {
-    "src": "/media/heroes/story-faces.webp",
-    "route": "/bitacora/la-historia-encuentra-sus-rostros/",
-    "width": 1672,
-    "height": 941,
-    "tool": "OpenAI image_gen vía Codex CLI 0.166.0",
-    "created": "2026-10-31",
-    "prompt": "Painterly illustration with impressionistic rendering in the spirit of episodic indie narrative adventure games: hand-painted textures like watercolor and gouache, visible brushstrokes, soft edges like concept art, simplified 3D forms, slightly simplified faces with natural proportions (not anime, not photorealistic). Lighting: low lateral golden-hour sunlight with bloom and soft sun rays cutting through haze and dust. Scene: a rusted industrial periphery of a ruined city at sunset: an elevated rail viaduct, tall brick smokestacks, small workshops with warm windows and a still canal reflecting the sky. a medic in a white coat with a red cross carrying a med kit tending to a traveler in a brown hood, scarf and heavy backpack on a bench while a small white hovering medical drone with a cyan eye and claw arms hovers nearby. Tender mood. Palette: warm desaturated amber and orange light, pastel pink clouds, washed-out pale sky blue, violet-tinted shadows (#f2a94e, #e9844a, #e8a6a1, #9cc3d9, #4a3d63); low saturation overall. Melancholic indie film mood with cinematic widescreen framing. Composition: the left 40% of the frame stays calm and soft (hazy sky, wall, shadow or distant silhouettes) for a headline; the subject sits in the right half; horizon in the lower third; characters full body at human scale. No text, no letters, no logos, no watermark, no border, no film grain.",
-    "sha256": "f3895c81d0bb6bd508c49195eea681fb263c0437fe94fb72ba105559a4542b59"
   },
   "units": {
     "src": "/media/heroes/units.webp",
@@ -328,26 +238,6 @@
     "created": "2026-10-31",
     "prompt": "Painterly illustration with impressionistic rendering in the spirit of episodic indie narrative adventure games: hand-painted textures like watercolor and gouache, visible brushstrokes, soft edges like concept art, simplified 3D forms, slightly simplified faces with natural proportions (not anime, not photorealistic). Lighting: low lateral golden-hour sunlight with bloom and soft sun rays cutting through haze and dust. Scene: a furnace district at sunset: steaming foundry halls, steel catwalks, cranes and molten metal glowing in the distance under a hazy sky. a young man with messy black hair in a long dark brown leather coat with brass buttons and a grey scarf, a faint cyan glow line along his cheek, mid-swing with a short blade leaving a cyan arc of light, a small white hovering medical drone with a cyan eye and claw arms following him. Palette: warm desaturated amber and orange light, pastel pink clouds, washed-out pale sky blue, violet-tinted shadows (#f2a94e, #e9844a, #e8a6a1, #9cc3d9, #4a3d63); low saturation overall. Melancholic indie film mood with cinematic widescreen framing. Composition: the left 40% of the frame stays calm and soft (hazy sky, wall, shadow or distant silhouettes) for a headline; the subject sits in the right half; horizon in the lower third; characters full body at human scale. No text, no letters, no logos, no watermark, no border, no film grain.",
     "sha256": "8f3bd8ebbdd33fb10318269f033add999cf82586649891d0683d76d22d832cdd"
-  },
-  "walking": {
-    "src": "/media/heroes/walking.webp",
-    "route": "/bitacora/caminar-es-mas-que-mover-un-sprite/",
-    "width": 1774,
-    "height": 887,
-    "tool": "OpenAI image_gen vía Codex CLI 0.166.0",
-    "created": "2026-10-31",
-    "prompt": "Painterly illustration with impressionistic rendering in the spirit of episodic indie narrative adventure games: hand-painted textures like watercolor and gouache, visible brushstrokes, soft edges like concept art, simplified 3D forms, slightly simplified faces with natural proportions (not anime, not photorealistic). Lighting: low lateral golden-hour sunlight with bloom and soft sun rays cutting through haze and dust. Scene: a flooded neighbourhood at sunset: wooden walkways over still water, leaning radio antennas, reflections of the low sun and pastel clouds. a young man with messy black hair in a long dark brown leather coat with brass buttons and a grey scarf, a faint cyan glow line along his cheek, walking in profile along the waterfront, coat and scarf swaying with his stride. Palette: warm desaturated amber and orange light, pastel pink clouds, washed-out pale sky blue, violet-tinted shadows (#f2a94e, #e9844a, #e8a6a1, #9cc3d9, #4a3d63); low saturation overall. Melancholic indie film mood with cinematic widescreen framing. Composition: the left 40% of the frame stays calm and soft (hazy sky, wall, shadow or distant silhouettes) for a headline; the subject sits in the right half; horizon in the lower third; characters full body at human scale. No text, no letters, no logos, no watermark, no border, no film grain.",
-    "sha256": "2007d486f53724533b474a249606f7957b8876d64798a6042f8defe292b63161"
-  },
-  "wanderer": {
-    "src": "/media/heroes/wanderer.webp",
-    "route": "/bitacora/el-errante-empieza-a-moverse/",
-    "width": 1916,
-    "height": 821,
-    "tool": "OpenAI image_gen vía Codex CLI 0.166.0",
-    "created": "2026-10-31",
-    "prompt": "Painterly illustration with impressionistic rendering in the spirit of episodic indie narrative adventure games: hand-painted textures like watercolor and gouache, visible brushstrokes, soft edges like concept art, simplified 3D forms, slightly simplified faces with natural proportions (not anime, not photorealistic). Lighting: low lateral golden-hour sunlight with bloom and soft sun rays cutting through haze and dust. Scene: a furnace district at sunset: steaming foundry halls, steel catwalks, cranes and molten metal glowing in the distance under a hazy sky. a skinny stalking robot and a small quadruped runner robot prowling along a catwalk, red sensor lights. Palette: warm desaturated amber and orange light, pastel pink clouds, washed-out pale sky blue, violet-tinted shadows (#f2a94e, #e9844a, #e8a6a1, #9cc3d9, #4a3d63); low saturation overall. Melancholic indie film mood with cinematic widescreen framing. Composition: the left 40% of the frame stays calm and soft (hazy sky, wall, shadow or distant silhouettes) for a headline; the subject sits in the right half; horizon in the lower third; characters full body at human scale. No text, no letters, no logos, no watermark, no border, no film grain.",
-    "sha256": "c570e448428e5d803597cb678853d042497fff25c44335c28b17eabd78c7f0c2"
   },
   "wiki": {
     "src": "/media/heroes/wiki.webp",

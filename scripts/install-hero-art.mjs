@@ -17,9 +17,11 @@ for (const name of (await fs.readdir(source)).filter((file) => file.endsWith(".p
   const original = await fs.readFile(path.join(source, name));
   const image = sharp(original);
   const { width, height } = await image.metadata();
+  // Se amplía a 2400 px con Lanczos y un enfoque suave para pantallas grandes y de alta densidad.
   await image
-    .resize({ width: Math.min(width, 1920), withoutEnlargement: true })
-    .webp({ quality: 84 })
+    .resize({ width: 2400, kernel: "lanczos3" })
+    .sharpen({ sigma: 0.8, m1: 0.6, m2: 1.2 })
+    .webp({ quality: 90, smartSubsample: true })
     .toFile(path.join(target, key + ".webp"));
   manifest[key] = {
     src: `/media/heroes/${key}.webp`,
