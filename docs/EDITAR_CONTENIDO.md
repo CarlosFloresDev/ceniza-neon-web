@@ -10,7 +10,7 @@ La referencia de commit es obligatoria en este archivo de avances: si no existe 
 
 Identifica las imágenes como captura, arte ambiental o ilustración conceptual. Una entrada debe explicar qué cambió, cómo se comprobó y qué sigue pendiente. No utilices una captura antigua para demostrar el estado de una función nueva. Si no hay una captura histórica verificada, usa `image: null`: aparecerá una ficha editorial expresamente identificada, no una imagen inventada del prototipo.
 
-Cada ruta nueva necesita además una ilustración exclusiva en `content/page-art.json`. Define `route`, `key`, `src`, `source`, `alt`, `prompt` y referencias. Guarda el original generado y monta su copia web mediante `node scripts/install-page-art.mjs CLAVE "PNG_GENERADO"`. No reutilices la cabecera de otro artículo para llenar el hueco: las comprobaciones exigen una imagen distinta por página. Las fuentes y prompts originales quedan fuera de la publicación.
+Cada ruta nueva necesita además su escena en `content/scenes.mjs`: elige un fondo de distrito y coloca sprites del juego con posición, altura y profundidad. La combinación de fondo y actores no puede repetir la de otra página; las pruebas lo comprueban. Si hace falta un sprite nuevo, añádelo a `scripts/import-scene-art.mjs` y ejecuta `node scripts/import-scene-art.mjs RUTA_DEL_JUEGO`.
 
 La cabecera y miniatura utilizan la ilustración conceptual. El campo `image` de la entrada sigue describiendo la captura o ficha documental que aparece dentro del artículo. Son dos funciones diferentes: la ilustración comunica el tema y la captura permite revisar lo implementado.
 
