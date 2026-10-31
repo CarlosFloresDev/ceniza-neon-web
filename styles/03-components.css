@@ -1,4 +1,5 @@
 /* Piezas reutilizables: rótulos, botones, enlaces, notas, diálogos y reproductor. */
+/* Rótulos escritos a mano, como notas en el margen de un diario. */
 .eyebrow,
 .line-number,
 .capture-label,
@@ -7,21 +8,27 @@
 .boss-label,
 .district-number,
 .wiki-category,
-.art-caption,
+.art-caption {
+  font-family: var(--hand);
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1.1;
+}
+/* Datos (fechas, duraciones, recuentos) en Inter pequeño con cifras tabulares. */
 .post-meta,
 .tracklist-heading {
-  font-family: var(--pixel);
-  font-size: var(--step--2);
-  line-height: 1.5;
-  letter-spacing: 0.04em;
+  font-family: var(--text);
+  font-size: var(--step--1);
+  font-variant-numeric: tabular-nums;
 }
-/* Los rótulos llegan en mayúsculas desde el contenido; se muestran en caja de frase. */
+/* Los rótulos llegan en mayúsculas desde el contenido; se escriben en caja de frase. */
 .eyebrow,
 .capture-label,
 .image-index,
 .boss-label,
 .wiki-category,
 .art-caption,
+.post-meta,
 .tracklist-heading {
   text-transform: lowercase;
 }
@@ -31,6 +38,7 @@
 .boss-label::first-letter,
 .wiki-category::first-letter,
 .art-caption::first-letter,
+.post-meta > ::first-letter,
 .tracklist-heading > span::first-letter {
   text-transform: uppercase;
 }
@@ -49,6 +57,7 @@
   box-shadow: 0 0 10px var(--signal);
 }
 
+/* CTA primario: sólido ámbar. Secundario: contorno dibujado a mano. */
 .button {
   position: relative;
   display: inline-flex;
@@ -56,13 +65,12 @@
   justify-content: center;
   gap: 12px;
   min-height: 52px;
-  padding: 0 24px;
+  padding: 0 26px;
   background: var(--sodium);
-  color: var(--night);
-  font: 700 1.05rem/1 var(--display);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  clip-path: var(--notched);
+  color: #1d1408;
+  font: 600 1rem/1 var(--text);
+  border-radius: 10px 6px 12px 7px;
+  box-shadow: 0 10px 30px -12px #f2a94e99;
   transition:
     transform 160ms var(--ease-out),
     background-color 160ms ease;
@@ -71,17 +79,17 @@
   transform: scale(0.97);
 }
 .button-ghost {
-  background: transparent;
+  background: var(--sketch) center / 100% 100% no-repeat;
   color: var(--bone);
-  box-shadow: inset 0 0 0 1.5px var(--steel-2);
+  box-shadow: none;
+  border-radius: 0;
 }
 @media (hover: hover) and (pointer: fine) {
   .button:hover {
-    background: #ffbc63;
+    background-color: #ffbc67;
   }
   .button-ghost:hover {
-    background: #ffffff0d;
-    box-shadow: inset 0 0 0 1.5px var(--sodium);
+    background-color: #ffffff12;
   }
   .button:hover .icon {
     transform: translateX(3px);
@@ -96,9 +104,7 @@
   align-items: center;
   gap: 10px;
   color: var(--sodium);
-  font: 700 1rem/1.2 var(--display);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
+  font: 600 1rem/1.2 var(--text);
 }
 .text-link .icon {
   transition: transform 200ms var(--ease-out);
@@ -132,20 +138,43 @@
   color: var(--sodium);
   margin-bottom: 14px;
 }
+/* Nota de diario: papel claro con cinta, tinta oscura (contraste AA). */
 .note-box {
+  position: relative;
   margin-top: clamp(40px, 6vw, 72px);
-  padding: clamp(24px, 4vw, 40px);
-  background: var(--slate);
-  border-left: 3px solid var(--sodium);
+  padding: clamp(28px, 4vw, 44px);
+  max-width: 820px;
   display: grid;
   gap: 14px;
-  max-width: 820px;
+  color: var(--ink);
+  background:
+    var(--grain) 0 0 / 180px,
+    linear-gradient(var(--paper), #e6d8c2);
+  background-blend-mode: multiply, normal;
+  border-radius: 3px;
+  box-shadow: 0 18px 40px -20px #000c;
+  transform: rotate(-0.6deg);
+}
+.note-box::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 40px;
+  width: 96px;
+  height: 26px;
+  background: #f4ebdf99;
+  transform: rotate(-4deg);
+  box-shadow: 0 1px 2px #0003;
 }
 .note-box h3 {
   font-size: var(--step-2);
 }
 .note-box p {
-  color: #cdd4dc;
+  color: #3d3445;
+}
+.note-box .eyebrow,
+.note-box .text-link {
+  color: #a35418;
 }
 .caption-note,
 .pending-link {
@@ -263,7 +292,7 @@ dialog::backdrop {
 .gallery-dialog p,
 .trailer-dialog p {
   padding: 12px 16px;
-  font: var(--step--2) / 1.5 var(--pixel);
+  font: var(--step--1) / 1.5 var(--text);
   color: var(--fog);
 }
 .dialog-close {
@@ -284,7 +313,7 @@ dialog::backdrop {
   align-items: center;
   gap: 14px;
   padding: 12px 14px;
-  background: #131b26f2;
+  background: #1d1a26f2;
   backdrop-filter: blur(8px);
   box-shadow: inset 0 0 0 1px var(--steel-2);
   clip-path: var(--notched);
@@ -299,19 +328,18 @@ dialog::backdrop {
 }
 .mini-player small {
   display: block;
-  font: var(--step--2) / 1.4 var(--pixel);
+  font: var(--step--1) / 1.4 var(--text);
   color: var(--sodium);
 }
 .mini-title {
   display: block;
-  font: 700 1.05rem/1.2 var(--display);
-  text-transform: uppercase;
+  font: 600 1rem/1.2 var(--text);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .mini-clock {
-  font: var(--step--2) var(--pixel);
+  font: var(--step--1) var(--text);
   color: var(--fog);
 }
 .mini-player button {
@@ -321,4 +349,38 @@ dialog::backdrop {
 }
 .mini-player button:active {
   transform: scale(0.94);
+}
+
+/* Polaroid ladeada con cinta: se usa para capturas reales del juego en las cabeceras. */
+.polaroid {
+  position: relative;
+  margin: 0;
+  width: var(--w, 240px);
+  padding: 10px 10px 0;
+  background: #f6efe4;
+  color: var(--ink);
+  box-shadow: 0 20px 40px -14px #000d;
+  transform: rotate(var(--tilt, -4deg));
+}
+.polaroid::before {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  width: 84px;
+  height: 26px;
+  margin-left: -42px;
+  background: #efe6d6b3;
+  transform: rotate(3deg);
+  box-shadow: 0 1px 2px #0003;
+}
+.polaroid img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+.polaroid figcaption {
+  padding: 8px 4px 12px;
+  font: 600 1.25rem/1.1 var(--hand);
+  color: #3a3040;
 }

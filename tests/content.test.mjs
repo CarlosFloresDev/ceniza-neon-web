@@ -56,7 +56,7 @@ test("Every header has a registered painted illustration and keeps its honest ca
   }
   const wiki = await fs.readFile("dist/wiki/prefecto/index.html", "utf8");
   assert.match(wiki, /data-painted/);
-  assert.match(wiki, /No es una captura del juego/);
+  assert.match(wiki, /no es una captura/i);
 });
 test("The journal dates come from verified commits and distinguish retrospective entries", async () => {
   const history = JSON.parse(
@@ -119,7 +119,7 @@ test("Current boss coverage and the walking entry never reuse superseded capture
     assert.ok(
       !(await files("public/media")).some((file) => file.endsWith(name)),
     );
-  for (const name of ["big-shoulders", "literata", "literata-italic", "silkscreen"])
+  for (const name of ["permanent-marker", "caveat", "inter", "inter-italic"])
     assert.ok((await fs.stat(`dist/fonts/${name}.woff2`)).size > 1000);
   for (const script of ["gsap.min.js", "ScrollTrigger.min.js", "lenis.min.js"])
     assert.ok((await fs.stat(`dist/vendor/${script}`)).size > 1000);

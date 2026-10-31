@@ -4,8 +4,8 @@ import { sceneFor, stillPath } from "./scene.mjs";
 import { esc, svg, sigil } from "./lib/html.mjs";
 import { site } from "./site.mjs";
 
-// Solo las fuentes del primer pintado; Silkscreen llega con font-display: swap.
-const FONT_PRELOADS = ["big-shoulders", "literata"]
+// Solo las fuentes del primer pintado; Caveat llega con font-display: swap.
+const FONT_PRELOADS = ["permanent-marker", "inter"]
   .map(
     (name) =>
       `<link rel="preload" href="/fonts/${name}.woff2" as="font" type="font/woff2" crossorigin>`,
@@ -49,7 +49,7 @@ export function renderPage(
   const still = stillPath(sceneFor(url), "jpg");
   body = illustratePage(url, body);
   const absolute = site.url ? site.url.replace(/\/$/, "") + url : null;
-  return `<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#0d131c"><title>${esc(title)}${title === site.title ? "" : " · CENIZA NEÓN"}</title><meta name="description" content="${esc(description)}">${absolute ? `<link rel="canonical" href="${esc(absolute)}">` : ""}<meta property="og:type" content="${type}"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:locale" content="es_ES"><meta property="og:site_name" content="CENIZA NEÓN">${absolute ? `<meta property="og:url" content="${esc(absolute)}"><meta property="og:image" content="${esc(site.url)}${still}">` : ""}<meta name="twitter:card" content="summary_large_image"><link rel="icon" type="image/svg+xml" href="/favicon.svg">${FONT_PRELOADS}<link rel="stylesheet" href="/styles.css"><link rel="alternate" type="application/rss+xml" title="Bitácora de CENIZA NEÓN" href="/bitacora/feed.xml">${SCRIPTS}</head><body>${header(url)}<main id="contenido">${body}</main>${footer()}</body></html>`;
+  return `<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#15131c"><title>${esc(title)}${title === site.title ? "" : " · CENIZA NEÓN"}</title><meta name="description" content="${esc(description)}">${absolute ? `<link rel="canonical" href="${esc(absolute)}">` : ""}<meta property="og:type" content="${type}"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:locale" content="es_ES"><meta property="og:site_name" content="CENIZA NEÓN">${absolute ? `<meta property="og:url" content="${esc(absolute)}"><meta property="og:image" content="${esc(site.url)}${still}">` : ""}<meta name="twitter:card" content="summary_large_image"><link rel="icon" type="image/svg+xml" href="/favicon.svg">${FONT_PRELOADS}<link rel="stylesheet" href="/styles.css"><link rel="alternate" type="application/rss+xml" title="Bitácora de CENIZA NEÓN" href="/bitacora/feed.xml">${SCRIPTS}</head><body>${header(url)}<main id="contenido">${body}</main>${footer()}</body></html>`;
 }
 export function intro(kicker, title, text) {
   return `<div class="page-intro container"><p class="eyebrow">${kicker}</p><h1>${title}</h1><p class="intro-copy">${text}</p></div>`;

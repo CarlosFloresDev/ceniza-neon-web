@@ -16,10 +16,21 @@ body {
   background: var(--night);
   color: var(--bone);
   font: 400 var(--step-0) / 1.65 var(--text);
-  font-optical-sizing: auto;
+  font-feature-settings: "ss01", "cv11";
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent;
   overflow-x: clip;
+}
+/* Grano de película fijo sobre todo el documento. */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 70;
+  pointer-events: none;
+  background-image: var(--grain);
+  opacity: 0.08;
+  mix-blend-mode: overlay;
 }
 body:has(dialog[open]) {
   overflow: hidden;
@@ -52,10 +63,9 @@ h1,
 h2,
 h3 {
   font-family: var(--display);
-  font-weight: 800;
-  line-height: 0.92;
-  letter-spacing: -0.005em;
-  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 1.02;
+  letter-spacing: 0.01em;
   text-wrap: balance;
   margin: 0;
 }
@@ -66,25 +76,25 @@ h2 {
   font-size: var(--step-4);
 }
 h3 {
+  font-family: var(--text);
   font-size: var(--step-2);
-  line-height: 1;
+  line-height: 1.15;
   font-weight: 700;
+  letter-spacing: -0.015em;
 }
-/* La énfasis de los titulares no cambia de familia ni de color: solo baja el peso. */
+/* La énfasis de los titulares no cambia de familia: solo baja un tono. */
 h1 em,
 h2 em {
   font-style: normal;
-  font-weight: 500;
-  color: inherit;
+  color: #d8cfc4;
 }
 p {
   margin: 0;
   text-wrap: pretty;
 }
 code {
-  font-family: var(--pixel);
-  font-size: 0.72em;
-  letter-spacing: 0.02em;
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.82em;
 }
 :focus-visible {
   outline: 2px solid var(--signal);
@@ -113,9 +123,7 @@ code {
   background: var(--sodium);
   color: var(--night);
   padding: 12px 20px;
-  font: 700 var(--step--1) var(--display);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
+  font: 600 var(--step--1) var(--text);
 }
 .skip-link:focus {
   top: 12px;

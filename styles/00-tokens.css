@@ -1,46 +1,51 @@
-/* Tokens: paleta tomada del pixel art del juego (noche pizarra, sodio de farola, señal cian, óxido). */
+/* Tokens: hora dorada sobre la ciudad del juego; titulares a rotulador, notas a mano y texto en Inter. */
 @font-face {
-  font-family: "Big Shoulders";
-  src: url("/fonts/big-shoulders.woff2") format("woff2");
+  font-family: "Permanent Marker";
+  src: url("/fonts/permanent-marker.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: Caveat;
+  src: url("/fonts/caveat.woff2") format("woff2");
+  font-weight: 400 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url("/fonts/inter.woff2") format("woff2");
   font-weight: 100 900;
   font-display: swap;
 }
 @font-face {
-  font-family: Literata;
-  src: url("/fonts/literata.woff2") format("woff2");
-  font-weight: 200 900;
-  font-display: swap;
-}
-@font-face {
-  font-family: Literata;
-  src: url("/fonts/literata-italic.woff2") format("woff2");
-  font-weight: 200 900;
+  font-family: Inter;
+  src: url("/fonts/inter-italic.woff2") format("woff2");
+  font-weight: 100 900;
   font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: Silkscreen;
-  src: url("/fonts/silkscreen.woff2") format("woff2");
-  font-weight: 400;
   font-display: swap;
 }
 
 :root {
-  --night: #0c121b;
-  --slate: #131b26;
-  --slate-2: #1a2431;
-  --steel: #2b3949;
-  --steel-2: #3d4f64;
-  --fog: #98a6b7;
-  --bone: #ece4d3;
-  --sodium: #f2a948;
-  --sodium-deep: #c97f2a;
-  --signal: #62d6cf;
-  --rust: #b85c3c;
+  --night: #15131c;
+  --slate: #1d1a26;
+  --slate-2: #262232;
+  --steel: #3a3447;
+  --steel-2: #544a66;
+  --fog: #b4abbb;
+  --bone: #f4ebdf;
+  --sodium: #f2a94e;
+  --sodium-deep: #d98a3a;
+  --orange: #e9844a;
+  --rose: #e8a6a1;
+  --signal: #9cc3d9;
+  --violet: #4a3d63;
+  --rust: #d9785a;
+  --paper: #efe4d2;
+  --ink: #2b2433;
 
-  --display: "Big Shoulders", "Arial Narrow", sans-serif;
-  --text: Literata, Georgia, serif;
-  --pixel: Silkscreen, "Courier New", monospace;
+  --display: "Permanent Marker", "Comic Sans MS", cursive;
+  --hand: Caveat, "Segoe Print", cursive;
+  --text: Inter, "Segoe UI", system-ui, sans-serif;
 
   /* Escala tipográfica 1.25 sobre 18 px. */
   --step--2: 0.72rem;
@@ -50,25 +55,21 @@
   --step-2: 1.66rem;
   --step-3: clamp(2rem, 1.5rem + 2vw, 2.6rem);
   --step-4: clamp(2.6rem, 1.6rem + 4vw, 4.4rem);
-  --step-5: clamp(3.4rem, 2rem + 6vw, 6.6rem);
-  --step-6: clamp(4.6rem, 1.5rem + 13vw, 13rem);
+  --step-5: clamp(2.9rem, 1.8rem + 4.6vw, 5.4rem);
+  --step-6: clamp(3.8rem, 1.6rem + 9vw, 9.5rem);
 
   --gutter: clamp(16px, 4vw, 56px);
   --measure: 66ch;
   --header: 72px;
 
-  /* Esquinas recortadas en escalón, como un borde de sprite. */
-  --notch: 5px;
-  --notched: polygon(
-    var(--notch) 0,
-    calc(100% - var(--notch)) 0,
-    100% var(--notch),
-    100% calc(100% - var(--notch)),
-    calc(100% - var(--notch)) 100%,
-    var(--notch) 100%,
-    0 calc(100% - var(--notch)),
-    0 var(--notch)
-  );
+  /* Esquinas suaves de papel; se mantiene el nombre para no tocar cada componente. */
+  --notched: inset(0 round 6px);
+  /* Grano de película para toda la página. */
+  --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  /* Borde dibujado a mano para el botón secundario. */
+  --sketch: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 60' preserveAspectRatio='none'%3E%3Cpath d='M4 6 C60 2 140 4 196 5 C198 22 197 40 195 55 C140 58 60 57 5 55 C2 40 3 22 4 6 M7 3 C80 7 150 1 193 8' fill='none' stroke='%23f4ebdf' stroke-width='2' stroke-linecap='round' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E");
+  /* Subrayado a rotulador bajo los titulares de sección. */
+  --scribble: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 20' preserveAspectRatio='none'%3E%3Cpath d='M3 12 C70 4 150 15 297 7 M20 16 C110 10 190 14 280 11' fill='none' stroke='%23f2a94e' stroke-width='3' stroke-linecap='round' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E");
 
   --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
   --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);

@@ -36,8 +36,7 @@
     0 0 60px #c97f2a66;
 }
 .hero-tagline {
-  font: 700 var(--step-2) / 1.1 var(--display);
-  text-transform: uppercase;
+  font: 600 clamp(1.9rem, 1.4rem + 1.4vw, 2.5rem) / 1.05 var(--hand);
   letter-spacing: 0.01em;
   max-width: 34ch;
   margin-bottom: 16px;
@@ -60,7 +59,7 @@
   flex-wrap: wrap;
   padding-block: 18px 22px;
   border-top: 1px solid #ffffff1a;
-  font: var(--step--2) / 1.4 var(--pixel);
+  font: var(--step--1) / 1.4 var(--text);
   color: var(--fog);
 }
 .hero-bottom a,
@@ -96,7 +95,7 @@
   padding: 16px var(--gutter);
   background: var(--slate);
   border-block: 1px solid var(--steel);
-  font: var(--step--2) / 1.5 var(--pixel);
+  font: var(--step--1) / 1.5 var(--text);
   color: #c4ccd5;
 }
 .status-strip span {
@@ -125,8 +124,7 @@
   max-width: 54ch;
 }
 .editorial-copy p:first-child {
-  font: 700 var(--step-2) / 1.1 var(--display);
-  text-transform: uppercase;
+  font: 600 clamp(1.9rem, 1.4rem + 1.4vw, 2.5rem) / 1.05 var(--hand);
   color: var(--signal);
 }
 
@@ -211,7 +209,7 @@
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: linear-gradient(0deg, #0c121bf2 0%, #0c121b80 40%, transparent 70%);
+  background: linear-gradient(0deg, #15131cf2 0%, #15131c80 40%, transparent 70%);
 }
 .district-number {
   position: absolute;
@@ -266,7 +264,7 @@
   left: 14px;
   bottom: 12px;
   padding: 4px 8px;
-  background: #0c121bd9;
+  background: #15131cd9;
   color: var(--sodium);
 }
 @media (hover: hover) and (pointer: fine) {
@@ -315,7 +313,7 @@
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: linear-gradient(90deg, #0c121bf5 0%, #0c121bb3 45%, transparent 85%);
+  background: linear-gradient(90deg, #15131cf5 0%, #15131cb3 45%, transparent 85%);
 }
 .music-feature-content {
   padding-block: 96px;

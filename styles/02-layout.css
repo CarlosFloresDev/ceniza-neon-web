@@ -31,14 +31,14 @@ main {
   justify-content: space-between;
   gap: 24px;
   padding-inline: var(--gutter);
-  background: linear-gradient(#0c121bcc, #0c121b00);
+  background: linear-gradient(#15131ccc, #15131c00);
   transition:
     background-color 240ms ease,
     backdrop-filter 240ms ease;
   view-transition-name: site-header;
 }
 .site-header.is-scrolled {
-  background: #0c121be6;
+  background: #15131ce6;
   backdrop-filter: blur(10px);
   box-shadow: inset 0 -1px 0 var(--steel);
 }
@@ -46,9 +46,7 @@ main {
   display: flex;
   align-items: center;
   gap: 12px;
-  font: 800 1.3rem/1 var(--display);
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
+  font: 400 1.3rem/1 var(--display);
 }
 .brand b {
   font-weight: 800;
@@ -63,9 +61,7 @@ main {
   display: flex;
   align-items: center;
   gap: clamp(14px, 2vw, 30px);
-  font: 600 0.98rem/1 var(--display);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
+  font: 500 0.95rem/1 var(--text);
 }
 #main-nav a {
   position: relative;
@@ -134,7 +130,7 @@ main {
     align-items: stretch;
     gap: 0;
     padding: 8px var(--gutter) 24px;
-    background: #0c121bf5;
+    background: #15131cf5;
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--steel);
     font-size: 1.5rem;
@@ -183,8 +179,7 @@ main {
   padding-block: 56px 40px;
 }
 .footer-main p {
-  font: 700 var(--step-2) / 1 var(--display);
-  text-transform: uppercase;
+  font: 400 var(--step-2) / 1.1 var(--display);
 }
 .footer-main p span {
   color: var(--fog);
@@ -211,7 +206,7 @@ main {
   gap: 8px 24px;
   padding-block: 20px 28px;
   border-top: 1px solid var(--steel);
-  font: var(--step--2) / 1.6 var(--pixel);
+  font: var(--step--1) / 1.6 var(--text);
   color: var(--fog);
 }
 @media (max-width: 760px) {

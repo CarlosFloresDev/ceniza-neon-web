@@ -130,14 +130,24 @@
       if (finePointer.matches) {
         const tiltX = gsap.quickTo(stage, "--rx", { duration: 1.1, ease: "power3.out" });
         const tiltY = gsap.quickTo(stage, "--ry", { duration: 1.1, ease: "power3.out" });
+        // Las polaroids están más cerca de la cámara: se desplazan más que la ilustración.
+        const pinned = hero.querySelector(".hero-polaroids");
+        const driftX = pinned && gsap.quickTo(pinned, "x", { duration: 0.9, ease: "power3.out" });
+        const driftY = pinned && gsap.quickTo(pinned, "y", { duration: 0.9, ease: "power3.out" });
         hero.addEventListener("pointermove", (event) => {
           const box = hero.getBoundingClientRect();
-          tiltY(((event.clientX - box.left) / box.width - 0.5) * 6);
-          tiltX(((event.clientY - box.top) / box.height - 0.5) * -3);
+          const px = (event.clientX - box.left) / box.width - 0.5;
+          const py = (event.clientY - box.top) / box.height - 0.5;
+          tiltY(px * 6);
+          tiltX(py * -3);
+          driftX?.(px * -22);
+          driftY?.(py * -14);
         });
         hero.addEventListener("pointerleave", () => {
           tiltX(0);
           tiltY(0);
+          driftX?.(0);
+          driftY?.(0);
         });
       }
       gsap.to(stage, {
@@ -185,6 +195,23 @@
         );
       intro.from(rest, { opacity: 0, y: 16, duration: 0.7, stagger: 0.08 }, firstVisit ? 1.1 : 0.4);
     }
+
+    // Cabeceras interiores: el texto aparece con un fundido corto y las polaroids caen sobre la escena.
+    if (hero && !title) {
+      const copy = hero.querySelectorAll(
+        ".page-intro > *, .article-header > *, .wiki-art-heading > *, .universe-hero > .container > *",
+      );
+      gsap.from(copy, { opacity: 0, y: 14, duration: 0.7, stagger: 0.06, ease: "power3.out", delay: 0.1 });
+    }
+    gsap.from(".hero-polaroids .polaroid", {
+      opacity: 0,
+      y: -30,
+      rotate: (index) => (index % 2 ? 12 : -12),
+      duration: 0.9,
+      stagger: 0.12,
+      ease: "back.out(1.4)",
+      delay: 0.5,
+    });
 
     // Apariciones al entrar en pantalla, una vez y en grupo.
     const reveal = gsap.utils.toArray("[data-reveal]");

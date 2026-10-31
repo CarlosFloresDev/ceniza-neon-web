@@ -6,7 +6,7 @@
   position: absolute;
   inset: 0;
   overflow: hidden;
-  background: linear-gradient(#0a1019 0%, #172434 55%, #24364a 100%);
+  background: linear-gradient(#2b2440 0%, #6b5168 55%, #d79a77 100%);
   perspective: calc(var(--persp) * 1px);
   perspective-origin: 50% 100%;
   contain: paint;
@@ -62,7 +62,7 @@
 }
 .scene-haze {
   background:
-    linear-gradient(to top, #0c121bcc 0%, #0c121b55 9%, transparent 26%),
+    linear-gradient(to top, #15131ccc 0%, #15131c55 9%, transparent 26%),
     radial-gradient(120% 40% at 50% 100%, #62d6cf14, transparent 70%);
 }
 .scene-actor {
@@ -121,9 +121,21 @@
 .art-caption {
   position: absolute;
   right: var(--gutter);
-  bottom: 14px;
+  bottom: 16px;
   z-index: 2;
-  color: #c3ccd6aa;
+  max-width: min(320px, 60%);
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  color: #f4ebdfcc;
+  transform: rotate(-2deg);
+}
+.art-caption::before {
+  content: "";
+  flex: none;
+  width: 34px;
+  height: 22px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 22'%3E%3Cpath d='M32 3 C20 4 9 9 4 18 M4 18 L3 10 M4 18 L11 16' fill='none' stroke='%23f4ebdf' stroke-opacity='.8' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat;
 }
 
 /* Cabecera de sección: escena a sangre con el título sobre su lado izquierdo. */
@@ -148,17 +160,21 @@
   z-index: -1;
   pointer-events: none;
   background:
-    linear-gradient(90deg, #0c121bf0 0%, #0c121bc4 32%, #0c121b33 62%, transparent 80%),
-    linear-gradient(0deg, #0c121b 0%, #0c121b99 18%, transparent 46%);
+    radial-gradient(130% 110% at 65% 40%, transparent 55%, #15131ccc 100%),
+    linear-gradient(90deg, #15131ceb 0%, #15131cb3 30%, #15131c26 60%, transparent 80%),
+    linear-gradient(0deg, #15131c 0%, #15131c8c 16%, transparent 44%);
 }
 .section-hero .page-intro,
 .section-hero .article-header,
 .wiki-art-heading {
   padding-block: 64px clamp(56px, 8vw, 96px);
 }
-.section-hero h1 {
-  max-width: 14ch;
-  margin-bottom: 22px;
+.section-hero h1,
+.universe-hero h1 {
+  max-width: 16ch;
+  margin-bottom: 26px;
+  padding-bottom: 14px;
+  background: var(--scribble) left bottom / min(320px, 70%) 14px no-repeat;
 }
 .section-hero .article-header h1 {
   max-width: 18ch;
@@ -173,12 +189,35 @@
   }
   .section-hero-shade,
   .hero-shade {
-    background: linear-gradient(0deg, #0c121b 0%, #0c121bf0 34%, #0c121b66 62%, #0c121b33 100%);
+    background: linear-gradient(0deg, #15131c 0%, #15131cf0 34%, #15131c66 62%, #15131c33 100%);
   }
   .art-caption {
     display: none;
   }
   .scene-painting {
     object-position: 72% 50%;
+  }
+}
+
+/* Polaroids sobre la cabecera: arriba a la derecha, por delante de la ilustración. */
+.hero-polaroids {
+  position: absolute;
+  top: calc(var(--header) + 4vh);
+  right: var(--gutter);
+  z-index: 1;
+  display: flex;
+  gap: 18px;
+  pointer-events: none;
+}
+.hero-polaroids .polaroid {
+  --w: clamp(150px, 13vw, 210px);
+  pointer-events: auto;
+}
+.hero-polaroids .polaroid + .polaroid {
+  margin-top: 42px;
+}
+@media (max-width: 980px) {
+  .hero-polaroids {
+    display: none;
   }
 }

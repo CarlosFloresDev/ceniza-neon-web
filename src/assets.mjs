@@ -7,17 +7,14 @@ import { renderStill } from "./scene-still.mjs";
 const modules = path.resolve("node_modules");
 // Destino en dist/ -> origen en node_modules/. Solo el subconjunto latino: basta para el español.
 const vendor = {
-  "fonts/big-shoulders.woff2":
-    "@fontsource-variable/big-shoulders-display/files/big-shoulders-display-latin-wght-normal.woff2",
-  "fonts/BigShoulders-OFL.txt": "@fontsource-variable/big-shoulders-display/LICENSE",
-  "fonts/literata.woff2":
-    "@fontsource-variable/literata/files/literata-latin-wght-normal.woff2",
-  "fonts/literata-italic.woff2":
-    "@fontsource-variable/literata/files/literata-latin-wght-italic.woff2",
-  "fonts/Literata-OFL.txt": "@fontsource-variable/literata/LICENSE",
-  "fonts/silkscreen.woff2":
-    "@fontsource/silkscreen/files/silkscreen-latin-400-normal.woff2",
-  "fonts/Silkscreen-OFL.txt": "@fontsource/silkscreen/LICENSE",
+  "fonts/permanent-marker.woff2":
+    "@fontsource/permanent-marker/files/permanent-marker-latin-400-normal.woff2",
+  "fonts/PermanentMarker-LICENSE.txt": "@fontsource/permanent-marker/LICENSE",
+  "fonts/caveat.woff2": "@fontsource-variable/caveat/files/caveat-latin-wght-normal.woff2",
+  "fonts/Caveat-OFL.txt": "@fontsource-variable/caveat/LICENSE",
+  "fonts/inter.woff2": "@fontsource-variable/inter/files/inter-latin-wght-normal.woff2",
+  "fonts/inter-italic.woff2": "@fontsource-variable/inter/files/inter-latin-wght-italic.woff2",
+  "fonts/Inter-OFL.txt": "@fontsource-variable/inter/LICENSE",
   "vendor/gsap.min.js": "gsap/dist/gsap.min.js",
   "vendor/ScrollTrigger.min.js": "gsap/dist/ScrollTrigger.min.js",
   "vendor/lenis.min.js": "lenis/dist/lenis.min.js",

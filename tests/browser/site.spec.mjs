@@ -73,10 +73,11 @@ test("Custom type, 3D camera and ambient ash load, and reduced motion stops them
   await page.evaluate(() => document.fonts.ready);
   const family = (selector) =>
     page.locator(selector).first().evaluate((el) => getComputedStyle(el).fontFamily);
-  expect(await family(".hero-tagline")).toContain("Big Shoulders");
-  expect(await family(".eyebrow")).toContain("Silkscreen");
-  expect(await family(".hero-description")).toContain("Literata");
-  expect(await page.evaluate(() => document.fonts.check("800 40px 'Big Shoulders'"))).toBeTruthy();
+  expect(await family(".hero-title")).toContain("Permanent Marker");
+  expect(await family(".hero-tagline")).toContain("Caveat");
+  expect(await family(".eyebrow")).toContain("Caveat");
+  expect(await family(".hero-description")).toContain("Inter");
+  expect(await page.evaluate(() => document.fonts.check("40px 'Permanent Marker'"))).toBeTruthy();
   await expect(page.locator(".ambient-canvas")).toHaveCount(1);
   await page.mouse.move(1300, 200);
   await expect
