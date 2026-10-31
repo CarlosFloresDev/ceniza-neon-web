@@ -42,7 +42,11 @@ La autenticación pertenece a la sesión local de Wrangler. No colocar tokens en
 | `content/page-art.json` | Ilustraciones, rutas y prompts propios de las 34 cabeceras nuevas |
 | `content/wiki.mjs` | Los 15 artículos de la wiki |
 | `content/soundtrack.json` | 21 pistas, títulos extraídos de metadatos y duración |
-| `scripts/build.mjs` | Plantillas, SEO, RSS, sitemap y cabeceras de seguridad |
+| `scripts/build.mjs` | Orquesta la compilación: limpia `dist/`, copia `public/` y escribe cada ruta |
+| `src/layout.mjs` | Documento HTML, cabecera, pie y metadatos SEO compartidos |
+| `src/pages/` | Una plantilla por sección; cada una devuelve sus rutas |
+| `src/lib/html.mjs` | Escape, iconos, botones e imágenes reutilizables |
+| `src/feeds.mjs` | RSS, sitemap, robots y cabeceras de seguridad |
 | `public/styles.css` | Diseño responsive, tipografía y animaciones |
 | `public/app.js` | Navegación móvil, búsqueda, galería, teaser y reproductor |
 | `public/effects.js` | Partículas, profundidad de portada y progreso de lectura; respeta movimiento reducido |

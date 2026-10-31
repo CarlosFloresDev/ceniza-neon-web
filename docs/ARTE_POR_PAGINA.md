@@ -14,7 +14,7 @@ Las imágenes no son capturas ni anuncios de funciones terminadas. El rótulo de
 
 ## Archivos
 
-`content/page-art.json` relaciona cada ruta con su imagen, texto alternativo, prompt completo y referencias. `scripts/page-art.mjs` compone la cabecera y conserva una sola cabecera H1 por página. También asigna la imagen propia a los metadatos sociales.
+`content/page-art.json` relaciona cada ruta con su imagen, texto alternativo, prompt completo y referencias. `src/page-art.mjs` compone la cabecera y conserva una sola cabecera H1 por página. También asigna la imagen propia a los metadatos sociales.
 
 `art/sources/pages/` contiene los originales PNG intactos. `public/media/pages/` contiene las copias WebP de hasta 1680 píxeles de ancho. `art/page-records/` registra herramienta, prompt, referencias, dimensiones, fecha y SHA-256. Las referencias aprobadas necesarias para documentar la generación están copiadas en `art/references/`; el sitio se puede construir sin abrir el proyecto Godot.
 
