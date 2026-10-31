@@ -1,6 +1,6 @@
 // Fotogramas planos de cada escena para redes sociales, tarjetas y póster del teaser.
 import sharp from "sharp";
-import { groundOf } from "./scene.mjs";
+import { groundOf, paintingFor } from "./scene.mjs";
 
 const WIDTH = 1200;
 const HEIGHT = 630;
@@ -29,6 +29,16 @@ async function place(data, info, left, top) {
 }
 
 export async function renderStill(scene, file) {
+  const painting = paintingFor(scene);
+  if (painting) {
+    const flat = await sharp("public" + painting.src)
+      .resize({ width: WIDTH, height: HEIGHT, fit: "cover", position: "attention" })
+      .png()
+      .toBuffer();
+    await sharp(flat).webp({ quality: 80 }).toFile(file + ".webp");
+    await sharp(flat).jpeg({ quality: 80, mozjpeg: true }).toFile(file + ".jpg");
+    return;
+  }
   const sky = Buffer.from(
     `<svg xmlns="http://www.w3.org/2000/svg" width="${WIDTH}" height="${HEIGHT}"><defs><linearGradient id="s" x2="0" y2="1"><stop offset="0" stop-color="${SKY.top}"/><stop offset="1" stop-color="${SKY.bottom}"/></linearGradient></defs><rect width="100%" height="100%" fill="url(#s)"/></svg>`,
   );

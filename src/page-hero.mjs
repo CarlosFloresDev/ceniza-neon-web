@@ -1,8 +1,13 @@
 // Inserta la escena de cabecera en cada página manteniendo un único H1.
-import { renderScene } from "./scene.mjs";
+import { paintingFor, renderScene, sceneFor } from "./scene.mjs";
+
+const caption = (route) =>
+  paintingFor(sceneFor(route))
+    ? "Ilustración de cabecera · No es una captura del juego"
+    : "Pixel art del juego · Composición para la web";
 
 function shell(route, content) {
-  return `<section class="section-hero">${renderScene(route)}<div class="section-hero-shade" aria-hidden="true"></div>${content}<span class="art-caption">Pixel art del juego · Composición para la web</span></section>`;
+  return `<section class="section-hero">${renderScene(route)}<div class="section-hero-shade" aria-hidden="true"></div>${content}<span class="art-caption">${caption(route)}</span></section>`;
 }
 
 export function illustratePage(route, body) {
