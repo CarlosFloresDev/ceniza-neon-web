@@ -4,45 +4,37 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { posts } from "../content/editorial.mjs";
 import { wiki } from "../content/wiki.mjs";
-test("Every page has its own illustration while generated art remains separate from gameplay captures", async () => {
-  const manifest = JSON.parse(
-    await fs.readFile("content/page-art.json", "utf8"),
+test("Every page opens with its own scene built from the game's pixel art", async () => {
+  const { scenes } = await import("../content/scenes.mjs");
+  const art = JSON.parse(await fs.readFile("content/scene-art.json", "utf8"));
+  const routes = Object.keys(scenes);
+  assert.equal(routes.length, 36);
+  const signatures = new Set(
+    Object.values(scenes).map((scene) =>
+      [scene.zone, ...scene.actors.map((actor) => actor.id)].join("+"),
+    ),
   );
-  assert.equal(manifest.entries.length, 34);
-  const used = new Set();
-  const originals = new Set();
-  for (const file of (await files("dist")).filter((file) =>
-    file.endsWith(".html"),
-  )) {
+  assert.equal(signatures.size, 36, "two pages share the same composition");
+  for (const record of [...Object.values(art.sprites), ...Object.values(art.layers)]) {
+    assert.match(record.source, /^assets\/(characters|world)\//);
+    assert.ok((await fs.stat("public" + record.file)).size > 0, record.file);
+  }
+  const keys = new Set();
+  for (const file of (await files("dist")).filter((file) => file.endsWith(".html"))) {
     const html = await fs.readFile(file, "utf8");
-    const art = [...html.matchAll(/data-page-art="([^"]+)"/g)];
-    assert.equal(art.length, 1, file);
-    assert.ok(!used.has(art[0][1]), file + " reused a page illustration");
-    used.add(art[0][1]);
-    await fs.access("public" + art[0][1]);
-    if (!["/media/hero.webp", "/media/station.webp"].includes(art[0][1]))
-      assert.match(html, /ARTE CONCEPTUAL/);
+    const found = [...html.matchAll(/data-scene="([^"]+)"/g)];
+    assert.equal(found.length, 1, file);
+    assert.ok(!keys.has(found[0][1]), file + " reused a scene");
+    keys.add(found[0][1]);
+    await fs.access(`dist/media/still/${found[0][1]}.jpg`);
+    assert.doesNotMatch(html, /\/media\/pages\/|\/media\/hero\.webp|\/media\/station\.webp|ARTE CONCEPTUAL/);
   }
-  assert.equal(used.size, 36);
-  for (const entry of manifest.entries) {
-    await fs.access(entry.source);
-    const record = JSON.parse(
-      await fs.readFile(`art/page-records/${entry.key}.json`, "utf8"),
-    );
-    assert.equal(record.route, entry.route);
-    assert.equal(record.prompt, entry.prompt);
-    assert.ok(
-      !originals.has(record.sha256),
-      entry.key + " duplicated another generated original",
-    );
-    originals.add(record.sha256);
-  }
-  assert.equal(originals.size, 34);
+  assert.equal(keys.size, 36);
   const walk = await fs.readFile(
     "dist/bitacora/caminar-es-mas-que-mover-un-sprite/index.html",
     "utf8",
   );
-  assert.match(walk, /data-page-art="\/media\/pages\/walking-v1.webp"/);
+  assert.match(walk, /data-scene="walking"/);
   assert.match(
     walk,
     /class="container article-cover"><img[^>]+marcha_vigente_20261029/,
@@ -109,8 +101,10 @@ test("Current boss coverage and the walking entry never reuse superseded capture
     assert.ok(
       !(await files("public/media")).some((file) => file.endsWith(name)),
     );
-  for (const name of ["rajdhani", "cormorant-italic", "plex-mono"])
-    assert.ok((await fs.stat(`public/fonts/${name}.woff2`)).size > 1000);
+  for (const name of ["big-shoulders", "literata", "literata-italic", "silkscreen"])
+    assert.ok((await fs.stat(`dist/fonts/${name}.woff2`)).size > 1000);
+  for (const script of ["gsap.min.js", "ScrollTrigger.min.js", "lenis.min.js"])
+    assert.ok((await fs.stat(`dist/vendor/${script}`)).size > 1000);
 });
 async function files(dir) {
   const results = [];

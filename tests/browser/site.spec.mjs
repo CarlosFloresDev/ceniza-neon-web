@@ -11,31 +11,27 @@ const pages = [
   "/contacto/",
   "/prensa/",
 ];
-test("All 36 routes load distinct page art, one heading and working images", async ({
+test("All 36 routes open with a distinct scene, one heading and loaded layers", async ({
   page,
 }) => {
   test.setTimeout(120000);
-  const manifest = JSON.parse(
-    await fs.readFile("content/page-art.json", "utf8"),
-  );
-  const routes = [
-    "/",
-    "/universo/",
-    ...manifest.entries.map((entry) => entry.route),
-  ];
-  const illustrations = new Set();
-  for (const route of routes) {
+  const { scenes } = await import("../../content/scenes.mjs");
+  const seen = new Set();
+  for (const route of Object.keys(scenes)) {
     await page.goto(route, { waitUntil: "domcontentloaded" });
     await expect(page.locator("main h1")).toHaveCount(1);
-    const hero = page.locator("[data-page-art]");
-    await expect(hero).toHaveCount(1);
-    const src = await hero.getAttribute("data-page-art");
-    expect(illustrations.has(src)).toBeFalsy();
-    illustrations.add(src);
-    const picture = hero.locator("img").first();
+    const scene = page.locator("[data-scene]");
+    await expect(scene).toHaveCount(1);
+    const key = await scene.getAttribute("data-scene");
+    expect(seen.has(key)).toBeFalsy();
+    seen.add(key);
     await expect
       .poll(() =>
-        picture.evaluate((img) => img.complete && img.naturalWidth > 0),
+        scene
+          .locator("img")
+          .evaluateAll((images) =>
+            images.every((img) => img.complete && img.naturalWidth > 0),
+          ),
       )
       .toBeTruthy();
     expect(
@@ -44,7 +40,7 @@ test("All 36 routes load distinct page art, one heading and working images", asy
       ),
     ).toBeTruthy();
   }
-  expect(illustrations.size).toBe(36);
+  expect(seen.size).toBe(36);
 });
 test("The archive exposes real development dates and the walking record shows current designs", async ({
   page,
@@ -70,49 +66,33 @@ test("The archive exposes real development dates and the walking record shows cu
   );
 });
 
-test("Custom type and ambient depth load, and reduced motion stops the effects", async ({
+test("Custom type, 3D camera and ambient ash load, and reduced motion stops them", async ({
   page,
 }) => {
   await page.goto("/");
   await page.evaluate(() => document.fonts.ready);
-  expect(
-    await page
-      .locator(".hero-tagline")
-      .evaluate((el) => getComputedStyle(el).fontFamily),
-  ).toContain("Rajdhani");
-  expect(
-    await page
-      .locator(".eyebrow")
-      .first()
-      .evaluate((el) => getComputedStyle(el).fontFamily),
-  ).toContain("Plex Mono");
-  expect(
-    await page
-      .locator("h2 em")
-      .first()
-      .evaluate((el) => getComputedStyle(el).fontFamily),
-  ).toContain("Cormorant");
-  expect(
-    await page.evaluate(() => document.fonts.check("600 20px Rajdhani")),
-  ).toBeTruthy();
+  const family = (selector) =>
+    page.locator(selector).first().evaluate((el) => getComputedStyle(el).fontFamily);
+  expect(await family(".hero-tagline")).toContain("Big Shoulders");
+  expect(await family(".eyebrow")).toContain("Silkscreen");
+  expect(await family(".hero-description")).toContain("Literata");
+  expect(await page.evaluate(() => document.fonts.check("800 40px 'Big Shoulders'"))).toBeTruthy();
   await expect(page.locator(".ambient-canvas")).toHaveCount(1);
-  await page.mouse.move(110, 210);
+  await page.mouse.move(1300, 200);
   await expect
     .poll(() =>
       page
-        .locator(".hero")
-        .evaluate((el) =>
-          Math.abs(parseFloat(el.style.getPropertyValue("--hero-x")) || 0),
-        ),
+        .locator(".hero .scene-stage")
+        .evaluate((el) => Math.abs(parseFloat(el.style.getPropertyValue("--ry")) || 0)),
     )
     .toBeGreaterThan(0.1);
   await page.emulateMedia({ reducedMotion: "reduce" });
   await expect(page.locator(".ambient-canvas")).toHaveCount(0);
-  expect(
-    await page
-      .locator(".hero-art")
-      .evaluate((el) => getComputedStyle(el).transform),
-  ).toBe("none");
+  await expect
+    .poll(() =>
+      page.locator(".hero .scene-stage").evaluate((el) => getComputedStyle(el).transform),
+    )
+    .toBe("none");
 });
 async function revealForCapture(page) {
   await page.evaluate(async () => {
@@ -249,9 +229,7 @@ test("Reduced motion, keyboard skip and unknown routes", async ({ page }) => {
     page.getByRole("link", { name: "Saltar al contenido" }),
   ).toBeFocused();
   expect(
-    await page
-      .locator(".hero-art img")
-      .evaluate((el) => getComputedStyle(el).animationName),
+    await page.locator(".hero .scene-rain").evaluate((el) => getComputedStyle(el).display),
   ).toBe("none");
   const response = await page.goto("/via-inexistente/");
   expect(response.status()).toBe(404);
