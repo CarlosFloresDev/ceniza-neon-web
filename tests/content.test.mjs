@@ -40,6 +40,24 @@ test("Every page opens with its own scene built from the game's pixel art", asyn
     /class="container article-cover"><img[^>]+marcha_vigente_20261029/,
   );
 });
+test("Every header has a registered painted illustration and keeps its honest caption", async () => {
+  const { scenes } = await import("../content/scenes.mjs");
+  const paintings = JSON.parse(await fs.readFile("content/hero-art.json", "utf8"));
+  const hashes = new Set();
+  for (const [route, scene] of Object.entries(scenes)) {
+    const painting = paintings[scene.key];
+    assert.ok(painting, "missing illustration for " + route);
+    assert.equal(painting.route, route);
+    assert.ok(painting.prompt.length > 200, scene.key);
+    assert.ok((await fs.stat("public" + painting.src)).size > 10000, painting.src);
+    await fs.access(`art/heroes/${scene.key}.png`);
+    assert.ok(!hashes.has(painting.sha256), scene.key + " duplicates another illustration");
+    hashes.add(painting.sha256);
+  }
+  const wiki = await fs.readFile("dist/wiki/prefecto/index.html", "utf8");
+  assert.match(wiki, /data-painted/);
+  assert.match(wiki, /No es una captura del juego/);
+});
 test("The journal dates come from verified commits and distinguish retrospective entries", async () => {
   const history = JSON.parse(
     await fs.readFile("content/development-history.json", "utf8"),
