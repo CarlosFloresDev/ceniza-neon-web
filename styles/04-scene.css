@@ -1,0 +1,170 @@
+/* Escenas de cabecera: planos de pixel art en perspectiva real.
+   La cámara mira desde el borde inferior; cada plano compensa su profundidad con scale(),
+   de modo que el suelo coincide en reposo y las capas solo se separan al moverse la cámara. */
+.scene {
+  --persp: 1000;
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background: linear-gradient(#0a1019 0%, #172434 55%, #24364a 100%);
+  perspective: calc(var(--persp) * 1px);
+  perspective-origin: 50% 100%;
+  contain: paint;
+}
+.scene-stage {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+  transform-origin: 50% 100%;
+  /* motion.js anima --rx, --ry (inclinación por puntero) y --dolly (avance con el scroll). */
+  transform: rotateX(calc(var(--rx, 0) * 1deg)) rotateY(calc(var(--ry, 0) * 1deg))
+    translateZ(calc(var(--dolly, 0) * 1px));
+}
+.scene-plane {
+  position: absolute;
+  inset: 0;
+  transform-origin: 50% 100%;
+  transform: translateZ(calc(var(--z) * 1px)) scale(calc(1 - var(--z) / var(--persp)));
+  pointer-events: none;
+}
+.scene-far {
+  position: absolute;
+  left: 0;
+  bottom: 30%;
+  width: 100%;
+  opacity: 0.85;
+}
+.scene-zone {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 100%;
+}
+.scene-ground {
+  position: absolute;
+  inset: auto 0 0;
+  height: var(--ground);
+  background: linear-gradient(#1c2938, #0a1018 60%);
+  box-shadow: 0 -1px 0 #3a4a5e;
+}
+.scene-haze {
+  background:
+    linear-gradient(to top, #0c121bcc 0%, #0c121b55 9%, transparent 26%),
+    radial-gradient(120% 40% at 50% 100%, #62d6cf14, transparent 70%);
+}
+.scene-actor {
+  position: absolute;
+  left: var(--x);
+  bottom: var(--y);
+  height: var(--h);
+  width: auto;
+  max-width: none;
+  transform: translateX(-50%);
+  filter: drop-shadow(0 6px 10px #05080d99);
+}
+.scene-actor[data-flip] {
+  transform: translateX(-50%) scaleX(-1);
+}
+.scene-actor[data-pixel] {
+  image-rendering: pixelated;
+}
+/* Lluvia fina por delante de todo; se mueve con transform para no repintar. */
+.scene-rain {
+  inset: -30% -20% -10%;
+  overflow: hidden;
+  opacity: 0.32;
+}
+.scene-rain::before {
+  content: "";
+  position: absolute;
+  inset: -100% 0 0;
+  background: repeating-linear-gradient(
+      104deg,
+      transparent 0 46px,
+      #b8d8e633 46px 47px,
+      transparent 47px 91px
+    ),
+    repeating-linear-gradient(
+      101deg,
+      transparent 0 71px,
+      #b8d8e622 71px 72px,
+      transparent 72px 133px
+    );
+  animation: rain 0.9s linear infinite;
+}
+@keyframes rain {
+  to {
+    transform: translate3d(-48px, 50%, 0);
+  }
+}
+.scene[data-night]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #040a16;
+  opacity: 0.38;
+  pointer-events: none;
+}
+.art-caption {
+  position: absolute;
+  right: var(--gutter);
+  bottom: 14px;
+  z-index: 2;
+  color: #c3ccd6aa;
+}
+
+/* Cabecera de sección: escena a sangre con el título sobre su lado izquierdo. */
+.section-hero {
+  position: relative;
+  isolation: isolate;
+  min-height: clamp(500px, 74vh, 760px);
+  display: flex;
+  align-items: flex-end;
+  padding-top: var(--header);
+  overflow: hidden;
+  border-bottom: 1px solid var(--steel);
+  view-transition-name: page-hero;
+}
+.section-hero > .scene {
+  z-index: -2;
+}
+.section-hero-shade,
+.hero-shade {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, #0c121bf0 0%, #0c121bc4 32%, #0c121b33 62%, transparent 80%),
+    linear-gradient(0deg, #0c121b 0%, #0c121b99 18%, transparent 46%);
+}
+.section-hero .page-intro,
+.section-hero .article-header,
+.wiki-art-heading {
+  padding-block: 64px clamp(56px, 8vw, 96px);
+}
+.section-hero h1 {
+  max-width: 14ch;
+  margin-bottom: 22px;
+}
+.section-hero .article-header h1 {
+  max-width: 18ch;
+}
+.section-hero .text-link {
+  margin-bottom: 26px;
+}
+
+@media (max-width: 760px) {
+  .section-hero {
+    min-height: 92svh;
+  }
+  .section-hero-shade,
+  .hero-shade {
+    background: linear-gradient(0deg, #0c121b 0%, #0c121bf0 34%, #0c121b66 62%, #0c121b33 100%);
+  }
+  .art-caption {
+    display: none;
+  }
+}

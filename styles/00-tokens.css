@@ -1,0 +1,76 @@
+/* Tokens: paleta tomada del pixel art del juego (noche pizarra, sodio de farola, señal cian, óxido). */
+@font-face {
+  font-family: "Big Shoulders";
+  src: url("/fonts/big-shoulders.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: Literata;
+  src: url("/fonts/literata.woff2") format("woff2");
+  font-weight: 200 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: Literata;
+  src: url("/fonts/literata-italic.woff2") format("woff2");
+  font-weight: 200 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: Silkscreen;
+  src: url("/fonts/silkscreen.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+:root {
+  --night: #0c121b;
+  --slate: #131b26;
+  --slate-2: #1a2431;
+  --steel: #2b3949;
+  --steel-2: #3d4f64;
+  --fog: #98a6b7;
+  --bone: #ece4d3;
+  --sodium: #f2a948;
+  --sodium-deep: #c97f2a;
+  --signal: #62d6cf;
+  --rust: #b85c3c;
+
+  --display: "Big Shoulders", "Arial Narrow", sans-serif;
+  --text: Literata, Georgia, serif;
+  --pixel: Silkscreen, "Courier New", monospace;
+
+  /* Escala tipográfica 1.25 sobre 18 px. */
+  --step--2: 0.72rem;
+  --step--1: 0.9rem;
+  --step-0: 1.0625rem;
+  --step-1: 1.33rem;
+  --step-2: 1.66rem;
+  --step-3: clamp(2rem, 1.5rem + 2vw, 2.6rem);
+  --step-4: clamp(2.6rem, 1.6rem + 4vw, 4.4rem);
+  --step-5: clamp(3.4rem, 2rem + 6vw, 6.6rem);
+  --step-6: clamp(4.6rem, 1.5rem + 13vw, 13rem);
+
+  --gutter: clamp(16px, 4vw, 56px);
+  --measure: 66ch;
+  --header: 72px;
+
+  /* Esquinas recortadas en escalón, como un borde de sprite. */
+  --notch: 5px;
+  --notched: polygon(
+    var(--notch) 0,
+    calc(100% - var(--notch)) 0,
+    100% var(--notch),
+    100% calc(100% - var(--notch)),
+    calc(100% - var(--notch)) 100%,
+    var(--notch) 100%,
+    0 calc(100% - var(--notch)),
+    0 var(--notch)
+  );
+
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
+}

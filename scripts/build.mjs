@@ -1,9 +1,10 @@
-// Genera el sitio estático en dist/ a partir de content/, src/ y public/.
+// Genera el sitio estático en dist/ a partir de content/, src/, styles/ y public/.
 import fs from "node:fs/promises";
 import path from "node:path";
 import { renderPage } from "../src/layout.mjs";
 import { auxiliaryFiles } from "../src/feeds.mjs";
 import { music } from "../src/site.mjs";
+import { bundleStyles, copyVendor, renderStills } from "../src/assets.mjs";
 import home from "../src/pages/home.mjs";
 import journal from "../src/pages/journal.mjs";
 import roadmap from "../src/pages/roadmap.mjs";
@@ -36,6 +37,9 @@ if (path.dirname(output) !== process.cwd() || path.basename(output) !== "dist")
 await fs.rm(output, { recursive: true, force: true });
 await fs.mkdir(output, { recursive: true });
 await fs.cp("public", "dist", { recursive: true });
+await bundleStyles(output);
+await copyVendor(output);
+await renderStills(output);
 
 async function write(file, text) {
   const target = path.join("dist", file);

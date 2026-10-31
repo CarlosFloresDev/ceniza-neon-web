@@ -1,0 +1,109 @@
+/* Movimiento: transiciones entre páginas, entradas y efectos ambientales.
+   Todo lo que desplaza o inclina se apaga con prefers-reduced-motion. */
+
+/* Navegación entre páginas del mismo sitio: la escena de cabecera se transforma en la siguiente
+   y el resto del documento se hunde en profundidad mientras entra el nuevo. */
+@view-transition {
+  navigation: auto;
+}
+::view-transition-group(*) {
+  animation-duration: 520ms;
+  animation-timing-function: var(--ease-in-out);
+}
+::view-transition-old(root) {
+  animation: page-sink 320ms var(--ease-in-out) both;
+}
+::view-transition-new(root) {
+  animation: page-rise 520ms var(--ease-out) 80ms both;
+}
+::view-transition-old(page-hero) {
+  animation: hero-fade-out 360ms var(--ease-in-out) both;
+}
+::view-transition-new(page-hero) {
+  animation: hero-fade-in 520ms var(--ease-out) both;
+}
+@keyframes page-sink {
+  to {
+    opacity: 0;
+    transform: perspective(1400px) translate3d(0, -12px, -80px) rotateX(3deg);
+  }
+}
+@keyframes page-rise {
+  from {
+    opacity: 0;
+    transform: perspective(1400px) translate3d(0, 24px, -40px) rotateX(-2deg);
+  }
+}
+@keyframes hero-fade-out {
+  to {
+    opacity: 0;
+    filter: blur(6px);
+  }
+}
+@keyframes hero-fade-in {
+  from {
+    opacity: 0;
+    filter: blur(6px);
+  }
+}
+
+/* Entradas al hacer scroll (motion.js marca .motion-ready y anima con GSAP). */
+.motion-ready [data-reveal] {
+  opacity: 0;
+}
+
+/* Lluvia de ceniza en todo el sitio, pintada por motion.js. */
+.ambient-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+.reading-progress {
+  position: fixed;
+  inset: 0 0 auto;
+  height: 2px;
+  z-index: 50;
+  background: var(--sodium);
+  transform: scaleX(0);
+  transform-origin: left;
+  pointer-events: none;
+}
+
+/* Lenis */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+  .scene-rain {
+    display: none;
+  }
+  .scene-stage {
+    transform: none !important;
+  }
+  .motion-ready [data-reveal] {
+    opacity: 1;
+  }
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

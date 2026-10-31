@@ -39,7 +39,8 @@ La autenticación pertenece a la sesión local de Wrangler. No colocar tokens en
 | `content/editorial.mjs` | Entradas recientes de bitácora, fichas públicas de personajes, distritos y roadmap |
 | `content/archive-posts.mjs` | Relatos retrospectivos de las primeras etapas |
 | `content/development-history.json` | Referencias de Git para las fechas reales de los avances |
-| `content/page-art.json` | Ilustraciones, rutas y prompts propios de las 34 cabeceras nuevas |
+| `content/scenes.mjs` | Escena de pixel art de cada ruta: fondo, actores y profundidad |
+| `content/scene-art.json` | Procedencia de los sprites y fondos importados del juego |
 | `content/wiki.mjs` | Los 15 artículos de la wiki |
 | `content/soundtrack.json` | 21 pistas, títulos extraídos de metadatos y duración |
 | `scripts/build.mjs` | Orquesta la compilación: limpia `dist/`, copia `public/` y escribe cada ruta |
@@ -47,12 +48,12 @@ La autenticación pertenece a la sesión local de Wrangler. No colocar tokens en
 | `src/pages/` | Una plantilla por sección; cada una devuelve sus rutas |
 | `src/lib/html.mjs` | Escape, iconos, botones e imágenes reutilizables |
 | `src/feeds.mjs` | RSS, sitemap, robots y cabeceras de seguridad |
-| `public/styles.css` | Diseño responsive, tipografía y animaciones |
+| `styles/` | Hoja de estilos en parciales numerados: tokens, base, estructura, componentes, escenas, páginas y movimiento |
 | `public/app.js` | Navegación móvil, búsqueda, galería, teaser y reproductor |
-| `public/effects.js` | Partículas, profundidad de portada y progreso de lectura; respeta movimiento reducido |
-| `public/media/` | Arte optimizado, capturas, logotipo y teaser |
+| `public/motion.js` | Scroll suave (Lenis), cámara 3D de las escenas y apariciones (GSAP); respeta movimiento reducido |
+| `public/media/` | Sprites y fondos del juego (`scene/`), capturas, logotipo y teaser |
 | `public/audio/` | Audio MP3 para reproducción web |
-| `art/` | Originales PNG, referencias, prompts y registros de procedencia de las ilustraciones |
+| `art/teaser/` | Fuentes que usa `scripts/build-teaser.py` |
 | `narrativa/` | Biblia, personajes, 36 escenas e instrucciones de integración; no se publica |
 | `tests/` | Comprobaciones de contenido y pruebas de navegador |
 | `docs/` | Guías de edición y despliegue |
