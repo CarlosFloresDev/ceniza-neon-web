@@ -6,6 +6,7 @@ import { auxiliaryFiles } from "../src/feeds.mjs";
 import { music } from "../src/site.mjs";
 import { bundleStyles, copyVendor, renderStills } from "../src/assets.mjs";
 import home from "../src/pages/home.mjs";
+import download from "../src/pages/download.mjs";
 import journal from "../src/pages/journal.mjs";
 import roadmap from "../src/pages/roadmap.mjs";
 import universe from "../src/pages/universe.mjs";
@@ -20,6 +21,7 @@ import notFound from "../src/pages/not-found.mjs";
 // Orden de publicación: también es el orden del sitemap.
 const sections = [
   home,
+  download,
   journal,
   roadmap,
   universe,

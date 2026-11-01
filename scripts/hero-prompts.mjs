@@ -59,6 +59,7 @@ const SUBJECTS = {
   contact: `a tall signal repeater tower with a blinking light, ${CAST.ranger} keeping watch at its base with a radio`,
   press: `${PORTADOR}, in profile on a high terrace overlooking the citadel gate, coat moving in the wind`,
   privacy: `a dormant colony power core on the deck, ${CAST.drone} scanning it with a soft cyan beam`,
+  download: `seen from behind, ${PORTADOR}, stepping toward a small service train waiting at a sunlit platform, its doors open and warm light spilling out, a bag over his shoulder, ready to depart. Hopeful, inviting mood`,
   lost: `a single lit street lamp and a warning sign at the end of an interrupted rail line, no people. Lonely but gentle mood`,
   "first-steps": `${PORTADOR}, arriving at an empty shelter among salvaged scrap and crates, setting down his bag`,
   "day-night": `night defense: a reinforced barricade wall and a small automatic turret guarding a canal walkway under a lamp, tense calm before an attack`,

@@ -4,7 +4,7 @@ Sitio independiente del proyecto Godot: inicio, universo, bitácora, roadmap, wi
 
 **Web pública:** https://ceniza-neon.chefsitturchey.workers.dev · **Repositorio privado:** https://github.com/CarlosFloresDev/ceniza-neon-web
 
-El juego sigue en desarrollo, sin beta pública. El cooperativo para dos jugadores es una función prevista. La web diferencia las mecánicas comprobadas del prototipo y la ampliación narrativa propuesta.
+El juego sigue en desarrollo. La alfa de prueba 0.1.0 se descarga para Windows y Android desde `/descargar/`; la versión web llegará a itch.io. El cooperativo para dos jugadores es una función prevista. La web diferencia las mecánicas comprobadas del prototipo y la ampliación narrativa propuesta.
 
 ## Trabajar en local
 
@@ -36,6 +36,7 @@ La autenticación pertenece a la sesión local de Wrangler. No colocar tokens en
 | Ruta | Contenido |
 | --- | --- |
 | `content/site.json` | URL pública, invitación de Discord, correo y estado del proyecto |
+| `content/download.json` | Página `/descargar/`: versión, enlaces de GitHub, tamaños, requisitos y la dirección de itch.io (`itch.url` para el enlace, `itch.embed` para incrustar el juego; vacías muestran «Próximamente») |
 | `content/editorial.mjs` | Entradas recientes de bitácora, fichas públicas de personajes, distritos y roadmap |
 | `content/archive-posts.mjs` | Relatos retrospectivos de las primeras etapas |
 | `content/development-history.json` | Referencias de Git para las fechas reales de los avances |

@@ -8,13 +8,13 @@ test("Every page opens with its own scene built from the game's pixel art", asyn
   const { scenes } = await import("../content/scenes.mjs");
   const art = JSON.parse(await fs.readFile("content/scene-art.json", "utf8"));
   const routes = Object.keys(scenes);
-  assert.equal(routes.length, 36);
+  assert.equal(routes.length, 37);
   const signatures = new Set(
     Object.values(scenes).map((scene) =>
       [scene.zone, ...scene.actors.map((actor) => actor.id)].join("+"),
     ),
   );
-  assert.equal(signatures.size, 36, "two pages share the same composition");
+  assert.equal(signatures.size, 37, "two pages share the same composition");
   for (const record of [...Object.values(art.sprites), ...Object.values(art.layers)]) {
     assert.match(record.source, /^assets\/(characters|world)\//);
     assert.ok((await fs.stat("public" + record.file)).size > 0, record.file);
@@ -29,7 +29,7 @@ test("Every page opens with its own scene built from the game's pixel art", asyn
     await fs.access(`dist/media/still/${found[0][1]}.jpg`);
     assert.doesNotMatch(html, /\/media\/pages\/|\/media\/hero\.webp|\/media\/station\.webp|ARTE CONCEPTUAL/);
   }
-  assert.equal(keys.size, 36);
+  assert.equal(keys.size, 37);
   const walk = await fs.readFile(
     "dist/bitacora/caminar-es-mas-que-mover-un-sprite/index.html",
     "utf8",
@@ -40,6 +40,8 @@ test("Every page opens with its own scene built from the game's pixel art", asyn
     /class="container article-cover"><img[^>]+marcha_vigente_20261029/,
   );
 });
+// La ilustración pintada de estas rutas está pendiente (prompt listo en art/heroes/prompts.json).
+const PENDING_PAINTINGS = new Set(["/descargar/"]);
 test("Every header has a registered painted illustration and keeps its honest caption", async () => {
   const { scenes } = await import("../content/scenes.mjs");
   const paintings = JSON.parse(await fs.readFile("content/hero-art.json", "utf8"));
@@ -48,6 +50,14 @@ test("Every header has a registered painted illustration and keeps its honest ca
     // La bitácora muestra capturas o pixel art del juego, nunca ilustraciones.
     if (route.startsWith("/bitacora/")) {
       assert.ok(!paintings[scene.key], route + " should not use a painting");
+      continue;
+    }
+    // Rutas nuevas con la ilustración pendiente: usan la composición de pixel art y lo dicen.
+    if (PENDING_PAINTINGS.has(route) && !paintings[scene.key]) {
+      const file = "dist" + route + "index.html";
+      const html = await fs.readFile(file, "utf8");
+      assert.match(html, /data-zone="/, file);
+      assert.match(html, /Pixel art del juego, montado para la web/, file);
       continue;
     }
     const painting = paintings[scene.key];
@@ -199,4 +209,28 @@ test("Narrative production files and secrets stay out of publication", async () 
       file,
     );
   }
+});
+
+test("The download page links the GitHub release and keeps the itch.io card pending until configured", async () => {
+  const download = JSON.parse(await fs.readFile("content/download.json", "utf8"));
+  const html = await fs.readFile("dist/descargar/index.html", "utf8");
+  assert.ok(html.includes(download.version));
+  assert.ok(html.includes(`href="${download.windows.url}"`));
+  assert.ok(html.includes(`href="${download.android.url}"`));
+  assert.ok(html.includes(`href="${download.releaseNotes}"`));
+  assert.match(html, /CenizaNeon\.exe/);
+  assert.match(html, /origen desconocido/);
+  const headers = await fs.readFile("dist/_headers", "utf8");
+  if (download.itch.embed) {
+    assert.ok(html.includes(`<iframe src="${download.itch.embed}"`));
+    assert.match(headers, /frame-src https:\/\/[a-z0-9.-]*itch\.io/);
+  } else {
+    assert.doesNotMatch(html, /<iframe/);
+    assert.doesNotMatch(headers, /frame-src/);
+    if (download.itch.url) assert.ok(html.includes(`href="${download.itch.url}"`));
+    else assert.match(html, /Próximamente en itch\.io/);
+  }
+  const home = await fs.readFile("dist/index.html", "utf8");
+  assert.match(home, /class="nav-play" href="\/descargar\/"/);
+  assert.match(home, /class="button" href="\/descargar\/"/);
 });

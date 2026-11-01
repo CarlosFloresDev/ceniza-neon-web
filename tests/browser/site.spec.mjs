@@ -10,8 +10,9 @@ const pages = [
   "/comunidad/",
   "/contacto/",
   "/prensa/",
+  "/descargar/",
 ];
-test("All 36 routes open with a distinct scene, one heading and loaded layers", async ({
+test("All 37 routes open with a distinct scene, one heading and loaded layers", async ({
   page,
 }) => {
   test.setTimeout(120000);
@@ -40,7 +41,7 @@ test("All 36 routes open with a distinct scene, one heading and loaded layers", 
       ),
     ).toBeTruthy();
   }
-  expect(seen.size).toBe(36);
+  expect(seen.size).toBe(37);
 });
 test("The archive exposes real development dates and the walking record shows current designs", async ({
   page,
@@ -235,4 +236,23 @@ test("Reduced motion, keyboard skip and unknown routes", async ({ page }) => {
   const response = await page.goto("/via-inexistente/");
   expect(response.status()).toBe(404);
   await expect(page.locator("h1")).toContainText("señal");
+});
+test("The home hero leads to the download page with working platform buttons", async ({
+  page,
+}) => {
+  await page.goto("/");
+  await page.getByRole("link", { name: /Jugar la alfa/ }).click();
+  await expect(page).toHaveURL(/\/descargar\/$/);
+  await expect(page.locator("h1")).toHaveText("Jugar CENIZA NEÓN.");
+  await expect(page.locator(".download-card")).toHaveCount(3);
+  for (const name of ["Descargar para Windows", "Descargar APK"]) {
+    const link = page.getByRole("link", { name });
+    await expect(link).toBeVisible();
+    await expect(link).toHaveAttribute("href", /^https:\/\/github\.com\/chefsitturchey-web\/Ceniza-ne-n\/releases\/download\//);
+  }
+  await expect(page.locator("#main-nav .nav-play")).toHaveAttribute("aria-current", "page");
+  await page.setViewportSize({ width: 390, height: 844 });
+  expect(
+    await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth),
+  ).toBeTruthy();
 });

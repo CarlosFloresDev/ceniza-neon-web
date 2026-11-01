@@ -89,6 +89,16 @@ export const scenes = {
     alt: "Un núcleo de colonia apagado y un dron que lo examina en la red.",
     actors: [a("core", 74, 20, { z: -10 }), a("drone", 60, 20, { z: 40, y: 18 })],
   },
+  "/descargar/": {
+    key: "download",
+    zone: "periphery",
+    alt: "El Portador, de espaldas, sube a un tren de servicio que espera con las puertas abiertas en el andén de la Periferia.",
+    actors: [
+      a("station", 30, 34, { z: -60 }),
+      a("train", 58, 30, { z: -10 }),
+      a("portador-back", 78, 42, { z: 80 }),
+    ],
+  },
   "/404.html": {
     key: "lost",
     zone: "dawn",

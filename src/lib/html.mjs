@@ -18,6 +18,7 @@ export const icon = (name = "arrow") =>
     chevron: '<path d="m8 4 8 8-8 8"/>',
     pause: '<path d="M8 5v14M16 5v14"/>',
     menu: '<path d="M4 7h16M4 12h16M4 17h16"/>',
+    download: '<path d="M12 4v11m-5-5 5 5 5-5M5 20h14"/>',
   })[name] || "";
 export const svg = (name, cls = "") =>
   `<svg class="icon ${cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">${icon(name)}</svg>`;

@@ -22,7 +22,7 @@ Empieza por seguir el objetivo de la interfaz. Un generador operativo permite al
 
 Cada distrito combina colonia, operaciones y un jefe. En las arenas controlas el combate personal. Los objetivos concretos del diario y de la interfaz indican cómo preparar el viaje.
 
-No hay una beta pública disponible. Esta guía describe el prototipo de desarrollo revisado el 29 de octubre de 2026.`,
+La alfa de prueba 0.1.0 ya se puede [descargar para Windows y Android](/descargar/). Esta guía describe el prototipo de desarrollo revisado el 29 de octubre de 2026; la alfa puede diferir en detalles.`,
   },
   {
     slug: "ciclo-dia-noche",
