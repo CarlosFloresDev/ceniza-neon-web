@@ -1,8 +1,14 @@
 {
   "source": "Current game branch history; author dates preserved; no inferred dates",
   "repository": "https://github.com/chefsitturchey-web/Ceniza-ne-n",
-  "snapshotDate": "2026-10-29",
+  "snapshotDate": "2026-11-06",
   "commits": [
+    {
+      "sha": "8ec850dfef79734bb795d7d55d5f3f0586a0d98b",
+      "authoredAt": "2026-11-06T12:27:39-05:00",
+      "committedAt": "2026-11-06T12:27:39-05:00",
+      "subject": "version 0.2.0-alpha"
+    },
     {
       "sha": "26fe4674fdb5a64b5941bbedb0c5266d8a5e8d4f",
       "authoredAt": "2026-10-29T16:55:33-05:00",

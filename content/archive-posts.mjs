@@ -169,4 +169,33 @@ La galería muestra los diseños vigentes del Portador, el Recaudador, Caldera, 
 
 Conseguir una silueta reconocible no resuelve automáticamente cómo apoya el pie o recupera el peso. Las revisiones siguientes afinan la marcha de los humanoides, los ataques y los efectos. El registro más reciente de caminar documenta además la separación de esas fuentes para trabajar sobre ellas.`,
   },
+  {
+    slug: "alfa-0-2-boss-rush-y-jefes-mas-duros",
+    category: "Versiones",
+    title: "Alfa 0.2: Boss Rush y jefes más duros",
+    excerpt:
+      "El 6 de noviembre se publicó la alfa 0.2.0 con Boss Rush, jefes cuerpo a cuerpo, novela visual en cada combate y fondos animados.",
+    image: null,
+    imageLabel: null,
+    read: "3 min",
+    commit: "8ec850d",
+    body: `## Qué trae la 0.2.0
+
+La alfa **0.2.0**, publicada el **6 de noviembre de 2026** para Windows, Android y navegador, se centra en los combates de jefe y en que el juego se explique solo.
+
+- **Boss Rush:** los cinco jefes seguidos, sin historia. El reloj solo corre en combate, entre jefes se recupera la mitad de la vida y el filo mejora. Un ranking local guarda los diez mejores tiempos con nombre.
+- **Jefes más duros:** además de sus poderes, ahora atacan cuerpo a cuerpo con zonas rojas y estocadas que hay que esquivar o leer.
+- **Pistas cortas:** al empezar cada pelea aparece una línea con atacar, esquivar e interactuar, y luego avisos breves de cada mecánica.
+- **Novela visual automática:** las escenas de entrada y de victoria de cada jefe se abren solas en la campaña.
+
+## Un distrito más vivo y más claro
+
+Los cinco distritos tienen fondos animados: agua que cae, humo, luces y otros detalles. El fondo ya no tiembla al caminar ni al frenar. El portal tiene un efecto nuevo de vórtice en pixel art.
+
+El tutorial guía con una flecha y enseña a reclutar gente, atacar portales y comprar en el Arsenal. Las teclas se muestran según el dispositivo (teclado o mando) y se resaltan en color. Los trabajadores también pueden seguir de noche si el jugador acepta el riesgo.
+
+## Descarga
+
+La versión está en la [página de descarga](/descargar/) y en el release de GitHub. Sigue siendo una alfa: el equilibrio de los jefes aún no se ha probado con jugadores.`,
+  },
 ];

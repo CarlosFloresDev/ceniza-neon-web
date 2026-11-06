@@ -8,13 +8,13 @@ test("Every page opens with its own scene built from the game's pixel art", asyn
   const { scenes } = await import("../content/scenes.mjs");
   const art = JSON.parse(await fs.readFile("content/scene-art.json", "utf8"));
   const routes = Object.keys(scenes);
-  assert.equal(routes.length, 37);
+  assert.equal(routes.length, 38);
   const signatures = new Set(
     Object.values(scenes).map((scene) =>
       [scene.zone, ...scene.actors.map((actor) => actor.id)].join("+"),
     ),
   );
-  assert.equal(signatures.size, 37, "two pages share the same composition");
+  assert.equal(signatures.size, 38, "two pages share the same composition");
   for (const record of [...Object.values(art.sprites), ...Object.values(art.layers)]) {
     assert.match(record.source, /^assets\/(characters|world)\//);
     assert.ok((await fs.stat("public" + record.file)).size > 0, record.file);
@@ -29,7 +29,7 @@ test("Every page opens with its own scene built from the game's pixel art", asyn
     await fs.access(`dist/media/still/${found[0][1]}.jpg`);
     assert.doesNotMatch(html, /\/media\/pages\/|\/media\/hero\.webp|\/media\/station\.webp|ARTE CONCEPTUAL/);
   }
-  assert.equal(keys.size, 37);
+  assert.equal(keys.size, 38);
   const walk = await fs.readFile(
     "dist/bitacora/caminar-es-mas-que-mover-un-sprite/index.html",
     "utf8",
@@ -81,9 +81,9 @@ test("The journal dates come from verified commits and distinguish retrospective
   const history = JSON.parse(
     await fs.readFile("content/development-history.json", "utf8"),
   );
-  assert.equal(posts.length, 10);
+  assert.equal(posts.length, 11);
   assert.equal(posts.at(-1).date, "2026-09-22");
-  assert.equal(posts[0].date, "2026-10-29");
+  assert.equal(posts[0].date, "2026-11-06");
   assert.ok(posts.some((post) => post.date === "2026-09-23"));
   assert.ok(posts.some((post) => post.date === "2026-10-12"));
   for (const post of posts) {

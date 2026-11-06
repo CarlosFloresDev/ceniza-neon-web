@@ -302,4 +302,10 @@ export const scenes = {
     alt: "El Portador y el Prefecto se miden ante la Ciudadela.",
     actors: [a("portador-slash", 62, 28, { z: 40 }), a("prefecto", 80, 40, { z: 60, flip: true })],
   },
+  "/bitacora/alfa-0-2-boss-rush-y-jefes-mas-duros/": {
+    key: "alpha-02",
+    zone: "network",
+    alt: "El Portador enfrenta a Madre Cero en el núcleo de la red.",
+    actors: [a("portador-slash", 30, 28, { z: 40 }), a("madre-attack", 72, 40, { z: 60, flip: true }), a("prefecto", 92, 34, { z: 20, flip: true })],
+  },
 };
