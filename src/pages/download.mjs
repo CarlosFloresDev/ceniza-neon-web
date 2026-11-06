@@ -48,7 +48,7 @@ ${browserCard()}
 </section>
 <section class="container download-details"><div class="download-requirements" data-reveal><h2>Requisitos</h2><dl><dt>Windows</dt><dd>${esc(windows.requirements)}.</dd><dt>Android</dt><dd>${esc(android.requirements)}.</dd><dt>Controles</dt><dd>Mando o teclado. En Android, controles táctiles en pantalla.</dd><dt>Jugadores</dt><dd>Un jugador. El cooperativo para dos sigue previsto y no está incluido.</dd></dl></div><div class="note-box"><h3>Antes de jugar</h3><p>Versión ${esc(version)}: una alfa de prueba del prototipo, no el juego terminado. El equilibrio, los controles y el contenido van a cambiar entre versiones.</p>${external(`Notas de la versión en GitHub ${svg("arrow")}`, download.releaseNotes, "text-link")}${external(`Informar de un error ${svg("arrow")}`, site.issues, "text-link")}</div></section>`,
       {
-        description: `Descarga la alfa de prueba ${version} de CENIZA NEÓN para Windows y Android. Versión web próximamente en itch.io.`,
+        description: `Descarga la alfa de prueba ${version} de CENIZA NEÓN para Windows y Android, o juégala en el navegador.`,
       },
     ),
   ];
