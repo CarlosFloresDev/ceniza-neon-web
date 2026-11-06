@@ -16,7 +16,7 @@ function browserCard() {
   let action;
   if (embed)
     // El juego solo se carga al pulsar Jugar: así la página no gasta datos ni memoria.
-    action = `<div class="itch-frame" data-itch-embed="${esc(embed)}"><button type="button" class="button itch-play">${svg("play")} Jugar</button></div>${url ? external(`Abrir en itch.io ${svg("arrow")}`, url, "text-link") : ""}`;
+    action = `<button type="button" class="button itch-play" data-itch-embed="${esc(embed)}">${svg("play")} Jugar</button>${url ? external(`Abrir en itch.io ${svg("arrow")}`, url, "text-link") : ""}`;
   else if (url)
     action = external(`${svg("play")} Jugar en itch.io`, url);
   else

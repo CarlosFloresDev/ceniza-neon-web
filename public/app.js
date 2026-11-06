@@ -295,9 +295,7 @@
 
 // Jugar en el navegador: al pulsar Jugar se abre una vista a pantalla completa con el
 // juego de itch.io; antes no se carga nada. Cerrar o Esc la quita y libera el juego.
-document.querySelectorAll("[data-itch-embed]").forEach((frame) => {
-  const button = frame.querySelector(".itch-play");
-  if (!button) return;
+document.querySelectorAll("[data-itch-embed]").forEach((button) => {
   button.addEventListener("click", () => {
     const stage = document.createElement("div");
     stage.className = "play-stage";
@@ -308,7 +306,7 @@ document.querySelectorAll("[data-itch-embed]").forEach((frame) => {
     close.className = "play-stage__close";
     close.textContent = "Cerrar ✕";
     const iframe = document.createElement("iframe");
-    iframe.src = frame.dataset.itchEmbed;
+    iframe.src = button.dataset.itchEmbed;
     iframe.title = "CENIZA NEÓN en itch.io";
     iframe.allowFullscreen = true;
     iframe.allow = "autoplay; fullscreen; gamepad";
