@@ -8,13 +8,13 @@ test("Every page opens with its own scene built from the game's pixel art", asyn
   const { scenes } = await import("../content/scenes.mjs");
   const art = JSON.parse(await fs.readFile("content/scene-art.json", "utf8"));
   const routes = Object.keys(scenes);
-  assert.equal(routes.length, 38);
+  assert.equal(routes.length, 39);
   const signatures = new Set(
     Object.values(scenes).map((scene) =>
       [scene.zone, ...scene.actors.map((actor) => actor.id)].join("+"),
     ),
   );
-  assert.equal(signatures.size, 38, "two pages share the same composition");
+  assert.equal(signatures.size, 39, "two pages share the same composition");
   for (const record of [...Object.values(art.sprites), ...Object.values(art.layers)]) {
     assert.match(record.source, /^assets\/(characters|world)\//);
     assert.ok((await fs.stat("public" + record.file)).size > 0, record.file);
@@ -29,7 +29,7 @@ test("Every page opens with its own scene built from the game's pixel art", asyn
     await fs.access(`dist/media/still/${found[0][1]}.jpg`);
     assert.doesNotMatch(html, /\/media\/pages\/|\/media\/hero\.webp|\/media\/station\.webp|ARTE CONCEPTUAL/);
   }
-  assert.equal(keys.size, 38);
+  assert.equal(keys.size, 39);
   const walk = await fs.readFile(
     "dist/bitacora/caminar-es-mas-que-mover-un-sprite/index.html",
     "utf8",
@@ -41,7 +41,7 @@ test("Every page opens with its own scene built from the game's pixel art", asyn
   );
 });
 // La ilustración pintada de estas rutas está pendiente (prompt listo en art/heroes/prompts.json).
-const PENDING_PAINTINGS = new Set(["/descargar/"]);
+const PENDING_PAINTINGS = new Set(["/descargar/", "/wiki/boss-rush/"]);
 test("Every header has a registered painted illustration and keeps its honest caption", async () => {
   const { scenes } = await import("../content/scenes.mjs");
   const paintings = JSON.parse(await fs.readFile("content/hero-art.json", "utf8"));

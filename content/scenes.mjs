@@ -199,6 +199,12 @@ export const scenes = {
     alt: "El Coro Sumergido lanza una onda sonora sobre el canal.",
     actors: [a("coro-attack", 68, 42, { z: 50, flip: true })],
   },
+  "/wiki/boss-rush/": {
+    key: "boss-rush",
+    zone: "foundry",
+    alt: "El Portador se enfrenta a Santa Caldera y al Recaudador en la Fundición.",
+    actors: [a("portador-slash", 28, 30, { z: 40 }), a("caldera", 62, 40, { z: 50, flip: true }), a("recaudador", 86, 34, { z: 20, flip: true })],
+  },
   "/wiki/prefecto/": {
     key: "prefect",
     zone: "citadel",

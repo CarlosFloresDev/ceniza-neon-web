@@ -38,7 +38,7 @@ Estas comprobaciones técnicas no sustituyen las pruebas con jugadores. El equil
 
 ## Lo siguiente
 
-Queremos seguir mejorando la animación y la identidad de cada lugar. La bitácora mostrará comparaciones y resultados de pruebas cuando estén disponibles. **Todavía no hay una beta pública ni una fecha de lanzamiento.**`,
+Queremos seguir mejorando la animación y la identidad de cada lugar. La bitácora mostrará comparaciones y resultados de pruebas cuando estén disponibles. **Ya se puede jugar la alfa de prueba 0.2.0; todavía no hay fecha de lanzamiento de la versión completa.**`,
   },
   {
     slug: "caminar-es-mas-que-mover-un-sprite",
@@ -138,7 +138,7 @@ Tampoco afirmamos una duración de campaña medida. Hay una meta de ampliar la h
 
 La wiki describe reglas actuales y señala lo previsto. El roadmap utiliza hitos sin fechas prometidas. La bitácora reúne cambios verificables, capturas y límites de las pruebas. El universo presenta una entrada sin destripar la historia; los guiones de producción se conservan separados del contenido público.
 
-Cuando exista una prueba pública, aparecerán aquí sus condiciones y cómo participar. Hasta entonces no hay descarga de beta ni formulario que simule apuntarte a una lista inexistente.`,
+La alfa de prueba 0.2.0 está disponible para Windows, Android y navegador en la [página de descarga](/descargar/) y en itch.io. Es una versión de prueba: el equilibrio y los controles pueden cambiar.`,
   },
 ];
 
@@ -268,7 +268,7 @@ export const roadmap = [
       "Construcción por trabajadores, tropas y defensas por niveles",
       "Experiencia, elecciones de mejoras y módulos",
       "Diario, conversaciones, guardado y laboratorio F1",
-      "Fondos por capas, marcos de vida y repertorio musical",
+      "Fondos por capas animados, marcos de vida y repertorio musical",
     ],
   },
   {
@@ -304,7 +304,7 @@ export const roadmap = [
       "Definir conexión, reparto de acciones y progreso",
       "Probar sincronización de tropas, construcción y jefes",
       "Accesibilidad, reconexión y sesiones completas",
-      "Preparar una prueba pública cuando la base sea estable",
+      "Pasar de alfa a beta cuando la base sea estable",
     ],
   },
 ];

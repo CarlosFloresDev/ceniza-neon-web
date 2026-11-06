@@ -9,7 +9,7 @@ export const wiki = [
 
 En la colonia eres un comandante. Construye infraestructura, incorpora habitantes y entrega herramientas para formar profesiones. Tus tropas defienden los frentes y asaltan las entradas enemigas. El Portador no resuelve esos combates golpeando personalmente.
 
-Empieza por seguir el objetivo de la interfaz. Un generador operativo permite alimentar la defensa; el cuartel y los reclutas sostienen la escuadra. Reserva recursos para reparar en lugar de gastarlos todos en ampliar.
+Empieza por seguir el objetivo de la interfaz. En una partida nueva, una flecha guía señala el siguiente paso y enseña a reclutar gente, atacar portales y comprar en el Arsenal. Un generador operativo permite alimentar la defensa; el cuartel y los reclutas sostienen la escuadra. Reserva recursos para reparar en lugar de gastarlos todos en ampliar.
 
 ## Antes de que anochezca
 
@@ -22,7 +22,7 @@ Empieza por seguir el objetivo de la interfaz. Un generador operativo permite al
 
 Cada distrito combina colonia, operaciones y un jefe. En las arenas controlas el combate personal. Los objetivos concretos del diario y de la interfaz indican cómo preparar el viaje.
 
-La alfa de prueba 0.2.0 ya se puede [descargar para Windows y Android](/descargar/). Esta guía describe el prototipo de desarrollo revisado el 29 de octubre de 2026; la alfa puede diferir en detalles.`,
+La alfa de prueba 0.2.0 se puede [descargar para Windows y Android o jugar en el navegador](/descargar/). Esta guía describe esa versión, publicada el 6 de noviembre de 2026.`,
   },
   {
     slug: "ciclo-dia-noche",
@@ -35,6 +35,10 @@ La alfa de prueba 0.2.0 ya se puede [descargar para Windows y Android](/descarga
 El ciclo actual distribuye 180 segundos de día, 20 de aviso y 90 de noche. Durante la preparación decides qué construir y qué frente reforzar. El aviso permite volver a posiciones seguras. La noche comprueba si la colonia puede sostenerse.
 
 La luz y el cielo cambian con la fase. Los fondos vivos son presentación ambiental: no añaden colisiones ni cambian las reglas del asedio.
+
+## Trabajar de noche
+
+De noche los trabajadores no salen solos. Si encargas una obra, una reparación o una mejora, el juego avisa: «De noche: tu gente puede morir». Al aceptar, trabajan hasta el amanecer al 80 % de su ritmo normal y no se retiran aunque haya enemigos cerca, que pueden atacarlos.
 
 ## No se gana esperando
 
@@ -181,6 +185,10 @@ El Recaudador protege su núcleo desde el frente y presiona con maquinaria pesad
 - Señales previas a un ataque fuerte.
 - Apertura del núcleo y tiempo real para golpear y retirarte.
 
+## Cuerpo a cuerpo
+
+Cerca usa la garra; a distancia lanza salvas con línea de tiro y embiste si te quedas cubierto. Una zona roja marca el golpe: sal de ella o esquiva con Espacio. Su núcleo es débil por los lados y la espalda. Con E en una consola sueltas una carga sobre el centro marcado: atráelo y sal del círculo.
+
 Los robots iniciales recibieron más presencia visual y ofensivas de mayor alcance. Su humo, escombros y temblor de impacto comunican peso, pero no sustituyen el anuncio de peligro.
 
 La dificultad relativa entre los cinco jefes sigue en revisión. No se afirma que el primer encuentro esté cerrado o equilibrado para todo tipo de jugador.`,
@@ -228,9 +236,9 @@ La historia ampliada profundiza el vínculo entre las voces y el barrio. Los nue
       "Escudo, estocada y recuperación: un duelo bajo las luces de la Ciudadela.",
     body: `## Un adversario que cierra el frente
 
-El Prefecto rodea al Portador y utiliza el escudo para protegerse. Alterna salvas y estocadas anunciadas. Tras una estocada puede seguir un barrido: salir del círculo es parte de la respuesta.
+El Prefecto rodea al Portador y utiliza el escudo para protegerse: golpear el escudo no sirve. Elige salva a distancia, estocada al acercarse o barrido cuerpo a cuerpo. El barrido tiene frente, así que se puede escapar por detrás.
 
-Durante su recuperación puede recibir daño doble. La segunda fase encadena dos estocadas; comprometer toda la resistencia en el primer movimiento deja poco margen para la continuación.
+Castígalo después de su ataque: durante su recuperación puede recibir daño doble. La cadena principal tiene una estocada en la primera fase, dos en la segunda y tres en la última guardia; comprometer toda la resistencia en el primer movimiento deja poco margen para la continuación.
 
 ## Espacio y lectura
 
@@ -266,23 +274,49 @@ El guion completo contiene revelaciones que esta ficha evita. La ampliación de 
       "Las acciones principales y las opciones para reducir efectos visuales.",
     body: `## Acciones de referencia
 
-| Tecla | Acción |
-| --- | --- |
-| E | Interactuar, encargar, mejorar o reparar según contexto |
-| F | Ordenar asalto o retirar la escuadra |
-| J | Ataque personal en arenas |
-| T | Alimentación de torretas |
-| V | Subir o bajar de la plataforma cuando esté disponible |
-| L | Diario |
-| F1 | Laboratorio de desarrollo |
+| Teclado | Mando | Acción |
+| --- | --- | --- |
+| A/D o flechas (W/S en arena) | Stick o cruceta | Moverse |
+| Mantener Shift | Cruceta abajo | Correr |
+| Mantener E | Mantener Y | Interactuar, construir, mejorar o reparar |
+| J | X | Atacar en arenas |
+| Espacio | A | Esquivar |
+| Q | LB | Sobrecarga |
+| V | Pulsar stick izquierdo | Subir o bajar de la plataforma |
+| Esc | Start | Pausa |
+| F | | Ordenar asalto o retirar la escuadra |
+| T | | Alimentación de torretas |
+| L | | Diario |
 
-Consulta las indicaciones del juego para movimiento, esquiva y acciones contextuales. Los controles pueden cambiar durante el desarrollo.
+El juego muestra cada tecla según el último dispositivo que usaste, teclado o mando, y la resalta en color. La pausa resume las acciones básicas.
+
+## Pistas en los jefes
+
+Al empezar cada combate aparece una línea corta: atacar, esquivar e interactuar. Después salen avisos breves de cada mecánica, como la zona roja de un golpe cuerpo a cuerpo o el momento en que el núcleo queda expuesto.
 
 ## Menos estímulos
 
 Las opciones permiten reducir destellos y partículas. La pausa detiene la animación ambiental de los distritos. Las señales de peligro y las barras deben conservar su función aunque reduzcas efectos.
 
 Esta web respeta la preferencia de movimiento reducido del sistema, ofrece navegación por teclado y reproduce audio solo cuando lo pides.`,
+  },
+  {
+    slug: "boss-rush",
+    group: "Modos",
+    title: "Boss Rush",
+    summary:
+      "Los cinco jefes seguidos, sin historia, contra el reloj y con ranking.",
+    body: `## Cinco jefes, un reloj
+
+Desde el menú principal, Boss Rush encadena al Recaudador, Santa Caldera, el Coro Sumergido, el Prefecto y Madre Cero. No hay escenas de novela visual: es solo combate. La campaña no se carga ni se guarda en este modo.
+
+El cronómetro avanza solo durante el combate: la pausa y los intermedios no cuentan. Tras cada victoria recuperas la mitad de tu vida máxima y el filo gana 15 de daño por etapa. En el intermedio puedes seguir o abandonar. Una derrota termina la ruta.
+
+## Ranking
+
+El juego guarda las diez mejores victorias por tiempo, con nombre y golpes recibidos, y la pantalla de resultados muestra las cinco primeras. Si entras al ranking puedes escribir tu nombre, de hasta 12 caracteres. Una derrota no cuenta.
+
+El ranking es local: se guarda en el dispositivo donde juegas. No hay una clasificación en línea.`,
   },
   {
     slug: "cooperativo",
