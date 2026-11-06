@@ -293,16 +293,40 @@
   });
 })();
 
-// Jugar en el navegador: el iframe de itch.io se crea solo al pulsar el botón.
+// Jugar en el navegador: al pulsar Jugar se abre una vista a pantalla completa con el
+// juego de itch.io; antes no se carga nada. Cerrar o Esc la quita y libera el juego.
 document.querySelectorAll("[data-itch-embed]").forEach((frame) => {
   const button = frame.querySelector(".itch-play");
   if (!button) return;
   button.addEventListener("click", () => {
+    const stage = document.createElement("div");
+    stage.className = "play-stage";
+    stage.setAttribute("role", "dialog");
+    stage.setAttribute("aria-label", "CENIZA NEÓN");
+    const close = document.createElement("button");
+    close.type = "button";
+    close.className = "play-stage__close";
+    close.textContent = "Cerrar ✕";
     const iframe = document.createElement("iframe");
     iframe.src = frame.dataset.itchEmbed;
     iframe.title = "CENIZA NEÓN en itch.io";
     iframe.allowFullscreen = true;
     iframe.allow = "autoplay; fullscreen; gamepad";
-    frame.replaceChildren(iframe);
+    const box = document.createElement("div");
+    box.className = "play-stage__box";
+    box.append(iframe);
+    stage.append(close, box);
+    document.body.append(stage);
+    document.body.style.overflow = "hidden";
+    const shut = () => {
+      stage.remove();
+      document.body.style.overflow = "";
+      document.removeEventListener("keydown", onKey);
+      button.focus();
+    };
+    const onKey = (event) => { if (event.key === "Escape") shut(); };
+    close.addEventListener("click", shut);
+    document.addEventListener("keydown", onKey);
+    close.focus();
   });
 });
