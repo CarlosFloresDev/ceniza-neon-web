@@ -1,15 +1,15 @@
 {
-  "version": "0.1.0-alpha",
+  "version": "0.2.0-alpha",
   "channel": "Alfa de prueba",
-  "releaseNotes": "https://github.com/chefsitturchey-web/Ceniza-ne-n/releases/tag/v0.1.0-alpha",
+  "releaseNotes": "https://github.com/chefsitturchey-web/Ceniza-ne-n/releases/tag/v0.2.0-alpha",
   "windows": {
-    "url": "https://github.com/chefsitturchey-web/Ceniza-ne-n/releases/download/v0.1.0-alpha/CenizaNeon-0.1.0-alpha-windows.zip",
-    "size": "136 MB",
+    "url": "https://github.com/chefsitturchey-web/Ceniza-ne-n/releases/download/v0.2.0-alpha/CenizaNeon-0.2.0-alpha-windows.zip",
+    "size": "126 MB",
     "requirements": "Windows 10 o posterior, 64 bits"
   },
   "android": {
-    "url": "https://github.com/chefsitturchey-web/Ceniza-ne-n/releases/download/v0.1.0-alpha/CenizaNeon-0.1.0-alpha-android.apk",
-    "size": "127 MB",
+    "url": "https://github.com/chefsitturchey-web/Ceniza-ne-n/releases/download/v0.2.0-alpha/CenizaNeon-0.2.0-alpha-android.apk",
+    "size": "119 MB",
     "requirements": "Android 8.0 o posterior, procesador arm64"
   },
   "itch": {
