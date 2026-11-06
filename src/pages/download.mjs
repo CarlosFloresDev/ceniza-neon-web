@@ -15,7 +15,8 @@ function browserCard() {
   const { url, embed } = download.itch;
   let action;
   if (embed)
-    action = `<div class="itch-frame"><iframe src="${esc(embed)}" title="CENIZA NEÓN en itch.io" loading="lazy" allowfullscreen allow="autoplay; fullscreen; gamepad"></iframe></div>${url ? external(`Abrir en itch.io ${svg("arrow")}`, url, "text-link") : ""}`;
+    // El juego solo se carga al pulsar Jugar: así la página no gasta datos ni memoria.
+    action = `<div class="itch-frame" data-itch-embed="${esc(embed)}"><button type="button" class="button itch-play">${svg("play")} Jugar</button></div>${url ? external(`Abrir en itch.io ${svg("arrow")}`, url, "text-link") : ""}`;
   else if (url)
     action = external(`${svg("play")} Jugar en itch.io`, url);
   else

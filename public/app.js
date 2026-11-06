@@ -292,3 +292,17 @@
     $$(".track").forEach((b) => b.classList.remove("is-active"));
   });
 })();
+
+// Jugar en el navegador: el iframe de itch.io se crea solo al pulsar el botón.
+document.querySelectorAll("[data-itch-embed]").forEach((frame) => {
+  const button = frame.querySelector(".itch-play");
+  if (!button) return;
+  button.addEventListener("click", () => {
+    const iframe = document.createElement("iframe");
+    iframe.src = frame.dataset.itchEmbed;
+    iframe.title = "CENIZA NEÓN en itch.io";
+    iframe.allowFullscreen = true;
+    iframe.allow = "autoplay; fullscreen; gamepad";
+    frame.replaceChildren(iframe);
+  });
+});

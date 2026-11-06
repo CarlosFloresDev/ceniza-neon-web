@@ -222,7 +222,8 @@ test("The download page links the GitHub release and keeps the itch.io card pend
   assert.match(html, /origen desconocido/);
   const headers = await fs.readFile("dist/_headers", "utf8");
   if (download.itch.embed) {
-    assert.ok(html.includes(`<iframe src="${download.itch.embed}"`));
+    assert.ok(html.includes(`data-itch-embed="${download.itch.embed}"`));
+    assert.doesNotMatch(html, /<iframe/);
     assert.match(headers, /frame-src https:\/\/[a-z0-9.-]*itch\.io/);
   } else {
     assert.doesNotMatch(html, /<iframe/);
