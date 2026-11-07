@@ -328,3 +328,42 @@ document.querySelectorAll("[data-itch-embed]").forEach((button) => {
     close.focus();
   });
 });
+// Top Boss Rush: se lee de /api/ranking al abrir la página de descarga.
+document.querySelectorAll("[data-ranking]").forEach(async (list) => {
+  const time = (s) => {
+    const m = Math.floor(s / 60);
+    return `${String(m).padStart(2, "0")}:${(s - m * 60).toFixed(1).padStart(4, "0")}`;
+  };
+  const row = (cls, text) => {
+    const li = document.createElement("li");
+    li.className = cls;
+    li.textContent = text;
+    return li;
+  };
+  try {
+    const response = await fetch("/api/ranking", { cache: "no-store" });
+    const { ranking } = await response.json();
+    if (!ranking || !ranking.length) {
+      list.replaceChildren(row("ranking-empty", "Aún no hay tiempos. ¡Sé el primero!"));
+      return;
+    }
+    list.replaceChildren(
+      ...ranking.map((entry, index) => {
+        const li = document.createElement("li");
+        const place = document.createElement("span");
+        place.className = "ranking-place";
+        place.textContent = String(index + 1);
+        const name = document.createElement("span");
+        name.className = "ranking-name";
+        name.textContent = entry.name;
+        const score = document.createElement("span");
+        score.className = "ranking-time";
+        score.textContent = `${time(entry.seconds)} · ${entry.hits} golpes`;
+        li.append(place, name, score);
+        return li;
+      }),
+    );
+  } catch {
+    list.replaceChildren(row("ranking-empty", "No se pudo cargar el ranking ahora."));
+  }
+});

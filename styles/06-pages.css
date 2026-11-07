@@ -954,3 +954,11 @@ input[type="range"] {
 .play-stage__close { justify-self: end; background: transparent; color: inherit; border: 1px solid currentColor; padding: 6px 14px; font: inherit; cursor: pointer; }
 .play-stage__box { width: min(100%, calc((100dvh - 70px) * 16 / 9)); aspect-ratio: 16 / 9; justify-self: center; align-self: center; }
 .play-stage__box iframe { width: 100%; height: 100%; border: 0; display: block; }
+
+/* Top Boss Rush */
+.ranking-board { margin-block: 3rem; }
+.ranking-list { list-style: none; padding: 0; margin: 1rem 0 0; display: grid; gap: 6px; max-width: 640px; }
+.ranking-list li { display: grid; grid-template-columns: 2.5rem 1fr auto; gap: 12px; align-items: center; padding: 10px 14px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); }
+.ranking-list li:nth-child(-n+3) .ranking-place { color: #ffce75; font-weight: 700; }
+.ranking-list .ranking-empty { display: block; opacity: 0.75; }
+.ranking-time { font-variant-numeric: tabular-nums; opacity: 0.85; }
