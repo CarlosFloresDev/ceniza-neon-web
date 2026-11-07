@@ -278,17 +278,17 @@ El guion completo contiene revelaciones que esta ficha evita. La ampliación de 
 | --- | --- | --- |
 | A/D o flechas (W/S en arena) | Stick o cruceta | Moverse |
 | Mantener Shift | Cruceta abajo | Correr |
-| Mantener E | Mantener Y | Interactuar, construir, mejorar o reparar |
-| J | X | Atacar en arenas |
-| Espacio | A | Esquivar |
-| Q | LB | Sobrecarga |
-| V | Pulsar stick izquierdo | Subir o bajar de la plataforma |
-| Esc | Start | Pausa |
-| F | | Ordenar asalto o retirar la escuadra |
-| T | | Alimentación de torretas |
-| L | | Diario |
+| Mantener E | Mantener △ | Interactuar, construir, mejorar o reparar |
+| J | □ | Atacar en arenas |
+| Espacio | ✕ | Esquivar |
+| Q | L1 | Sobrecarga |
+| V | L3 (pulsar stick izquierdo) | Subir o bajar de la plataforma |
+| Esc | Options | Pausa |
+| F | Cruceta arriba | Ordenar asalto o retirar la escuadra |
+| T | ○ | Alimentación de torretas |
+| L | R1 | Diario |
 
-El juego muestra cada tecla según el último dispositivo que usaste, teclado o mando, y la resalta en color. La pausa resume las acciones básicas.
+El juego muestra cada tecla según el último dispositivo que usaste, teclado o mando, y la resalta en color. Los botones del mando siguen el estilo PlayStation: ✕ azul, ○ rojo, □ rosa y △ verde. En los menús, ✕ acepta y ○ vuelve. La pausa resume las acciones básicas.
 
 ## Pistas en los jefes
 
