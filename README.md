@@ -1,10 +1,10 @@
 # CENIZA NEÓN · Web del videojuego
 
-Sitio independiente del proyecto Godot: inicio, universo, bitácora, roadmap, wiki, comunidad, contacto, dossier y banda sonora. Sitio estático en español, sin cuentas ni formularios simulados, desplegable en Cloudflare Workers con assets.
+Sitio independiente del proyecto Godot: inicio, universo, bitácora, roadmap, wiki, comunidad, contacto, dossier y banda sonora. Sitio estático en español, sin cuentas ni formularios simulados, desplegado en Cloudflare Workers con assets. El Worker también sirve la API del ranking online del Boss Rush (`/api/ranking`).
 
 **Web pública:** https://ceniza-neon.chefsitturchey.workers.dev · **Repositorio privado:** https://github.com/CarlosFloresDev/ceniza-neon-web
 
-El juego sigue en desarrollo. La alfa de prueba 0.1.0 se descarga para Windows y Android desde `/descargar/`; la versión web llegará a itch.io. El cooperativo para dos jugadores es una función prevista. La web diferencia las mecánicas comprobadas del prototipo y la ampliación narrativa propuesta.
+El juego sigue en desarrollo. La alfa de prueba 0.2 se descarga para Windows y Android desde `/descargar/`, que también tiene el botón **Jugar** (versión web de itch.io a pantalla completa) y el top 20 del Boss Rush. El cooperativo para dos jugadores es una función prevista. La web diferencia las mecánicas comprobadas del prototipo y la ampliación narrativa propuesta.
 
 ## Trabajar en local
 
@@ -29,7 +29,14 @@ npx wrangler whoami
 npm run deploy
 ```
 
-La autenticación pertenece a la sesión local de Wrangler. No colocar tokens en el repositorio. `wrangler.jsonc` define un Worker estático llamado `ceniza-neon`; la dirección pública está en `content/site.json`. Cambiar de cuenta o reutilizar otro Worker requiere revisar esa configuración antes de desplegar.
+La autenticación pertenece a la sesión local de Wrangler. No colocar tokens en el repositorio. `wrangler.jsonc` define el Worker `ceniza-neon`: `worker/index.mjs` atiende `/api/*` y el resto se sirve como assets; la dirección pública está en `content/site.json`. Cambiar de cuenta o reutilizar otro Worker requiere revisar esa configuración antes de desplegar.
+
+## Ranking online del Boss Rush
+
+- `worker/index.mjs`: `GET /api/ranking` devuelve el top 20; `POST /api/ranking` recibe `{name, seconds, hits, version}` desde el juego (`levels/expedition/online_ranking.gd` en el repo del juego).
+- Validación: nombre de 1 a 12 caracteres, tiempo de 30 s a 4 h y 20 envíos por hora por IP (hash). CORS abierto.
+- Base D1 `ceniza-ranking`, enlazada como `DB`. Esquema en `worker/schema.sql`. Para crearla en otra cuenta: `npx wrangler d1 execute ceniza-ranking --remote --file worker/schema.sql`.
+- Si cambias el formato de envío, cambia también el juego.
 
 ## Dónde editar
 
