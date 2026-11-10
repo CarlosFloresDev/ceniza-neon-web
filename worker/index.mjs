@@ -84,6 +84,15 @@ export default {
       }
       return json({ error: "Método no permitido" }, 405);
     }
-    return env.ASSETS.fetch(request);
+    // La web de Ceniza ahora vive dentro de Feka Studios. Este worker solo
+    // conserva /api/ranking para las versiones ya publicadas del juego.
+    const NUEVA = "https://feka-studios.chefsitturchey.workers.dev/ceniza";
+    const RUTAS = {
+      universo: "universo", wiki: "wiki", bitacora: "bitacora",
+      "banda-sonora": "banda-sonora", roadmap: "hoja-de-ruta", descargar: "descargar",
+    };
+    const primera = url.pathname.split("/").filter(Boolean)[0];
+    const destino = primera && RUTAS[primera] ? `${NUEVA}/${RUTAS[primera]}` : NUEVA;
+    return Response.redirect(destino, 301);
   },
 };
